@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "release/environments/environment.schema.json",
+  "title": "Non-secret release environment contract",
+  "$defs": {
+    "prerequisiteReference": {
+      "type": "string",
+      "pattern": "^prerequisite:[a-z][a-z0-9-]*$"
+    },
+    "nullablePrerequisiteReference": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prerequisiteReference"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "parameterReference": {
+      "type": "string",
+      "pattern": "^parameter:(?![a-z0-9-]*(?:dev|test|debug|emulator))[a-z][a-z0-9-]*$"
+    },
+    "secretReference": {
+      "type": "string",
+      "pattern": "^defineSecret:(?![a-z0-9-]*(?:dev|test|debug|emulator))[a-z][a-z0-9-]*$"
+    },
+    "parameterRefs": {
+      "type": "object",
+      "required": [
+        "firebaseConfiguration",
+        "runtimeConfiguration",
+        "telemetryConfiguration"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "firebaseConfiguration": {
+          "$ref": "#/$defs/parameterReference"
+        },
+        "runtimeConfiguration": {
+          "$ref": "#/$defs/parameterReference"
+        },
+        "telemetryConfiguration": {
+          "$ref": "#/$defs/parameterReference"
+        }
+      }
+    },
+    "secretRefs": {
+      "type": "object",
+      "required": [
+        "functionRuntime"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "functionRuntime": {
+          "$ref": "#/$defs/secretReference"
+        }
+      }
+    },
+    "externalPrerequisiteRefs": {
+      "type": "object",
+      "required": [
+        "playConsoleApp",
+        "playAppSigningCustody",
+        "deletionWebUrlDomain",
+        "dataSafetyPrivacyApproval",
+        "productionAlertTelemetryAccess"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "playConsoleApp": {
+          "$ref": "#/$defs/nullablePrerequisiteReference"
+        },
+        "playAppSigningCustody": {
+          "$ref": "#/$defs/nullablePrerequisiteReference"
+        },
+        "deletionWebUrlDomain": {
+          "$ref": "#/$defs/nullablePrerequisiteReference"
+        },
+        "dataSafetyPrivacyApproval": {
+          "$ref": "#/$defs/nullablePrerequisiteReference"
+        },
+        "productionAlertTelemetryAccess": {
+          "$ref": "#/$defs/nullablePrerequisiteReference"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "environmentId",
+    "androidApplicationRef",
+    "targetApi",
+    "androidAbi",
+    "firebasePrerequisiteRef",
+    "serviceIdentityPrerequisiteRef",
+    "appCheckPrerequisiteRef",
+    "contentVersionRef",
+    "releaseTrack",
+    "parameterRefs",
+    "secretRefs",
+    "externalPrerequisiteRefs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "environment.schema.json"
+    },
+    "schemaVersion": {
+      "const": "warrior-release-environment/v1"
+    },
+    "environmentId": {
+      "enum": [
+        "dev",
+        "stage",
+        "prod"
+      ]
+    },
+    "androidApplicationRef": {
+      "const": "prerequisite:android-package-name"
+    },
+    "targetApi": {
+      "const": 36
+    },
+    "androidAbi": {
+      "const": "arm64-v8a"
+    },
+    "firebasePrerequisiteRef": {
+      "$ref": "#/$defs/prerequisiteReference"
+    },
+    "serviceIdentityPrerequisiteRef": {
+      "const": "prerequisite:firebase-service-identities"
+    },
+    "appCheckPrerequisiteRef": {
+      "$ref": "#/$defs/nullablePrerequisiteReference"
+    },
+    "contentVersionRef": {
+      "$ref": "#/$defs/parameterReference"
+    },
+    "releaseTrack": {
+      "enum": [
+        "development",
+        "internal",
+        "production"
+      ]
+    },
+    "parameterRefs": {
+      "$ref": "#/$defs/parameterRefs"
+    },
+    "secretRefs": {
+      "$ref": "#/$defs/secretRefs"
+    },
+    "externalPrerequisiteRefs": {
+      "$ref": "#/$defs/externalPrerequisiteRefs"
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "environmentId": {
+          "const": "dev"
+        },
+        "firebasePrerequisiteRef": {
+          "const": "prerequisite:firebase-dev-project"
+        },
+        "appCheckPrerequisiteRef": {
+          "type": "null"
+        },
+        "releaseTrack": {
+          "const": "development"
+        },
+        "externalPrerequisiteRefs": {
+          "properties": {
+            "playConsoleApp": {
+              "type": "null"
+            },
+            "playAppSigningCustody": {
+              "type": "null"
+            },
+            "deletionWebUrlDomain": {
+              "type": "null"
+            },
+            "dataSafetyPrivacyApproval": {
+              "type": "null"
+            },
+            "productionAlertTelemetryAccess": {
+              "type": "null"
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "environmentId": {
+          "const": "stage"
+        },
+        "firebasePrerequisiteRef": {
+          "const": "prerequisite:firebase-stage-project"
+        },
+        "appCheckPrerequisiteRef": {
+          "type": "null"
+        },
+        "releaseTrack": {
+          "const": "internal"
+        },
+        "externalPrerequisiteRefs": {
+          "properties": {
+            "playConsoleApp": {
+              "type": "null"
+            },
+            "playAppSigningCustody": {
+              "type": "null"
+            },
+            "deletionWebUrlDomain": {
+              "type": "null"
+            },
+            "dataSafetyPrivacyApproval": {
+              "type": "null"
+            },
+            "productionAlertTelemetryAccess": {
+              "type": "null"
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "environmentId": {
+          "const": "prod"
+        },
+        "firebasePrerequisiteRef": {
+          "const": "prerequisite:firebase-prod-project"
+        },
+        "appCheckPrerequisiteRef": {
+          "const": "prerequisite:app-check-play-integrity"
+        },
+        "releaseTrack": {
+          "const": "production"
+        },
+        "externalPrerequisiteRefs": {
+          "properties": {
+            "playConsoleApp": {
+              "const": "prerequisite:play-console-app"
+            },
+            "playAppSigningCustody": {
+              "const": "prerequisite:play-app-signing-custody"
+            },
+            "deletionWebUrlDomain": {
+              "const": "prerequisite:deletion-web-url-domain"
+            },
+            "dataSafetyPrivacyApproval": {
+              "const": "prerequisite:data-safety-privacy-approval"
+            },
+            "productionAlertTelemetryAccess": {
+              "const": "prerequisite:production-alert-telemetry-access"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

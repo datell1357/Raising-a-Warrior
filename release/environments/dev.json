@@ -1,0 +1,28 @@
+{
+  "$schema": "environment.schema.json",
+  "schemaVersion": "warrior-release-environment/v1",
+  "environmentId": "dev",
+  "androidApplicationRef": "prerequisite:android-package-name",
+  "targetApi": 36,
+  "androidAbi": "arm64-v8a",
+  "firebasePrerequisiteRef": "prerequisite:firebase-dev-project",
+  "serviceIdentityPrerequisiteRef": "prerequisite:firebase-service-identities",
+  "appCheckPrerequisiteRef": null,
+  "contentVersionRef": "parameter:content-version",
+  "releaseTrack": "development",
+  "parameterRefs": {
+    "firebaseConfiguration": "parameter:firebase-configuration",
+    "runtimeConfiguration": "parameter:runtime-configuration",
+    "telemetryConfiguration": "parameter:telemetry-configuration"
+  },
+  "secretRefs": {
+    "functionRuntime": "defineSecret:function-runtime"
+  },
+  "externalPrerequisiteRefs": {
+    "playConsoleApp": null,
+    "playAppSigningCustody": null,
+    "deletionWebUrlDomain": null,
+    "dataSafetyPrivacyApproval": null,
+    "productionAlertTelemetryAccess": null
+  }
+}

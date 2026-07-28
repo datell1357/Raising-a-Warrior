@@ -1,0 +1,50 @@
+{
+  "$schema": "provenance.schema.json",
+  "schemaVersion": "warrior-release-provenance-contract/v1",
+  "subject": {
+    "required": true,
+    "requiredFields": [
+      "path",
+      "sha256"
+    ]
+  },
+  "repository": {
+    "required": true,
+    "provider": "github",
+    "requiredFields": [
+      "identity"
+    ]
+  },
+  "immutableIdentity": {
+    "required": true,
+    "requiredFields": [
+      "ref",
+      "commit",
+      "workflow"
+    ]
+  },
+  "predicate": {
+    "required": true,
+    "type": "https://slsa.dev/provenance/v1"
+  },
+  "oidc": {
+    "required": true,
+    "issuer": "https://token.actions.githubusercontent.com"
+  },
+  "signature": {
+    "required": true,
+    "schemaRef": "release/provenance/signature.schema.json",
+    "attestationRequired": true,
+    "signatureType": "github-oidc-signed-attestation",
+    "issuer": "https://token.actions.githubusercontent.com"
+  },
+  "verification": {
+    "required": true,
+    "command": "gh attestation verify"
+  },
+  "hostedAttestation": {
+    "status": "BLOCKED",
+    "blockedUntil": "authorized-committed-workflow-execution",
+    "proof": null
+  }
+}

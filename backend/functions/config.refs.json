@@ -1,0 +1,17 @@
+{
+  "parameterRefs": {
+    "firebaseConfiguration": "parameter:firebase-configuration",
+    "runtimeConfiguration": "parameter:runtime-configuration",
+    "telemetryConfiguration": "parameter:telemetry-configuration"
+  },
+  "secretRefs": {
+    "functionRuntime": "defineSecret:function-runtime"
+  },
+  "prerequisiteRefs": [
+    "firebase-dev-project",
+    "firebase-stage-project",
+    "firebase-prod-project",
+    "firebase-service-identities",
+    "app-check-play-integrity"
+  ]
+}

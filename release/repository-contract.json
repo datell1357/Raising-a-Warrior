@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "warrior-repository-contract/v1",
+  "requiredT5Roots": [
+    "client/WarriorRaising",
+    "backend/functions",
+    "content",
+    "tools/content-pipeline",
+    "tools/qa",
+    "web/account",
+    "web/ops",
+    "release",
+    ".github/workflows"
+  ],
+  "requiredT5Files": [
+    "backend/firestore.rules",
+    "backend/firestore.indexes.json",
+    "release/repository-contract.json",
+    "release/environments/environment.schema.json",
+    "release/environments/dev.json",
+    "release/environments/stage.json",
+    "release/environments/prod.json",
+    "release/provenance/provenance.schema.json",
+    "release/provenance/signature.schema.json",
+    "release/provenance/contract.json",
+    ".github/workflows/client.yml",
+    ".github/workflows/backend.yml",
+    ".github/workflows/content.yml",
+    ".github/workflows/security.yml",
+    ".github/workflows/release.yml"
+  ],
+  "protectedRoots": [
+    "content",
+    "docs",
+    "tools/content-pipeline",
+    "tools/qa/bootstrap",
+    "tools/qa/provenance",
+    "tools/qa/architecture",
+    ".omo/plans",
+    ".omo/evidence"
+  ],
+  "workspaces": {
+    "client": "client/WarriorRaising",
+    "backend": "backend/functions",
+    "content": "content",
+    "quality": "tools/qa",
+    "accountWeb": "web/account",
+    "operationsWeb": "web/ops",
+    "release": "release"
+  },
+  "lockfilePolicy": {
+    "packageManager": "bun",
+    "lockfile": "bun.lock",
+    "singleRootLockfile": true,
+    "frozenInstallCommand": "bun ci",
+    "workspaceLockfilesForbidden": true
+  },
+  "validationCommands": [
+    "bun run validate:scope",
+    "bun run audit:clean-room -- --strict",
+    "bun run test:schema",
+    "bun run validate:adr",
+    "bun run verify:repo"
+  ],
+  "t5T6Boundary": {
+    "t5": [
+      "repository layout and workspace declarations",
+      "non-secret environment and provenance contracts",
+      "CI contract declarations"
+    ],
+    "t6": [
+      "Unity project initialization",
+      "Android application configuration",
+      "AAB build, signing, and ARM64 artifact production"
+    ]
+  },
+  "forbiddenInfrastructure": [
+    "microservices",
+    "kubernetes",
+    "websocket-gateway",
+    "iOS-release-targets",
+    "play-feature-delivery"
+  ]
+}

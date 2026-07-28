@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "release/provenance/signature.schema.json",
+  "title": "GitHub OIDC signed attestation contract",
+  "$defs": {
+    "signatureContract": {
+      "type": "object",
+      "required": [
+        "required",
+        "schemaRef",
+        "attestationRequired",
+        "signatureType",
+        "issuer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "schemaRef": {
+          "const": "release/provenance/signature.schema.json"
+        },
+        "attestationRequired": {
+          "const": true
+        },
+        "signatureType": {
+          "const": "github-oidc-signed-attestation"
+        },
+        "issuer": {
+          "const": "https://token.actions.githubusercontent.com"
+        }
+      }
+    }
+  },
+  "$ref": "#/$defs/signatureContract"
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "unity-asmdef-policy",
+  "contract": "T5-P3",
+  "scope": {
+    "stage": "T5",
+    "nextStage": "T6",
+    "boundary": "policy-only"
+  },
+  "referenceForms": ["name", "guid"],
+  "rules": {
+    "explicitReferencesRequired": true,
+    "uniqueAssemblyNames": true,
+    "acyclic": true,
+    "noDanglingEdges": true,
+    "noRuntimeToTests": true,
+    "noCustomToPredefinedReferences": true,
+    "futureActualAsmdefsMustMatchPolicy": true
+  },
+  "assemblies": [
+    {
+      "name": "Core",
+      "kind": "runtime",
+      "references": []
+    },
+    {
+      "name": "Domain",
+      "kind": "runtime",
+      "references": ["Core"]
+    },
+    {
+      "name": "Application",
+      "kind": "runtime",
+      "references": ["Core", "Domain"]
+    },
+    {
+      "name": "Combat",
+      "kind": "runtime",
+      "references": ["Core", "Domain"]
+    },
+    {
+      "name": "Content",
+      "kind": "runtime",
+      "references": ["Core", "Domain"]
+    },
+    {
+      "name": "Platform",
+      "kind": "runtime",
+      "references": ["Core", "Domain", "Application"]
+    },
+    {
+      "name": "Presentation",
+      "kind": "runtime",
+      "references": ["Core", "Domain", "Application", "Combat", "Content"]
+    },
+    {
+      "name": "Tests",
+      "kind": "tests",
+      "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"]
+    }
+  ]
+}

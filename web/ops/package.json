@@ -1,0 +1,8 @@
+{
+  "name": "@raising-a-warrior/ops",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -b --pretty false"
+  }
+}

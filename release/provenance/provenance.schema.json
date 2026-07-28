@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "release/provenance/provenance.schema.json",
+  "title": "Release provenance requirement contract",
+  "type": "object",
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "subject",
+    "repository",
+    "immutableIdentity",
+    "predicate",
+    "oidc",
+    "signature",
+    "verification",
+    "hostedAttestation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "provenance.schema.json"
+    },
+    "schemaVersion": {
+      "const": "warrior-release-provenance-contract/v1"
+    },
+    "subject": {
+      "type": "object",
+      "required": [
+        "required",
+        "requiredFields"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "requiredFields": {
+          "const": [
+            "path",
+            "sha256"
+          ]
+        }
+      }
+    },
+    "repository": {
+      "type": "object",
+      "required": [
+        "required",
+        "provider",
+        "requiredFields"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "provider": {
+          "const": "github"
+        },
+        "requiredFields": {
+          "const": [
+            "identity"
+          ]
+        }
+      }
+    },
+    "immutableIdentity": {
+      "type": "object",
+      "required": [
+        "required",
+        "requiredFields"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "requiredFields": {
+          "const": [
+            "ref",
+            "commit",
+            "workflow"
+          ]
+        }
+      }
+    },
+    "predicate": {
+      "type": "object",
+      "required": [
+        "required",
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "type": {
+          "const": "https://slsa.dev/provenance/v1"
+        }
+      }
+    },
+    "oidc": {
+      "type": "object",
+      "required": [
+        "required",
+        "issuer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "issuer": {
+          "const": "https://token.actions.githubusercontent.com"
+        }
+      }
+    },
+    "signature": {
+      "$ref": "signature.schema.json#/$defs/signatureContract"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "required",
+        "command"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "command": {
+          "const": "gh attestation verify"
+        }
+      }
+    },
+    "hostedAttestation": {
+      "type": "object",
+      "required": [
+        "status",
+        "blockedUntil",
+        "proof"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "BLOCKED"
+        },
+        "blockedUntil": {
+          "const": "authorized-committed-workflow-execution"
+        },
+        "proof": {
+          "type": "null"
+        }
+      }
+    }
+  }
+}

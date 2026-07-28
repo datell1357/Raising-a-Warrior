@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tools/content-pipeline" },
+    { "path": "./backend/functions" },
+    { "path": "./web/account" },
+    { "path": "./web/ops" }
+  ]
+}
