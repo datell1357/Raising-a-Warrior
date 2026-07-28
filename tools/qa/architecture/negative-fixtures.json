@@ -1,0 +1,578 @@
+[
+  {
+    "id": "client-owned-wallet",
+    "path": "tools/qa/architecture/fixtures/negative/client-owned-wallet.json",
+    "expect": {
+      "code": "CLIENT_OWNED_WALLET",
+      "pointer": "/mutations/0/successEffect/clientWalletAuthority"
+    }
+  },
+  {
+    "id": "trusted-client-victory",
+    "path": "tools/qa/architecture/fixtures/negative/trusted-client-victory.json",
+    "expect": {
+      "code": "TRUSTED_CLIENT_VICTORY",
+      "pointer": "/mutations/6/successEffect/trustedClientVictory"
+    }
+  },
+  {
+    "id": "fixed-offline-cap",
+    "path": "tools/qa/architecture/fixtures/negative/fixed-offline-cap.json",
+    "expect": {
+      "code": "FIXED_OFFLINE_CAP",
+      "pointer": "/policy/fixedOfflineRewardCapSeconds"
+    }
+  },
+  {
+    "id": "web-gameplay",
+    "path": "tools/qa/architecture/fixtures/negative/web-gameplay.json",
+    "expect": {
+      "code": "WEB_GAMEPLAY",
+      "pointer": "/mutations/5/successEffect/webGameplay"
+    }
+  },
+  {
+    "id": "assumed-api-extension",
+    "path": "tools/qa/architecture/fixtures/negative/assumed-api-extension.json",
+    "expect": {
+      "code": "ASSUMED_API_EXTENSION",
+      "pointer": "/policy/api36Extension"
+    }
+  },
+  {
+    "id": "missing-app-check-integrity",
+    "path": "tools/qa/architecture/fixtures/negative/missing-app-check-integrity.json",
+    "expect": {
+      "code": "MISSING_APP_CHECK_INTEGRITY",
+      "pointer": "/mutations/0/appCheckIntegrity"
+    }
+  },
+  {
+    "id": "duplicate-mutation-spec",
+    "path": "tools/qa/architecture/fixtures/negative/duplicate-mutation-spec.json",
+    "expect": {
+      "code": "DUPLICATE_MUTATION_SPEC",
+      "pointer": "/mutations/1/specId"
+    }
+  },
+  {
+    "id": "missing-mutation-spec",
+    "path": "tools/qa/architecture/fixtures/negative/missing-mutation-spec.json",
+    "expect": {
+      "code": "MUTATION_COVERAGE",
+      "pointer": "/mutations"
+    }
+  },
+  {
+    "id": "multiple-server-owner",
+    "path": "tools/qa/architecture/fixtures/negative/multiple-server-owner.json",
+    "expect": {
+      "code": "SERVER_OWNER_COUNT",
+      "pointer": "/mutations/0/serverOwner"
+    }
+  },
+  {
+    "id": "no-server-owner",
+    "path": "tools/qa/architecture/fixtures/negative/no-server-owner.json",
+    "expect": {
+      "code": "SERVER_OWNER_COUNT",
+      "pointer": "/mutations/0/serverOwner"
+    }
+  },
+  {
+    "id": "missing-zero-mutation-failure",
+    "path": "tools/qa/architecture/fixtures/negative/missing-zero-mutation-failure.json",
+    "expect": {
+      "code": "MISSING_ZERO_MUTATION_FAILURE",
+      "pointer": "/mutations/0/zeroMutationFailure"
+    }
+  },
+  {
+    "id": "replay-second-effect",
+    "path": "tools/qa/architecture/fixtures/negative/replay-second-effect.json",
+    "expect": {
+      "code": "REPLAY_SECOND_EFFECT",
+      "pointer": "/mutations/0/replay"
+    }
+  },
+  {
+    "id": "transaction-callback-side-effect",
+    "path": "tools/qa/architecture/fixtures/negative/transaction-callback-side-effect.json",
+    "expect": {
+      "code": "TRANSACTION_SIDE_EFFECT",
+      "pointer": "/policy/idempotency/transactionCallback"
+    }
+  },
+  {
+    "id": "missing-prerequisite-id",
+    "path": "tools/qa/architecture/fixtures/negative/missing-prerequisite-id.json",
+    "expect": {
+      "code": "PREREQUISITE_ID",
+      "pointer": "/prerequisites/0/id"
+    }
+  },
+  {
+    "id": "secret-prerequisite-id",
+    "path": "tools/qa/architecture/fixtures/negative/secret-prerequisite-id.json",
+    "expect": {
+      "code": "PREREQUISITE_ID",
+      "pointer": "/prerequisites/0/id"
+    }
+  },
+  {
+    "id": "prerequisite-false-pass",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-false-pass.json",
+    "expect": {
+      "code": "PREREQUISITE_FALSE_PASS",
+      "pointer": "/prerequisites/0/status"
+    }
+  },
+  {
+    "id": "malformed-official-source",
+    "path": "tools/qa/architecture/fixtures/negative/malformed-official-source.json",
+    "expect": {
+      "code": "OFFICIAL_SOURCE_URL",
+      "pointer": "/sourceRegistry/0/url"
+    }
+  },
+  {
+    "id": "official-source-approved-url-swap",
+    "path": "tools/qa/architecture/fixtures/negative/official-source-approved-url-swap.json",
+    "expect": {
+      "code": "OFFICIAL_SOURCE_URL",
+      "pointer": "/sourceRegistry/10/url"
+    }
+  },
+  {
+    "id": "prerequisite-approved-url-swap",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-approved-url-swap.json",
+    "expect": {
+      "code": "PREREQUISITE_SOURCE_URL",
+      "pointer": "/prerequisites/2/sourceUrl"
+    }
+  },
+  {
+    "id": "canonical-binding-hash-drift",
+    "path": "tools/qa/architecture/fixtures/negative/canonical-binding-hash-drift.json",
+    "expect": {
+      "code": "CANONICAL_BINDING_HASH",
+      "pointer": "/canonicalBindings/0/sha256"
+    }
+  },
+  {
+    "id": "prerequisite-status-only-verified",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-status-only-verified.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_PATH",
+      "pointer": "/prerequisites/0/verification/artifactPath"
+    }
+  },
+  {
+    "id": "player-facing-season-pass",
+    "path": "tools/qa/architecture/fixtures/negative/player-facing-season-pass.json",
+    "expect": {
+      "code": "PLAYER_SEASON_PASS",
+      "pointer": "/mutations/0/successEffect/playerFacingSeasonPass"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-category",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-category.json",
+    "expect": {
+      "code": "PREREQUISITE_STATIC_DRIFT",
+      "pointer": "/prerequisites/0/category"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-owner",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-owner.json",
+    "expect": {
+      "code": "PREREQUISITE_STATIC_DRIFT",
+      "pointer": "/prerequisites/0/ownerRole"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-blocking-command",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-blocking-command.json",
+    "expect": {
+      "code": "PREREQUISITE_STATIC_DRIFT",
+      "pointer": "/prerequisites/0/blockingCommand"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-proof-required",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-proof-required.json",
+    "expect": {
+      "code": "PREREQUISITE_STATIC_DRIFT",
+      "pointer": "/prerequisites/0/proofRequired"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-proof-kind",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-proof-kind.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_KIND",
+      "pointer": "/prerequisites/0/proofKind"
+    }
+  },
+  {
+    "id": "prerequisite-missing-entry",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-missing-entry.json",
+    "expect": {
+      "code": "PREREQUISITE_COVERAGE",
+      "pointer": "/prerequisites"
+    }
+  },
+  {
+    "id": "prerequisite-extra-entry",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-extra-entry.json",
+    "expect": {
+      "code": "PREREQUISITE_COVERAGE",
+      "pointer": "/prerequisites"
+    }
+  },
+  {
+    "id": "prerequisite-verified-missing-artifact",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-verified-missing-artifact.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_ARTIFACT",
+      "pointer": "/prerequisites/0/verification/artifactPath"
+    }
+  },
+  {
+    "id": "prerequisite-wrong-hash",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-wrong-hash.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_HASH",
+      "pointer": "/prerequisites/0/verification/sha256"
+    }
+  },
+  {
+    "id": "prerequisite-invalid-timestamp",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-invalid-timestamp.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_TIME",
+      "pointer": "/prerequisites/0/verification/verifiedAt"
+    }
+  },
+  {
+    "id": "prerequisite-invalid-verifier",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-invalid-verifier.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_VERIFIER",
+      "pointer": "/prerequisites/0/verification/verifierId"
+    }
+  },
+  {
+    "id": "prerequisite-traversal-path",
+    "path": "tools/qa/architecture/fixtures/negative/prerequisite-traversal-path.json",
+    "expect": {
+      "code": "PREREQUISITE_PROOF_PATH",
+      "pointer": "/prerequisites/0/verification/artifactPath"
+    }
+  },
+  {
+    "id": "owner-swap",
+    "path": "tools/qa/architecture/fixtures/negative/owner-swap.json",
+    "expect": {
+      "code": "SERVER_OWNER_DRIFT",
+      "pointer": "/mutations/0/serverOwner"
+    }
+  },
+  {
+    "id": "mail-owner-regression",
+    "path": "tools/qa/architecture/fixtures/negative/mail-owner-regression.json",
+    "expect": {
+      "code": "SERVER_OWNER_DRIFT",
+      "pointer": "/mutations/46/serverOwner"
+    }
+  },
+  {
+    "id": "required-play-integrity-disabled",
+    "path": "tools/qa/architecture/fixtures/negative/required-play-integrity-disabled.json",
+    "expect": {
+      "code": "MISSING_APP_CHECK_INTEGRITY",
+      "pointer": "/mutations/0/appCheckIntegrity"
+    }
+  },
+  {
+    "id": "web-auth-missing-rbac",
+    "path": "tools/qa/architecture/fixtures/negative/web-auth-missing-rbac.json",
+    "expect": {
+      "code": "AUTH_BOUNDARY",
+      "pointer": "/mutations/29/authBoundary"
+    }
+  },
+  {
+    "id": "web-security-missing-audit",
+    "path": "tools/qa/architecture/fixtures/negative/web-security-missing-audit.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/29/securityProofs"
+    }
+  },
+  {
+    "id": "support-missing-verified-delegation",
+    "path": "tools/qa/architecture/fixtures/negative/support-missing-verified-delegation.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/35/securityProofs"
+    }
+  },
+  {
+    "id": "security-proof-order-drift",
+    "path": "tools/qa/architecture/fixtures/negative/security-proof-order-drift.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/0/securityProofs/0"
+    }
+  },
+  {
+    "id": "classification-drift",
+    "path": "tools/qa/architecture/fixtures/negative/classification-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION",
+      "pointer": "/mutations/0/classification"
+    }
+  },
+  {
+    "id": "idempotency-mismatch-drift",
+    "path": "tools/qa/architecture/fixtures/negative/idempotency-mismatch-drift.json",
+    "expect": {
+      "code": "IDEMPOTENCY_POLICY",
+      "pointer": "/policy/idempotency"
+    }
+  },
+  {
+    "id": "idempotency-semantic-collision-drift",
+    "path": "tools/qa/architecture/fixtures/negative/idempotency-semantic-collision-drift.json",
+    "expect": {
+      "code": "IDEMPOTENCY_POLICY",
+      "pointer": "/policy/idempotency"
+    }
+  },
+  {
+    "id": "source-claims-drift",
+    "path": "tools/qa/architecture/fixtures/negative/source-claims-drift.json",
+    "expect": {
+      "code": "SOURCE_CLAIM_DRIFT",
+      "pointer": "/sourceClaims/claims/0/facts/0"
+    }
+  },
+  {
+    "id": "adr-claim-drift",
+    "path": "tools/qa/architecture/fixtures/negative/adr-claim-drift.json",
+    "expect": {
+      "code": "ADR_CLAIM_DRIFT",
+      "pointer": "/adrRegistry/2/path"
+    }
+  },
+  {
+    "id": "adr-missing-decision",
+    "path": "tools/qa/architecture/fixtures/negative/adr-missing-decision.json",
+    "expect": {
+      "code": "ADR_SECTION_MISSING",
+      "pointer": "/adr/Decision"
+    }
+  },
+  {
+    "id": "adr-contradictory-decision-body",
+    "path": "tools/qa/architecture/fixtures/negative/adr-contradictory-decision-body.json",
+    "expect": {
+      "code": "ADR_DECISION_CLAIM_MISSING",
+      "pointer": "/adr/Decision"
+    }
+  },
+  {
+    "id": "adr-source-url-swap",
+    "path": "tools/qa/architecture/fixtures/negative/adr-source-url-swap.json",
+    "expect": {
+      "code": "ADR_SOURCE_TABLE_URL",
+      "pointer": "/adrRegistry/0/sourceIds/3"
+    }
+  },
+  {
+    "id": "adr-source-row-missing",
+    "path": "tools/qa/architecture/fixtures/negative/adr-source-row-missing.json",
+    "expect": {
+      "code": "ADR_SOURCE_TABLE_COVERAGE",
+      "pointer": "/adrRegistry/0/sourceIds"
+    }
+  },
+  {
+    "id": "session-rationale-drift",
+    "path": "tools/qa/architecture/fixtures/negative/session-rationale-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION_RATIONALE",
+      "pointer": "/mutations/1/classificationRationale"
+    }
+  },
+  {
+    "id": "draw-recovery-rationale-drift",
+    "path": "tools/qa/architecture/fixtures/negative/draw-recovery-rationale-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION_RATIONALE",
+      "pointer": "/mutations/26/classificationRationale"
+    }
+  },
+  {
+    "id": "stage-selection-rationale-drift",
+    "path": "tools/qa/architecture/fixtures/negative/stage-selection-rationale-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION_RATIONALE",
+      "pointer": "/mutations/27/classificationRationale"
+    }
+  },
+  {
+    "id": "scheduled-unlock-rationale-drift",
+    "path": "tools/qa/architecture/fixtures/negative/scheduled-unlock-rationale-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION_RATIONALE",
+      "pointer": "/mutations/31/classificationRationale"
+    }
+  },
+  {
+    "id": "power-save-rationale-drift",
+    "path": "tools/qa/architecture/fixtures/negative/power-save-rationale-drift.json",
+    "expect": {
+      "code": "MUTATION_CLASSIFICATION_RATIONALE",
+      "pointer": "/mutations/49/classificationRationale"
+    }
+  },
+  {
+    "id": "ad-missing-consent-gate",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-consent-gate.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-missing-server-nonce",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-server-nonce.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-missing-nonce-expiry",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-nonce-expiry.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-missing-provider-ssv-signature",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-provider-ssv-signature.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-missing-transaction-id-dedupe",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-transaction-id-dedupe.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-missing-nonce-single-consumption",
+    "path": "tools/qa/architecture/fixtures/negative/ad-missing-nonce-single-consumption.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/32/securityProofs"
+    }
+  },
+  {
+    "id": "ad-commerce-proof-drift",
+    "path": "tools/qa/architecture/fixtures/negative/ad-commerce-proof-drift.json",
+    "expect": {
+      "code": "COMMERCE_PROOF_DRIFT",
+      "pointer": "/mutations/32/commerceProof"
+    }
+  },
+  {
+    "id": "iap-missing-purchase-token",
+    "path": "tools/qa/architecture/fixtures/negative/iap-missing-purchase-token.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/33/securityProofs"
+    }
+  },
+  {
+    "id": "iap-missing-play-developer-api",
+    "path": "tools/qa/architecture/fixtures/negative/iap-missing-play-developer-api.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/33/securityProofs"
+    }
+  },
+  {
+    "id": "iap-missing-purchased-state",
+    "path": "tools/qa/architecture/fixtures/negative/iap-missing-purchased-state.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/33/securityProofs"
+    }
+  },
+  {
+    "id": "iap-missing-backend-acknowledgement",
+    "path": "tools/qa/architecture/fixtures/negative/iap-missing-backend-acknowledgement.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/33/securityProofs"
+    }
+  },
+  {
+    "id": "iap-missing-purchase-token-dedupe",
+    "path": "tools/qa/architecture/fixtures/negative/iap-missing-purchase-token-dedupe.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/33/securityProofs"
+    }
+  },
+  {
+    "id": "iap-commerce-proof-drift",
+    "path": "tools/qa/architecture/fixtures/negative/iap-commerce-proof-drift.json",
+    "expect": {
+      "code": "COMMERCE_PROOF_DRIFT",
+      "pointer": "/mutations/33/commerceProof"
+    }
+  },
+  {
+    "id": "recovery-missing-authoritative-reconciliation",
+    "path": "tools/qa/architecture/fixtures/negative/recovery-missing-authoritative-reconciliation.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/34/securityProofs"
+    }
+  },
+  {
+    "id": "refund-missing-voided-reconciliation",
+    "path": "tools/qa/architecture/fixtures/negative/refund-missing-voided-reconciliation.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/35/securityProofs"
+    }
+  },
+  {
+    "id": "canonical-binding-path-drift",
+    "path": "tools/qa/architecture/fixtures/negative/canonical-binding-path-drift.json",
+    "expect": {
+      "code": "CANONICAL_BINDING_PATH",
+      "pointer": "/canonicalBindings/0/path"
+    }
+  },
+  {
+    "id": "security-proof-missing-generic",
+    "path": "tools/qa/architecture/fixtures/negative/security-proof-missing-generic.json",
+    "expect": {
+      "code": "SECURITY_PROOF_DRIFT",
+      "pointer": "/mutations/0/securityProofs"
+    }
+  }
+]

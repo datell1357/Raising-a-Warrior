@@ -1,0 +1,1 @@
+{ "kind": "architecture-validation-fixture", "matrix": "docs/architecture/mutation-matrix.json", "prerequisites": "docs/operations/external-prerequisites.json", "patches": [{ "target": "matrix", "op": "replace", "pointer": "/mutations/0/successEffect/playerFacingSeasonPass", "value": true }] }

@@ -1,0 +1,1 @@
+{ "kind": "architecture-validation-fixture", "matrix": "docs/architecture/mutation-matrix.json", "prerequisites": "docs/operations/external-prerequisites.json", "patches": [{ "target": "matrix", "op": "replace", "pointer": "/sourceRegistry/0/url", "value": "https://example.invalid/not-official" }] }

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "warrior-official-source-claims/v1",
+  "claims": [
+    { "id": "play-billing-security", "url": "https://developer.android.com/google/play/billing/security", "retrievedAt": "2026-07-28", "facts": ["backend-receives-purchase-token", "purchase-token-globally-unique-primary-idempotency-key", "verify-with-play-developer-api", "grant-purchased-only-not-pending"], "caveats": [] },
+    { "id": "play-billing-integrate", "url": "https://developer.android.com/google/play/billing/integrate", "retrievedAt": "2026-07-28", "facts": ["acknowledge-after-entitlement-within-3-days", "grant-purchased-only"], "caveats": ["pending-purchases-require-resolution-window"] },
+    { "id": "play-billing-one-time", "url": "https://developer.android.com/google/play/billing/lifecycle/one-time", "retrievedAt": "2026-07-28", "facts": ["acknowledge-non-consumable-or-consume-consumable", "no-acknowledgement-within-3-days-causes-refund-or-revocation"], "caveats": [] },
+    { "id": "play-billing-rtdn", "url": "https://developer.android.com/google/play/billing/rtdn-reference", "retrievedAt": "2026-07-28", "facts": ["deduplicate-message-id", "read-authoritative-state-from-api"], "caveats": ["notification-is-not-full-purchase-state"] },
+    { "id": "play-voided-purchases", "url": "https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list", "retrievedAt": "2026-07-28", "facts": ["reconcile-canceled-refunded-and-chargeback-entitlements"], "caveats": ["voided-purchase-record-identity-must-remain-unique-for-reconciliation"] },
+    { "id": "admob-unity-ssv", "url": "https://developers.google.com/admob/unity/ssv", "retrievedAt": "2026-07-28", "facts": ["verify-signature-and-key", "preserve-callback-query-fields-except-signature-and-key-id", "deduplicate-transaction-id", "cache-verification-keys-at-most-24-hours", "handle-callback-retries"], "caveats": ["nonce-expiry-and-single-consumption-are-application-architecture", "user-id-and-custom-data-are-not-trust"] },
+    { "id": "admob-unity-privacy", "url": "https://developers.google.com/admob/unity/privacy", "retrievedAt": "2026-07-28", "facts": ["update-consent-each-app-launch", "check-can-request-ads-before-request"], "caveats": [] }
+  ]
+}

@@ -1,0 +1,1 @@
+{"kind":"architecture-validation-fixture","matrix":"docs/architecture/mutation-matrix.json","prerequisites":"docs/operations/external-prerequisites.json","patches":[{"target":"prerequisites","op":"replace","pointer":"/prerequisites/0/category","value":"wrong"}]}
