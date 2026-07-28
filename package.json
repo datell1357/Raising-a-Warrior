@@ -1,0 +1,25 @@
+{
+  "name": "raising-a-warrior",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "backend/functions",
+    "web/account",
+    "web/ops"
+  ],
+  "scripts": {
+    "validate:scope": "node tools/qa/bootstrap/validate-scope.mjs",
+    "audit:clean-room": "node tools/qa/provenance/audit.mjs",
+    "test:schema": "node tools/content-pipeline/test-schema.mjs",
+    "validate:adr": "node tools/qa/architecture/run-validation-suite.mjs",
+    "typecheck": "tsc -b --pretty false",
+    "test:repo": "node tools/qa/repository/run-validation-suite.mjs && node tools/qa/repository/run-live-regressions.mjs",
+    "verify:repo": "bun run typecheck && bun run test:repo && node tools/qa/repository/verify-repository.mjs",
+    "evidence:repo": "node tools/qa/repository/capture-evidence.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "yaml": "2.9.0"
+  }
+}

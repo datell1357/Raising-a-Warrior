@@ -1,0 +1,423 @@
+{
+  "product": {
+    "name": "워리어 키우기",
+    "horizonWeeks": 64,
+    "launchBaseline": "3/30/300",
+    "d90Baseline": "6/60/600",
+    "questBaseline": [
+      20,
+      8,
+      6,
+      40,
+      28
+    ],
+    "skillBaseline": {
+      "launch": 18,
+      "scheduled": 6,
+      "total": 24
+    },
+    "equipmentBaseline": {
+      "slots": 3,
+      "rarities": 5,
+      "tiers": 4
+    },
+    "summonBaseline": {
+      "single": true,
+      "tenDraw": true,
+      "tenDrawGuarantee": true,
+      "sixtyDrawPity": true
+    },
+    "storeBaseline": {
+      "freeDaily": 1,
+      "rewardedAds": 2,
+      "currencyProducts": 4,
+      "starterPack": 1,
+      "adRemoval": 1
+    },
+    "promotionBaseline": {
+      "launch": 5,
+      "scheduled": 1,
+      "total": 6
+    },
+    "locales": [
+      "ko",
+      "en",
+      "ja",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "accessibilityMinimumDp": 48,
+    "roles": [
+      "player",
+      "operator",
+      "customer-support"
+    ],
+    "devices": [
+      "Android",
+      "Web"
+    ],
+    "w48FeatureFreeze": true,
+    "w64Semantics": "launch-ready plus fully built/localized/QA-approved D30/D60/D90 artifacts; actual D30/D60/D90 operations are post-launch",
+    "webBoundary": "Web is limited to account deletion, support, operations and never gameplay",
+    "seasonPass": {
+      "playerFacing": false,
+      "sku": false,
+      "purchase": false,
+      "progression": false,
+      "rewards": false,
+      "operatorGateOnly": "NS-SEASON-GATE"
+    },
+    "externalRiskOwners": {
+      "product": "unknown/unassigned",
+      "artLead": "unknown/unassigned",
+      "translationLQA": "unknown/unassigned",
+      "backend": "unknown/unassigned",
+      "operationsLegal": "unknown/unassigned"
+    }
+  },
+  "ownership": {
+    "requirements": [
+      "R-IIHNMM",
+      "R-FXPTCH",
+      "R-PCGQUK",
+      "R-GBZSDW",
+      "R-QYFYBC",
+      "NR-LOCAL-A11Y"
+    ],
+    "featureCount": 18,
+    "specCount": 55,
+    "planRows": [
+      {
+        "todo": "T9",
+        "feature": "F-THXTSZ",
+        "specs": [
+          "S-LVWHIB",
+          "NS-SESSION-RECONNECT",
+          "S-TGKDXL"
+        ]
+      },
+      {
+        "todo": "T10",
+        "feature": "F-ACWSGP",
+        "specs": [
+          "S-RVSTQT",
+          "S-XJSOJJ",
+          "NS-WEB-DELETE"
+        ]
+      },
+      {
+        "todo": "T11",
+        "feature": "F-PBSUSF",
+        "specs": [
+          "S-YFLBRX",
+          "NS-AUTO-FARM"
+        ]
+      },
+      {
+        "todo": "T12",
+        "feature": "F-HWZUUP",
+        "specs": [
+          "S-VLJARV"
+        ]
+      },
+      {
+        "todo": "T13",
+        "feature": "F-GXOCUU",
+        "specs": [
+          "S-LXSNDL",
+          "NS-DAILY-WEEKLY",
+          "NS-ACHIEVEMENT",
+          "NS-ATTENDANCE"
+        ]
+      },
+      {
+        "todo": "T13",
+        "feature": "F-WCYUBV",
+        "specs": [
+          "S-TWOQHT",
+          "NS-RESEARCH",
+          "NS-PROMOTION"
+        ]
+      },
+      {
+        "todo": "T14",
+        "feature": "F-MPWRJX",
+        "specs": [
+          "S-LPEJNI",
+          "NS-SKILL-UPGRADE",
+          "NS-SKILL-LOADOUT",
+          "NS-SKILL-AUTO"
+        ]
+      },
+      {
+        "todo": "T15",
+        "feature": "F-QBEEMX",
+        "specs": [
+          "S-XANCZD",
+          "NS-EQUIP-LOCK",
+          "NS-EQUIP-UPGRADE",
+          "NS-EQUIP-FUSION"
+        ]
+      },
+      {
+        "todo": "T16",
+        "feature": "F-KZWEOI",
+        "specs": [
+          "S-AOQYYC",
+          "NS-DRAW-TEN",
+          "NS-DRAW-ODDS",
+          "NS-DRAW-RECOVERY"
+        ]
+      },
+      {
+        "todo": "T17",
+        "feature": "F-DXKNLU",
+        "specs": [
+          "S-UHNSOK",
+          "NS-CELL-PROGRESS"
+        ]
+      },
+      {
+        "todo": "T18",
+        "feature": "F-HMVZDT",
+        "specs": [
+          "S-AJNKBZ",
+          "NS-CONTENT-ROLLBACK",
+          "NS-SCHEDULED-UNLOCK"
+        ]
+      },
+      {
+        "todo": "T19",
+        "feature": "F-TIQUNR",
+        "specs": [
+          "S-IRLFRY",
+          "S-OJRSXR",
+          "NS-IAP-RECOVERY",
+          "NS-IAP-REFUND",
+          "NS-STORE-DAILY"
+        ]
+      },
+      {
+        "todo": "T20",
+        "feature": "F-NHEIDC",
+        "specs": [
+          "S-AJLBYA",
+          "NS-MAIL-PUBLISH",
+          "NS-MAINTENANCE",
+          "S-AHBKUR",
+          "NS-ATTENDANCE-GATE",
+          "NS-SEASON-GATE"
+        ]
+      },
+      {
+        "todo": "T21",
+        "feature": "F-CGHLJL",
+        "specs": [
+          "S-MXZRCE",
+          "S-BSTFCP",
+          "NS-COST-ALERT"
+        ]
+      },
+      {
+        "todo": "T22",
+        "feature": "NF-PLAYER-LIVEOPS",
+        "specs": [
+          "NS-NOTICE-VIEW",
+          "NS-EVENT-PARTICIPATE",
+          "NS-MAIL-CLAIM"
+        ]
+      },
+      {
+        "todo": "T23",
+        "feature": "NF-LOCALE",
+        "specs": [
+          "NS-LOCALE-SELECT",
+          "NS-LOCALE-RENDER"
+        ]
+      },
+      {
+        "todo": "T24",
+        "feature": "NF-A11Y-POWER",
+        "specs": [
+          "NS-A11Y-SETTINGS",
+          "NS-POWER-SAVE"
+        ]
+      },
+      {
+        "todo": "T25",
+        "feature": "NF-RESPONSIVE-UI",
+        "specs": [
+          "NS-SAFEAREA-PANEL"
+        ]
+      }
+    ]
+  },
+  "contractedValues": {
+    "canonicalExclusions": [
+      "iOS",
+      "guild",
+      "chat",
+      "PvP",
+      "realtime coop",
+      "world boss",
+      "Dragon Valley",
+      "companion formation",
+      "forced interstitials",
+      "cash loot boxes",
+      "original APK code/assets/values/copy/names/protocols/SDK config reuse",
+      "Web gameplay",
+      "Web progression",
+      "Web inventory",
+      "Web summon",
+      "Web reward claims",
+      "Web wallet ledger editing",
+      "client-authoritative economy",
+      "600 scenes",
+      "fixed offline cap"
+    ],
+    "roles": [
+      "player",
+      "operator",
+      "customer-support"
+    ],
+    "devices": [
+      "Android",
+      "Web"
+    ],
+    "webRestrictions": [
+      "account deletion",
+      "support",
+      "operations"
+    ],
+    "seasonPassOperatorGate": "NS-SEASON-GATE",
+    "launchContract": "3/30/300",
+    "d90Contract": "6/60/600"
+  },
+  "requirements": [
+    {
+      "id": "R-IIHNMM",
+      "features": [
+        "F-THXTSZ",
+        "F-ACWSGP"
+      ]
+    },
+    {
+      "id": "R-FXPTCH",
+      "features": [
+        "F-PBSUSF",
+        "F-HWZUUP"
+      ]
+    },
+    {
+      "id": "R-PCGQUK",
+      "features": [
+        "F-GXOCUU",
+        "F-WCYUBV",
+        "F-MPWRJX",
+        "F-QBEEMX",
+        "F-KZWEOI"
+      ]
+    },
+    {
+      "id": "R-GBZSDW",
+      "features": [
+        "F-DXKNLU",
+        "F-HMVZDT"
+      ]
+    },
+    {
+      "id": "R-QYFYBC",
+      "features": [
+        "F-TIQUNR",
+        "F-NHEIDC",
+        "F-CGHLJL",
+        "NF-PLAYER-LIVEOPS"
+      ]
+    },
+    {
+      "id": "NR-LOCAL-A11Y",
+      "features": [
+        "NF-LOCALE",
+        "NF-A11Y-POWER",
+        "NF-RESPONSIVE-UI"
+      ]
+    }
+  ],
+  "features": [
+    "F-THXTSZ",
+    "F-ACWSGP",
+    "F-PBSUSF",
+    "F-HWZUUP",
+    "F-GXOCUU",
+    "F-WCYUBV",
+    "F-MPWRJX",
+    "F-QBEEMX",
+    "F-KZWEOI",
+    "F-DXKNLU",
+    "F-HMVZDT",
+    "F-TIQUNR",
+    "F-NHEIDC",
+    "F-CGHLJL",
+    "NF-PLAYER-LIVEOPS",
+    "NF-LOCALE",
+    "NF-A11Y-POWER",
+    "NF-RESPONSIVE-UI"
+  ],
+  "specs": [
+    "S-LVWHIB",
+    "NS-SESSION-RECONNECT",
+    "S-TGKDXL",
+    "S-RVSTQT",
+    "S-XJSOJJ",
+    "NS-WEB-DELETE",
+    "S-YFLBRX",
+    "NS-AUTO-FARM",
+    "S-VLJARV",
+    "S-LXSNDL",
+    "NS-DAILY-WEEKLY",
+    "NS-ACHIEVEMENT",
+    "NS-ATTENDANCE",
+    "S-TWOQHT",
+    "NS-RESEARCH",
+    "NS-PROMOTION",
+    "S-LPEJNI",
+    "NS-SKILL-UPGRADE",
+    "NS-SKILL-LOADOUT",
+    "NS-SKILL-AUTO",
+    "S-XANCZD",
+    "NS-EQUIP-LOCK",
+    "NS-EQUIP-UPGRADE",
+    "NS-EQUIP-FUSION",
+    "S-AOQYYC",
+    "NS-DRAW-TEN",
+    "NS-DRAW-ODDS",
+    "NS-DRAW-RECOVERY",
+    "S-UHNSOK",
+    "NS-CELL-PROGRESS",
+    "S-AJNKBZ",
+    "NS-CONTENT-ROLLBACK",
+    "NS-SCHEDULED-UNLOCK",
+    "S-IRLFRY",
+    "S-OJRSXR",
+    "NS-IAP-RECOVERY",
+    "NS-IAP-REFUND",
+    "NS-STORE-DAILY",
+    "S-AJLBYA",
+    "NS-MAIL-PUBLISH",
+    "NS-MAINTENANCE",
+    "S-AHBKUR",
+    "NS-ATTENDANCE-GATE",
+    "NS-SEASON-GATE",
+    "S-MXZRCE",
+    "S-BSTFCP",
+    "NS-COST-ALERT",
+    "NS-NOTICE-VIEW",
+    "NS-EVENT-PARTICIPATE",
+    "NS-MAIL-CLAIM",
+    "NS-LOCALE-SELECT",
+    "NS-LOCALE-RENDER",
+    "NS-A11Y-SETTINGS",
+    "NS-POWER-SAVE",
+    "NS-SAFEAREA-PANEL"
+  ]
+}
