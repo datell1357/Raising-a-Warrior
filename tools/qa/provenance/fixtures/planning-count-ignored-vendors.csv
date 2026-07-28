@@ -1,0 +1,3 @@
+vendor_id,vendor_name,license_id,receipt_id,source_record,status
+vendor:test-only-count-001,Test-only Count Vendor One,license:test-only-license-001,receipt:test-only-receipt-001,source:test-only-count-001,approved
+vendor:test-only-count-002,Test-only Count Vendor Two,license:test-only-license-002,receipt:test-only-receipt-002,source:test-only-count-002,approved

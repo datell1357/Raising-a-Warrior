@@ -1,0 +1,2 @@
+asset_id,source_type,source_ref,creator_id,vendor_id,license_id,receipt_id,source_derivative_link,export_id,similarity_status,similarity_review_id
+asset:sample-synthetic-concept-001,synthetic-original,source:sample-synthetic-concept-001,creator:sample-original-artist,vendor:sample-internal-creative,license:sample-original-work,receipt:sample-original-001,source:sample-synthetic-concept-001->derivative:asset:sample-synthetic-concept-001,export:asset:sample-synthetic-concept-001,reviewed-clear,review:asset:sample-synthetic-concept-001

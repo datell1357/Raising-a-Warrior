@@ -1,0 +1,2 @@
+asset_id,source_type,source_ref,creator_id,vendor_id,license_id,receipt_id,source_derivative_link,export_id,similarity_status,similarity_review_id
+asset:test-only-complete-001,synthetic-original,source:test-only-complete-001,creator:test-only-creator,vendor:test-only-vendor,,receipt:test-only-receipt-001,source:test-only-complete-001->derivative:asset:test-only-complete-001,export:asset:test-only-complete-001,reviewed-clear,review:asset:test-only-complete-001
