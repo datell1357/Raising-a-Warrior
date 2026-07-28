@@ -1,1 +1,1 @@
-{"patches":[{"op":"replace","pointer":"/allPaths/0","value":"release/signing/fixture.p12"},{"op":"add","pointer":"/repositoryFiles/release~1signing~1fixture.p12","value":{"content":"FIXTURE_ONLY_BINARY_CONTAINER"}}]}
+{"patches":[{"op":"add","pointer":"/allPaths/-","value":"release/signing/fixture.p12"},{"op":"add","pointer":"/repositoryFiles/release~1signing~1fixture.p12","value":{"content":"FIXTURE_ONLY_BINARY_CONTAINER"}}]}

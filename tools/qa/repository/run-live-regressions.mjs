@@ -68,6 +68,10 @@ function apply(model, value, at) {
   }
   const key = parts.at(-1);
   if (Array.isArray(parent)) {
+    if (patch.op === 'add' && key === '-') {
+      parent.push(patch.value);
+      return;
+    }
     const index = Number(key);
     if (!Number.isInteger(index) || index < 0 || index > parent.length || (patch.op !== 'add' && index === parent.length)) fail('INVALID_PATCH_POINTER', `${at}/pointer`, 'array patch index does not exist');
     if (patch.op === 'remove') parent.splice(index, 1);
