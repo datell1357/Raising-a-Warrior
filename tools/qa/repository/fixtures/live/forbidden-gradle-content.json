@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/repositoryFiles/client~1WarriorRaising~1build.gradle","value":{"content":"plugins { id 'com.android.application' }\n"}}]}

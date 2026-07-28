@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/environmentDocuments/dev/firebasePrerequisiteRef","value":"prerequisite:firebase-stage-project"}]}

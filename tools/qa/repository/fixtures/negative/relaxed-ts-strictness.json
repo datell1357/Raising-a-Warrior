@@ -1,0 +1,10 @@
+{
+  "kind": "repository-validation-fixture",
+  "patches": [
+    {
+      "op": "replace",
+      "pointer": "/typescript/projects/backend~1functions/compilerOptions/strict",
+      "value": false
+    }
+  ]
+}

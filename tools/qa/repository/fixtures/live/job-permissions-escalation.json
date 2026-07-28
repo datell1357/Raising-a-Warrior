@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/workflows/client.yml/jobs/validate/permissions","value":{"contents":"write"}}]}

@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/repositoryFiles/backend~1application.properties","value":{"content":"spring.application.name=fixture\n"}}]}

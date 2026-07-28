@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/repositoryContract/validationCommands/4","value":"bun run test:repo"}]}

@@ -1,0 +1,1 @@
+{"kind":"repository-live-policy-suite","fixtures":[{"id":"root-reference-drift","path":"tools/qa/repository/fixtures/live/root-reference-drift.json","expect":{"code":"TS_ROOT_REFERENCES_INVALID","pointer":"/tsconfig.json/references"}}]}

@@ -1,0 +1,1 @@
+{"kind":"repository-validation-fixture","patches":[{"op":"add","pointer":"/files/fixtures~1play-test-sku.txt","value":{"content":"PLAY_TEST_SKU=fixture.only.test.sku\n"}}]}

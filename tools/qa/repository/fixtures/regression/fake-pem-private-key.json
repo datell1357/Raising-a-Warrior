@@ -1,0 +1,1 @@
+{"kind":"repository-validation-fixture","patches":[{"op":"add","pointer":"/files/fixtures~1private-key.pem","value":{"content":"-----BEGIN PRIVATE KEY-----\nFIXTURE_ONLY_PEM_PRIVATE_KEY\n-----END PRIVATE KEY-----\n"}}]}

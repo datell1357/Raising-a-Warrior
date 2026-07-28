@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/workflows/client.yml/jobs/validate/steps/0/uses","value":"untrusted/fixture-action@0000000000000000000000000000000000000000"}]}

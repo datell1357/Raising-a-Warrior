@@ -1,0 +1,10 @@
+{
+  "kind": "repository-validation-fixture",
+  "patches": [
+    {
+      "op": "replace",
+      "pointer": "/lockfile/integrity",
+      "value": "sha256:fixture-lockfile-drift"
+    }
+  ]
+}

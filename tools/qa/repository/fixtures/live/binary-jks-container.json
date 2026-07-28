@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/allPaths/0","value":"release/signing/fixture.jks"},{"op":"add","pointer":"/repositoryFiles/release~1signing~1fixture.jks","value":{"content":"FIXTURE_ONLY_BINARY_CONTAINER"}}]}

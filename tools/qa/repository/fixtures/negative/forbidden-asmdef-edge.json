@@ -1,0 +1,10 @@
+{
+  "kind": "repository-validation-fixture",
+  "patches": [
+    {
+      "op": "replace",
+      "pointer": "/assemblies/Warrior.Domain/references/0",
+      "value": "Warrior.Presentation"
+    }
+  ]
+}

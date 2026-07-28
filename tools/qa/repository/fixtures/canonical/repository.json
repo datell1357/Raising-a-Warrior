@@ -1,0 +1,53 @@
+{
+  "files": {
+    "release/environments/prod.json": {
+      "content": "{\"apiBaseUrl\":\"https://api.prod.invalid\"}\n"
+    }
+  },
+  "assemblies": {
+    "Warrior.Core": {
+      "references": []
+    },
+    "Warrior.Domain": {
+      "references": [
+        "Warrior.Core"
+      ]
+    }
+  },
+  "environments": {
+    "dev": {
+      "parameterRefs": {
+        "apiBaseUrl": "parameter:dev-api-base-url"
+      }
+    },
+    "stage": {
+      "parameterRefs": {
+        "apiBaseUrl": "parameter:stage-api-base-url"
+      }
+    },
+    "prod": {
+      "parameterRefs": {
+        "apiBaseUrl": "parameter:prod-api-base-url"
+      }
+    }
+  },
+  "typescript": {
+    "projects": {
+      "backend/functions": {
+        "compilerOptions": {
+          "strict": true
+        }
+      }
+    }
+  },
+  "lockfile": {
+    "packageManager": "bun",
+    "integrity": "sha256:canonical-repository-lockfile"
+  },
+  "provenance": {
+    "signature": {
+      "required": true,
+      "algorithm": "sha256"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"kind":"repository-validation-fixture","patches":[{"op":"add","pointer":"/files/fixtures~1admob-test-unit.txt","value":{"content":"ADMOB_AD_UNIT_ID=ca-app-pub-0000000000000000/0000000000\n"}}]}

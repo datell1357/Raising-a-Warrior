@@ -1,0 +1,111 @@
+{
+  "kind": "repository-validation-suite",
+  "canonical": "tools/qa/repository/fixtures/canonical/repository.json",
+  "secretRuleFixtures": {
+    "fixture-seed": "seeded-secret",
+    "aws-access-key": "fake-aws-access-key",
+    "google-api-key": "fake-google-api-key",
+    "github-token": "fake-github-token",
+    "pem-private-key": "fake-pem-private-key",
+    "google-service-account": "fake-google-service-account",
+    "jwt": "fake-jwt",
+    "firebase-app-check-debug-token": "fake-firebase-debug-token",
+    "play-test-sku": "fake-play-test-sku",
+    "admob-test-unit": "fake-admob-test-unit",
+    "google-oauth-client-secret": "fake-google-oauth-client-secret",
+    "slack-token": "fake-slack-token",
+    "stripe-secret-key": "fake-stripe-key",
+    "url-basic-auth": "fake-basic-auth-url"
+  },
+  "fixtures": [
+    {
+      "id": "seeded-secret",
+      "path": "tools/qa/repository/fixtures/negative/seeded-secret.json",
+      "expect": {
+        "code": "SECRET_DETECTED",
+        "pointer": "/files/release~1environments~1prod.json/content"
+      }
+    },
+    {
+      "id": "forbidden-asmdef-edge",
+      "path": "tools/qa/repository/fixtures/negative/forbidden-asmdef-edge.json",
+      "expect": {
+        "code": "ASMDEF_FORBIDDEN_REFERENCE",
+        "pointer": "/assemblies/Warrior.Domain/references/0"
+      }
+    },
+    {
+      "id": "dev-endpoint-in-prod",
+      "path": "tools/qa/repository/fixtures/negative/dev-endpoint-in-prod.json",
+      "expect": {
+        "code": "PROD_DEV_ENDPOINT",
+        "pointer": "/environments/prod/parameterRefs/apiBaseUrl"
+      }
+    },
+    {
+      "id": "relaxed-ts-strictness",
+      "path": "tools/qa/repository/fixtures/negative/relaxed-ts-strictness.json",
+      "expect": {
+        "code": "TS_STRICT_DISABLED",
+        "pointer": "/typescript/projects/backend~1functions/compilerOptions/strict"
+      }
+    },
+    {
+      "id": "environment-drift",
+      "path": "tools/qa/repository/fixtures/negative/environment-drift.json",
+      "expect": {
+        "code": "ENVIRONMENT_DRIFT",
+        "pointer": "/environments/stage/parameterRefs"
+      }
+    },
+    {
+      "id": "lockfile-drift",
+      "path": "tools/qa/repository/fixtures/negative/lockfile-drift.json",
+      "expect": {
+        "code": "LOCKFILE_DRIFT",
+        "pointer": "/lockfile"
+      }
+    },
+    {
+      "id": "missing-provenance-signature",
+      "path": "tools/qa/repository/fixtures/negative/missing-provenance-signature.json",
+      "expect": {
+        "code": "PROVENANCE_SIGNATURE_REQUIRED",
+        "pointer": "/provenance/signature/required"
+      }
+    },
+    {
+      "id": "missing-files",
+      "path": "tools/qa/repository/fixtures/regression/missing-files.json",
+      "expect": { "code": "MISSING_REQUIRED_FIELD", "pointer": "/files" }
+    },
+    {
+      "id": "base64-secret",
+      "path": "tools/qa/repository/fixtures/regression/base64-secret.json",
+      "expect": { "code": "SECRET_DETECTED", "pointer": "/files/release~1environments~1prod.json/content" }
+    },
+    {
+      "id": "assembly-cycle",
+      "path": "tools/qa/repository/fixtures/regression/assembly-cycle.json",
+      "expect": { "code": "ASMDEF_CYCLE", "pointer": "/assemblies" }
+    },
+    {
+      "id": "incomplete-provenance",
+      "path": "tools/qa/repository/fixtures/regression/incomplete-provenance.json",
+      "expect": { "code": "PROVENANCE_SIGNATURE_REQUIRED", "pointer": "/provenance/signature/required" }
+    },
+    {"id":"fake-aws-access-key","path":"tools/qa/repository/fixtures/regression/fake-aws-access-key.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1aws-access-key.txt/content"}},
+    {"id":"fake-google-api-key","path":"tools/qa/repository/fixtures/regression/fake-google-api-key.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1google-api-key.txt/content"}},
+    {"id":"fake-github-token","path":"tools/qa/repository/fixtures/regression/fake-github-token.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1github-token.txt/content"}},
+    {"id":"fake-pem-private-key","path":"tools/qa/repository/fixtures/regression/fake-pem-private-key.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1private-key.pem/content"}},
+    {"id":"fake-google-service-account","path":"tools/qa/repository/fixtures/regression/fake-google-service-account.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1service-account.json/content"}},
+    {"id":"fake-jwt","path":"tools/qa/repository/fixtures/regression/fake-jwt.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1jwt.txt/content"}},
+    {"id":"fake-firebase-debug-token","path":"tools/qa/repository/fixtures/regression/fake-firebase-debug-token.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1firebase-debug-token.txt/content"}},
+    {"id":"fake-play-test-sku","path":"tools/qa/repository/fixtures/regression/fake-play-test-sku.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1play-test-sku.txt/content"}},
+    {"id":"fake-admob-test-unit","path":"tools/qa/repository/fixtures/regression/fake-admob-test-unit.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1admob-test-unit.txt/content"}},
+    {"id":"fake-google-oauth-client-secret","path":"tools/qa/repository/fixtures/regression/fake-google-oauth-client-secret.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1google-oauth-client-secret.txt/content"}},
+    {"id":"fake-slack-token","path":"tools/qa/repository/fixtures/regression/fake-slack-token.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1slack-token.txt/content"}},
+    {"id":"fake-stripe-key","path":"tools/qa/repository/fixtures/regression/fake-stripe-key.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1stripe-key.txt/content"}},
+    {"id":"fake-basic-auth-url","path":"tools/qa/repository/fixtures/regression/fake-basic-auth-url.json","expect":{"code":"SECRET_DETECTED","pointer":"/files/fixtures~1basic-auth-url.txt/content"}}
+  ]
+}

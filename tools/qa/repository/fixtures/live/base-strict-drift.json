@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/baseTsconfig/compilerOptions/strict","value":false}]}

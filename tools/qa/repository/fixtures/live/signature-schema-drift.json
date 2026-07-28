@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/signatureSchema","value":{"title":"Fixture-only signature schema drift"}}]}

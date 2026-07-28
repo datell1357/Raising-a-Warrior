@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/repositoryFiles/backend~1functions~1src~1forbidden-url.ts","value":{"content":"export const endpoint = new URL('https://fixture.invalid/forbidden');\n"}}]}

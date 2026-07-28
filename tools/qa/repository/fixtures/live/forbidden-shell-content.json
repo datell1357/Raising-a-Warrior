@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/repositoryFiles/backend~1deploy.sh","value":{"content":"#!/bin/sh\nfirebase deploy\n"}}]}

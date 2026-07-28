@@ -1,0 +1,10 @@
+{
+  "kind": "repository-validation-fixture",
+  "patches": [
+    {
+      "op": "replace",
+      "pointer": "/provenance/signature/required",
+      "value": false
+    }
+  ]
+}

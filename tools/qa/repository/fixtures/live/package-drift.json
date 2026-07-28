@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/packageManifest/devDependencies/yaml","value":"0.0.0"}]}

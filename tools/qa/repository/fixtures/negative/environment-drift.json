@@ -1,0 +1,12 @@
+{
+  "kind": "repository-validation-fixture",
+  "patches": [
+    {
+      "op": "replace",
+      "pointer": "/environments/stage/parameterRefs",
+      "value": {
+        "apiBaseUrl": "parameter:prod-api-base-url"
+      }
+    }
+  ]
+}

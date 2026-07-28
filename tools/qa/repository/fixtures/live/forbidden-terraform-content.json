@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/repositoryFiles/backend~1main.tf","value":{"content":"resource \"google_project_service\" \"fixture\" {}\n"}}]}

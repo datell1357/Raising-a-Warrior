@@ -1,0 +1,1 @@
+{"kind":"repository-validation-fixture","patches":[{"op":"add","pointer":"/files/fixtures~1slack-token.txt","value":{"content":"SLACK_BOT_TOKEN=xoxb-000000000000-000000000000-FIXTURE_ONLY\n"}}]}

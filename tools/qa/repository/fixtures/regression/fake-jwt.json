@@ -1,0 +1,1 @@
+{"kind":"repository-validation-fixture","patches":[{"op":"add","pointer":"/files/fixtures~1jwt.txt","value":{"content":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmaXh0dXJlLW9ubHkifQ.FIXTURE_ONLY_SIGNATURE\n"}}]}

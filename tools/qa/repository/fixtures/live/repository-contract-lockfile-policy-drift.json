@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/repositoryContract/lockfilePolicy/frozenInstallCommand","value":"bun install"}]}

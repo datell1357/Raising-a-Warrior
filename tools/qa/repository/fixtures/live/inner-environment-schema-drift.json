@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/environmentSchema/$defs/parameterReference/pattern","value":"^parameter:.*$"}]}
