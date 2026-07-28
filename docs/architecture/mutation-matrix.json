@@ -1,0 +1,2536 @@
+{
+  "schemaVersion": "warrior-mutation-matrix/v1",
+  "canonicalBindings": [
+    {
+      "path": "docs/Manyfast/워리어 키우기_PRD.md",
+      "sha256": "e5022e677825192b0c1556c0d0a8dba62ecc169dbe5e848a361964b600636aa0"
+    },
+    {
+      "path": "docs/Manyfast/워리어 키우기_기능명세서.md",
+      "sha256": "ae62160348dd60473fa3e2533aa118102cd5d1ac40c20af4e304df74822c42d0"
+    },
+    {
+      "path": "docs/Manyfast/워리어 키우기_유저플로우.md",
+      "sha256": "d641842f326d9643fb48a43fdaf0fef28e90ba963859bd595db8bfbaad5ca406"
+    },
+    {
+      "path": "docs/production/scope-contract.json",
+      "sha256": "96a98565799a4f042ceb8ad5e6b72af16b738c468d816ed046b76b819923e0c2"
+    },
+    {
+      "path": "content/contracts/command.schema.json",
+      "sha256": "233d8a0ed5d4a8e04273661c5c0e74a7d8a89b7d59233c2d80cacbd787f8b3c9"
+    },
+    {
+      "path": ".omo/evidence/implementation/20260727T000000Z/contracts/a14/task-3/artifact-hashes.json",
+      "sha256": "9718320d9dc99bcfef744956b1279fcc99cb3982cd731b73611293d63f5d18b5"
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "firestore-transactions",
+      "url": "https://firebase.google.com/docs/firestore/manage-data/transactions",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "firestore-client-libraries",
+      "url": "https://firebase.google.com/docs/firestore/client/libraries",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "firestore-rest",
+      "url": "https://firebase.google.com/docs/firestore/use-rest-api",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "firestore-iam",
+      "url": "https://firebase.google.com/docs/firestore/security/iam",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "app-check-play-integrity",
+      "url": "https://firebase.google.com/docs/app-check/android/play-integrity-provider",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "app-check",
+      "url": "https://firebase.google.com/docs/app-check",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "auth-unity",
+      "url": "https://firebase.google.com/docs/auth/unity/manage-users",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "auth-admin",
+      "url": "https://firebase.google.com/docs/auth/admin/manage-users",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "emulator-firestore",
+      "url": "https://firebase.google.com/docs/emulator-suite/connect_firestore",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "emulator-rules",
+      "url": "https://firebase.google.com/docs/rules/emulator-setup",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-target-api",
+      "url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-account-deletion",
+      "url": "https://support.google.com/googleplay/android-developer/answer/10144311?hl=en",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-data-safety",
+      "url": "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "android-apk-splits",
+      "url": "https://developer.android.com/build/configure-apk-splits",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-aab-size",
+      "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-app-signing",
+      "url": "https://support.google.com/googleplay/android-developer/answer/9842756?hl=en",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "android-64-bit",
+      "url": "https://developer.android.com/google/play/requirements/64-bit",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "android-abis",
+      "url": "https://developer.android.com/ndk/guides/abis",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "unity-fixed-updates",
+      "url": "https://docs.unity3d.com/6/Documentation/Manual/fixed-updates.html",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "unity-physics-manual",
+      "url": "https://docs.unity3d.com/6/Documentation/Manual/physics-optimization-cpu-manual-simulation.html",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "unity-fixed-delta",
+      "url": "https://docs.unity3d.com/6/Documentation/ScriptReference/Time-fixedDeltaTime.html",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-billing-security",
+      "url": "https://developer.android.com/google/play/billing/security",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-billing-integrate",
+      "url": "https://developer.android.com/google/play/billing/integrate",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-billing-one-time",
+      "url": "https://developer.android.com/google/play/billing/lifecycle/one-time",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-billing-rtdn",
+      "url": "https://developer.android.com/google/play/billing/rtdn-reference",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "play-voided-purchases",
+      "url": "https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.voidedpurchases/list",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "admob-unity-ssv",
+      "url": "https://developers.google.com/admob/unity/ssv",
+      "retrievedAt": "2026-07-28"
+    },
+    {
+      "id": "admob-unity-privacy",
+      "url": "https://developers.google.com/admob/unity/privacy",
+      "retrievedAt": "2026-07-28"
+    }
+  ],
+  "adrRegistry": [
+    {
+      "id": "001-authority",
+      "path": "docs/architecture/adr/001-authority.md",
+      "title": "Authority Boundary",
+      "decisionIds": [
+        "server-authority",
+        "firestore-client-deny",
+        "iam-explicit"
+      ],
+      "riskIds": [
+        "client-write-bypass",
+        "privileged-access-confusion"
+      ],
+      "sourceIds": [
+        "firestore-client-libraries",
+        "firestore-rest",
+        "firestore-iam",
+        "app-check"
+      ]
+    },
+    {
+      "id": "002-deterministic-combat",
+      "path": "docs/architecture/adr/002-deterministic-combat.md",
+      "title": "Deterministic Combat",
+      "decisionIds": [
+        "fixed-point-20-tick",
+        "signed-start-stage",
+        "server-replay"
+      ],
+      "riskIds": [
+        "client-result-forgery",
+        "engine-timing-drift"
+      ],
+      "sourceIds": [
+        "unity-fixed-updates",
+        "unity-physics-manual",
+        "unity-fixed-delta"
+      ]
+    },
+    {
+      "id": "003-idempotency-ledger",
+      "path": "docs/architecture/adr/003-idempotency-ledger.md",
+      "title": "Idempotency and Ledger",
+      "decisionIds": [
+        "effect-once",
+        "idempotency-conflict",
+        "transaction-outbox"
+      ],
+      "riskIds": [
+        "transport-retry",
+        "transaction-retry-side-effect"
+      ],
+      "sourceIds": [
+        "firestore-transactions",
+        "play-billing-security",
+        "play-billing-integrate",
+        "play-billing-one-time",
+        "play-billing-rtdn",
+        "play-voided-purchases",
+        "admob-unity-ssv",
+        "admob-unity-privacy"
+      ]
+    },
+    {
+      "id": "004-content-versioning",
+      "path": "docs/architecture/adr/004-content-versioning.md",
+      "title": "Content Versioning",
+      "decisionIds": [
+        "immutable-content",
+        "optimistic-state",
+        "catalog-offline-cap"
+      ],
+      "riskIds": [
+        "catalog-rollback",
+        "stale-client"
+      ],
+      "sourceIds": [
+        "firestore-transactions"
+      ]
+    },
+    {
+      "id": "005-privacy-delete",
+      "path": "docs/architecture/adr/005-privacy-delete.md",
+      "title": "Privacy and Deletion",
+      "decisionIds": [
+        "consent-gating",
+        "verified-delegation",
+        "deletion-lifecycle"
+      ],
+      "riskIds": [
+        "unauthorized-deletion",
+        "incomplete-third-party-propagation"
+      ],
+      "sourceIds": [
+        "auth-unity",
+        "auth-admin",
+        "play-account-deletion",
+        "play-data-safety"
+      ]
+    },
+    {
+      "id": "006-platform-policy",
+      "path": "docs/architecture/adr/006-platform-policy.md",
+      "title": "Android and Play Policy",
+      "decisionIds": [
+        "api-36-baseline",
+        "extension-evidence",
+        "external-blocked"
+      ],
+      "riskIds": [
+        "submission-policy-drift",
+        "missing-console-prerequisite"
+      ],
+      "sourceIds": [
+        "play-target-api",
+        "play-app-signing",
+        "play-aab-size",
+        "android-apk-splits",
+        "android-64-bit",
+        "android-abis",
+        "app-check-play-integrity",
+        "emulator-firestore",
+        "emulator-rules"
+      ]
+    }
+  ],
+  "policy": {
+    "authoritativeStateWrite": "server-command-only",
+    "firestoreClientAuthorityWrites": "denied",
+    "adminAccess": "iam-explicit",
+    "combat": "server-validated-20-tick-fixed-point",
+    "offlineRewardCapSource": "immutable-catalog.offlineRewardCapSeconds",
+    "webGameplay": "forbidden",
+    "playerSeasonPass": "forbidden",
+    "api36Extension": "live-play-console-evidence-required",
+    "idempotency": {
+      "dedupeIdentity": [
+        "authenticatedActor",
+        "operation",
+        "commandId",
+        "canonicalRequestHash"
+      ],
+      "exactRetry": "return-original-committed-response",
+      "mismatch": "IdempotencyConflict",
+      "semanticCollision": "AlreadyProcessed",
+      "transactionCallback": "side-effect-free",
+      "externalEffects": "transactional-outbox-or-receipt-state"
+    }
+  },
+  "exclusions": [
+    {
+      "specId": "NS-DRAW-ODDS",
+      "reason": "Displays immutable published odds without persisting player or authority state."
+    },
+    {
+      "specId": "NS-COST-ALERT",
+      "reason": "Displays or acknowledges telemetry without changing authority state."
+    },
+    {
+      "specId": "NS-NOTICE-VIEW",
+      "reason": "Renders an existing notice without a persisted read mutation."
+    },
+    {
+      "specId": "NS-LOCALE-RENDER",
+      "reason": "Renders selected locale content; selection itself is Profile-owned."
+    },
+    {
+      "specId": "NS-SAFEAREA-PANEL",
+      "reason": "Renders responsive safe-area UI without a persisted mutation."
+    }
+  ],
+  "mutations": [
+    {
+      "specId": "S-LVWHIB",
+      "label": "게스트 시작",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Identity",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Creates or restores one authenticated guest identity."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 게스트 시작 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SESSION-RECONNECT",
+      "label": "세션 재연결",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Identity",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Persists safe session restoration state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Rotates or records server session restoration metadata only; never overwrites progression.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-TGKDXL",
+      "label": "Google 연결·충돌 처리",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Identity",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Links identity after authoritative collision handling."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of Google 연결·충돌 처리 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-RVSTQT",
+      "label": "동의·버전 기록",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Privacy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Records consent version and server timestamp."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 동의·버전 기록 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-XJSOJJ",
+      "label": "앱 내 삭제·상태 안내",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Privacy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Submits one privacy deletion lifecycle request."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 앱 내 삭제·상태 안내 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-WEB-DELETE",
+      "label": "웹 삭제 요청·상태 조회",
+      "actorRoles": [
+        "player",
+        "customer-support"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Privacy",
+      "authBoundary": "firebase-auth-or-verified-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Submits or reads an authorized deletion lifecycle."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 웹 삭제 요청·상태 조회 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit",
+        "verified-delegation"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-YFLBRX",
+      "label": "보스 진입·승패·재도전·다음 단계 lifecycle",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Combat",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits server-validated boss lifecycle state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 보스 진입·승패·재도전·다음 단계 lifecycle through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "signed-stage-token",
+        "server-replay"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-AUTO-FARM",
+      "label": "일반 자동 전투",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Combat",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits validated auto-combat progression."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 일반 자동 전투 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "signed-stage-token",
+        "server-replay"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-VLJARV",
+      "label": "서버 시간 정산·exactly-once 수령",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Settles catalog-capped offline reward once."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 서버 시간 정산·exactly-once 수령 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-LXSNDL",
+      "label": "20단계 온보딩",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits eligible onboarding progress and reward."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 20단계 온보딩 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-DAILY-WEEKLY",
+      "label": "일일·주간 퀘스트 진행·수령",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits one eligible repeatable quest claim."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 일일·주간 퀘스트 진행·수령 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-ACHIEVEMENT",
+      "label": "업적 보상 수령",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits one eligible achievement claim."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 업적 보상 수령 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-ATTENDANCE",
+      "label": "출석 보상 수령",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits one current attendance claim."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 출석 보상 수령 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-TWOQHT",
+      "label": "능력 3축 배분·반영",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits bounded stat allocation."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 능력 3축 배분·반영 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-RESEARCH",
+      "label": "연구 투자",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits validated research investment."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 연구 투자 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-PROMOTION",
+      "label": "승급 도전·상한 해금",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits server-validated promotion result."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 승급 도전·상한 해금 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-LPEJNI",
+      "label": "스킬 학습",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits eligible skill learning."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 스킬 학습 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SKILL-UPGRADE",
+      "label": "스킬 강화",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits bounded skill upgrade."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 스킬 강화 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SKILL-LOADOUT",
+      "label": "4슬롯 스킬 장착",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits valid four-slot loadout."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 4슬롯 스킬 장착 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SKILL-AUTO",
+      "label": "AUTO 조건 사용·복구",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Combat",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits valid auto-cast configuration."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of AUTO 조건 사용·복구 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-XANCZD",
+      "label": "인벤토리에서 장비 장착",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits compatible equipment assignment."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 인벤토리에서 장비 장착 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-EQUIP-LOCK",
+      "label": "장비 잠금·해제",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits equipment lock state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 장비 잠금·해제 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-EQUIP-UPGRADE",
+      "label": "장비 강화",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits validated equipment upgrade."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 장비 강화 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-EQUIP-FUSION",
+      "label": "중복 장비 융합",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Progression",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits eligible equipment fusion."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 중복 장비 융합 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-AOQYYC",
+      "label": "1회 소환",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Economy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits one server-selected summon outcome."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 1회 소환 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-DRAW-TEN",
+      "label": "10회 소환·보장/보정",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Economy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits ten server-selected summon outcomes and counters."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 10회 소환·보장/보정 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-DRAW-RECOVERY",
+      "label": "미확인 소환 결과 복구",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Economy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Records recovery access without a second grant."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Atomically acknowledges or reopens an existing receipt without a second grant.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-UHNSOK",
+      "label": "지역·스테이지 선택/잠금",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits selected eligible stage state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists current eligible stage and token basis; locked selection writes nothing.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-CELL-PROGRESS",
+      "label": "전투 셀 진행·클리어",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits server-validated cell progress."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 전투 셀 진행·클리어 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "signed-stage-token",
+        "server-replay"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-AJNKBZ",
+      "label": "운영자 D30/60/90 활성화",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Activates a compatible scheduled content version."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 운영자 D30/60/90 활성화 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-CONTENT-ROLLBACK",
+      "label": "예약 콘텐츠 롤백",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Activates a compatible previous manifest."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 예약 콘텐츠 롤백 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SCHEDULED-UNLOCK",
+      "label": "예약 지역 해금·구버전 호환",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits scheduled unlock availability."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists account compatibility and unlock basis at server date; early or old client writes nothing.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-IRLFRY",
+      "label": "보상형 광고 2종 nonce+SSV 보상",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Commerce",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Grants one verified nonce and SSV reward."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 보상형 광고 2종 nonce+SSV 보상 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "consent-gate",
+        "server-nonce",
+        "nonce-expiry",
+        "provider-ssv-signature",
+        "transaction-id-dedupe",
+        "nonce-single-consumption"
+      ],
+      "commerceProof": {
+        "kind": "rewarded-ad",
+        "consent": "update-each-launch-and-can-request-before-request",
+        "nonce": "server-bound-account-placement-ad-unit-reward-expiry",
+        "ssv": "signature-key-verified-unmodified-fields",
+        "dedupe": "transaction-id-and-nonce-single-consumption"
+      }
+    },
+    {
+      "specId": "S-OJRSXR",
+      "label": "재화 상품 4종·시작 패키지 1종·광고 제거 1종 IAP 구매·검증",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Commerce",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Grants one verified purchase receipt entitlement."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 재화 상품 4종·시작 패키지 1종·광고 제거 1종 IAP 구매·검증 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "purchase-token",
+        "play-developer-api",
+        "purchased-state",
+        "backend-acknowledgement",
+        "purchase-token-dedupe"
+      ],
+      "commerceProof": {
+        "kind": "purchase",
+        "token": "globally-unique-idempotency-key",
+        "verify": "play-developer-api",
+        "grant": "purchased-only-never-pending",
+        "acknowledge": "backend-after-grant-within-3-days"
+      }
+    },
+    {
+      "specId": "NS-IAP-RECOVERY",
+      "label": "구매 복구",
+      "actorRoles": [
+        "player",
+        "customer-support"
+      ],
+      "devices": [
+        "Android",
+        "Web"
+      ],
+      "serverOwner": "Commerce",
+      "authBoundary": "firebase-auth-and-web-rbac-delegation",
+      "appCheckIntegrity": "required-play-integrity-and-web-rbac",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Restores one existing verified entitlement."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 구매 복구 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version",
+        "authenticated-session",
+        "rbac",
+        "audit",
+        "verified-delegation",
+        "authoritative-api-reconciliation"
+      ],
+      "commerceProof": {
+        "kind": "purchase-recovery",
+        "reconciliation": "authoritative-api-reconciliation",
+        "token": "purchase-token-dedupe",
+        "grant": "purchased-only-never-pending"
+      }
+    },
+    {
+      "specId": "NS-IAP-REFUND",
+      "label": "환불 상태 조정",
+      "actorRoles": [
+        "customer-support"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Commerce",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Reconciles verified refund entitlement without direct wallet edits."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 환불 상태 조정 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit",
+        "verified-delegation",
+        "authoritative-api-reconciliation",
+        "voided-purchase-reconciliation"
+      ],
+      "commerceProof": {
+        "kind": "purchase-refund",
+        "reconciliation": "authoritative-api-reconciliation",
+        "voided": "voided-purchase-reconciliation",
+        "ledger": "entitlement-ledger-reconciliation"
+      }
+    },
+    {
+      "specId": "NS-STORE-DAILY",
+      "label": "무료 일일 보상 수령",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Economy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Grants one current free daily entitlement."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 무료 일일 보상 수령 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-AJLBYA",
+      "label": "공지 게시·회수/audit",
+      "actorRoles": [
+        "operator",
+        "customer-support"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited notice lifecycle state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 공지 게시·회수/audit through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-MAIL-PUBLISH",
+      "label": "우편 게시·회수",
+      "actorRoles": [
+        "operator",
+        "customer-support"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited mail lifecycle state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 우편 게시·회수 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-MAINTENANCE",
+      "label": "점검 시작·종료",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited maintenance state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 점검 시작·종료 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-AHBKUR",
+      "label": "이벤트 gate",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited event availability."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 이벤트 gate through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-ATTENDANCE-GATE",
+      "label": "출석 가용성 게이트",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited attendance availability."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 출석 가용성 게이트 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-SEASON-GATE",
+      "label": "시즌·패스 가용성 게이트",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits operator-only season availability gate."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 시즌·패스 가용성 게이트 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-MXZRCE",
+      "label": "1→5→20→50→100 rollout·자동 중단",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited rollout progression or automatic stop."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 1→5→20→50→100 rollout·자동 중단 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "S-BSTFCP",
+      "label": "kill switch 실행",
+      "actorRoles": [
+        "operator"
+      ],
+      "devices": [
+        "Web"
+      ],
+      "serverOwner": "Operations",
+      "authBoundary": "authenticated-rbac-delegation",
+      "appCheckIntegrity": "not-applicable-web",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits audited kill-switch state."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of kill switch 실행 through a server command.",
+      "securityProofs": [
+        "authenticated-session",
+        "rbac",
+        "audit"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-EVENT-PARTICIPATE",
+      "label": "이벤트 참여",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Content",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits eligible event progress."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 이벤트 참여 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-MAIL-CLAIM",
+      "label": "우편 보상 수령·만료 처리",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Economy",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Commits one eligible mail claim or expiry."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 우편 보상 수령·만료 처리 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-LOCALE-SELECT",
+      "label": "5개 언어 선택·저장",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Profile",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Persists supported locale preference."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 5개 언어 선택·저장 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-A11Y-SETTINGS",
+      "label": "접근성 설정",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Profile",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Persists supported accessibility preferences."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists the authoritative result of 접근성 설정 through a server command.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    },
+    {
+      "specId": "NS-POWER-SAVE",
+      "label": "절전 진입·대체 입력 해제",
+      "actorRoles": [
+        "player"
+      ],
+      "devices": [
+        "Android"
+      ],
+      "serverOwner": "Profile",
+      "authBoundary": "firebase-auth",
+      "appCheckIntegrity": "required-play-integrity",
+      "serverTimePolicy": "server-authoritative",
+      "contentCatalogPolicy": "immutable-versioned-catalog",
+      "stateVersionPolicy": "optimistic-state-version",
+      "transactionBoundary": "atomic-authority-transaction",
+      "ledgerAudit": "command-ledger-and-audit",
+      "replay": "effect-once-command",
+      "writePath": "server-command-only",
+      "successEffect": {
+        "authorityCommit": true,
+        "clientWalletAuthority": false,
+        "trustedClientVictory": false,
+        "webGameplay": false,
+        "playerFacingSeasonPass": false,
+        "summary": "Persists selected power-save preference."
+      },
+      "zeroMutationFailure": {
+        "authoritativeState": "unchanged",
+        "orphanEffects": "none",
+        "outcome": "deterministic-error-or-status",
+        "retry": "safe"
+      },
+      "classification": "persisted-authority-command",
+      "classificationRationale": "Persists Profile preference only; authoritative elapsed time continues.",
+      "securityProofs": [
+        "firebase-auth",
+        "app-check-play-integrity",
+        "command-id",
+        "expected-state-version"
+      ],
+      "commerceProof": null
+    }
+  ]
+}
