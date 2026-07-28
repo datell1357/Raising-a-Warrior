@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content/contracts/manifest.schema.json",
+  "title": "Content manifest schema",
+  "$defs": {
+    "manifestComponent": {
+      "type": "object",
+      "required": [
+        "id",
+        "bundle",
+        "sha256",
+        "sizeBytes",
+        "dependencies",
+        "minAppBuild"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "bundle": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "sizeBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "minAppBuild": {
+          "type": "string"
+        }
+      }
+    },
+    "manifestSet": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/manifestComponent"
+      }
+    }
+  },
+  "$ref": "#/$defs/manifestSet"
+}

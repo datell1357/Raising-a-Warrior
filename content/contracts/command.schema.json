@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content/contracts/command.schema.json",
+  "title": "Canonical command, result, and error schema",
+  "$defs": {
+    "stateVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "contentVersion": {
+      "type": "string"
+    },
+    "commandId": {
+      "type": "string"
+    },
+    "currencyAmount": {
+      "type": "object",
+      "required": [
+        "currencyId",
+        "amount"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "currencyId": {
+          "type": "string",
+          "enum": [
+            "BrassCoin",
+            "MoonShard",
+            "StarSeal",
+            "MetalFragment"
+          ]
+        },
+        "amount": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        }
+      }
+    },
+    "commandPayload": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "noop"
+        }
+      }
+    },
+    "resultPayload": {
+      "type": "object",
+      "required": [
+        "ok"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        }
+      }
+    },
+    "commandEnvelope": {
+      "description": "A commandId is idempotent within the authenticated actor and operation. An exact retry with the same actor, operation, and canonical request hash returns the original response; a different actor, operation, or request hash using the same commandId returns IdempotencyConflict.",
+      "type": "object",
+      "required": [
+        "commandId",
+        "expectedStateVersion",
+        "clientBuild",
+        "contentVersion",
+        "payload"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "commandId": {
+          "$ref": "#/$defs/commandId"
+        },
+        "expectedStateVersion": {
+          "$ref": "#/$defs/stateVersion"
+        },
+        "clientBuild": {
+          "type": "string"
+        },
+        "contentVersion": {
+          "$ref": "#/$defs/contentVersion"
+        },
+        "payload": {
+          "$ref": "#/$defs/commandPayload"
+        }
+      }
+    },
+    "commandResult": {
+      "type": "object",
+      "required": [
+        "commandId",
+        "stateVersion",
+        "serverTime",
+        "walletDelta",
+        "payload",
+        "snapshotRequired"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "commandId": {
+          "$ref": "#/$defs/commandId"
+        },
+        "stateVersion": {
+          "$ref": "#/$defs/stateVersion"
+        },
+        "serverTime": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)$"
+        },
+        "walletDelta": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/currencyAmount"
+          }
+        },
+        "payload": {
+          "$ref": "#/$defs/resultPayload"
+        },
+        "snapshotRequired": {
+          "type": "boolean"
+        }
+      }
+    },
+    "domainError": {
+      "description": "IdempotencyConflict reports reuse of a commandId with a different authenticated actor, operation, or canonical request hash. AlreadyProcessed is reserved for a new command whose semantic entitlement key was already consumed by an earlier command.",
+      "type": "string",
+      "enum": [
+        "VersionConflict",
+        "ContentOutdated",
+        "InsufficientCurrency",
+        "NotEligible",
+        "LimitReached",
+        "InvalidReceipt",
+        "ExpiredToken",
+        "IdempotencyConflict",
+        "AlreadyProcessed",
+        "TemporarilyUnavailable"
+      ]
+    },
+    "commandError": {
+      "type": "object",
+      "required": [
+        "commandId",
+        "error",
+        "message"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "commandId": {
+          "$ref": "#/$defs/commandId"
+        },
+        "error": {
+          "$ref": "#/$defs/domainError"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/commandEnvelope"
+    },
+    {
+      "$ref": "#/$defs/commandResult"
+    },
+    {
+      "$ref": "#/$defs/commandError"
+    }
+  ]
+}

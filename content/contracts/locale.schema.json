@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content/contracts/locale.schema.json",
+  "title": "Locale catalog schema",
+  "$defs": {
+    "localeCatalog": {
+      "type": "object",
+      "required": [
+        "locale",
+        "keyCount",
+        "keys"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "locale": {
+          "type": "string",
+          "enum": [
+            "ko",
+            "en",
+            "ja",
+            "zh-CN",
+            "zh-TW"
+          ]
+        },
+        "keyCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "localeCatalogSet": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/localeCatalog"
+      }
+    }
+  },
+  "$ref": "#/$defs/localeCatalogSet"
+}

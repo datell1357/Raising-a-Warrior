@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content/contracts/release-candidate.schema.json",
+  "title": "Release candidate component schema",
+  "$defs": {
+    "releaseCandidateComponent": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "componentId",
+        "sourceHash",
+        "artifactHash"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "componentId": {
+          "type": "string"
+        },
+        "sourceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "artifactHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "releaseCandidateSet": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/releaseCandidateComponent"
+      }
+    }
+  },
+  "$ref": "#/$defs/releaseCandidateSet"
+}
