@@ -1,0 +1,9 @@
+{
+  "commandId": "cmd-001",
+  "expectedStateVersion": "1",
+  "clientBuild": "1.0.0",
+  "contentVersion": "20260727T000000Z-task3-content",
+  "payload": {
+    "kind": "noop"
+  }
+}

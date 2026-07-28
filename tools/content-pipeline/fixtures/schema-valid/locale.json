@@ -1,0 +1,42 @@
+[
+  {
+    "locale": "ko",
+    "keyCount": 2,
+    "keys": [
+      "ui.title",
+      "ui.start"
+    ]
+  },
+  {
+    "locale": "en",
+    "keyCount": 2,
+    "keys": [
+      "ui.title",
+      "ui.start"
+    ]
+  },
+  {
+    "locale": "ja",
+    "keyCount": 2,
+    "keys": [
+      "ui.title",
+      "ui.start"
+    ]
+  },
+  {
+    "locale": "zh-CN",
+    "keyCount": 2,
+    "keys": [
+      "ui.title",
+      "ui.start"
+    ]
+  },
+  {
+    "locale": "zh-TW",
+    "keyCount": 2,
+    "keys": [
+      "ui.title",
+      "ui.start"
+    ]
+  }
+]

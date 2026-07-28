@@ -1,0 +1,12 @@
+[
+  {
+    "id": "POOL-01",
+    "denominator": 1000000,
+    "oddsByEquipment": [
+      {
+        "equipmentId": "EQ-01",
+        "ppm": 999999
+      }
+    ]
+  }
+]

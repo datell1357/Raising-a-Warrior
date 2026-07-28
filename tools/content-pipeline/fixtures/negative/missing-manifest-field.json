@@ -1,0 +1,7336 @@
+{
+  "snapshotId": "launch",
+  "contentVersion": "20260727T000000Z-task3-content",
+  "baseline": {
+    "weeks": 64,
+    "launchBaseline": "3/30/300",
+    "questBaseline": [
+      20,
+      8,
+      6,
+      40,
+      28
+    ],
+    "skills": {
+      "launch": 18,
+      "scheduled": 6,
+      "total": 18
+    },
+    "equipment": {
+      "slots": 3,
+      "rarities": 5,
+      "tiers": 4
+    },
+    "store": {
+      "freeDaily": 1,
+      "rewardedAds": 2,
+      "currencyProducts": 4,
+      "starterPack": 1,
+      "adRemoval": 1
+    },
+    "promotion": {
+      "launch": 5,
+      "scheduled": 1,
+      "total": 6
+    },
+    "locales": [
+      "ko",
+      "en",
+      "ja",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "roles": [
+      "player",
+      "operator",
+      "customer-support"
+    ],
+    "devices": [
+      "Android",
+      "Web"
+    ]
+  },
+  "offlineRewardCapSeconds": "1",
+  "regions": [
+    {
+      "id": "RG-01",
+      "order": 1,
+      "stageIds": [
+        "ST-001",
+        "ST-002",
+        "ST-003",
+        "ST-004",
+        "ST-005",
+        "ST-006",
+        "ST-007",
+        "ST-008",
+        "ST-009",
+        "ST-010"
+      ]
+    },
+    {
+      "id": "RG-02",
+      "order": 2,
+      "stageIds": [
+        "ST-011",
+        "ST-012",
+        "ST-013",
+        "ST-014",
+        "ST-015",
+        "ST-016",
+        "ST-017",
+        "ST-018",
+        "ST-019",
+        "ST-020"
+      ]
+    },
+    {
+      "id": "RG-03",
+      "order": 3,
+      "stageIds": [
+        "ST-021",
+        "ST-022",
+        "ST-023",
+        "ST-024",
+        "ST-025",
+        "ST-026",
+        "ST-027",
+        "ST-028",
+        "ST-029",
+        "ST-030"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "ST-001",
+      "regionId": "RG-01",
+      "order": 1,
+      "cellIds": [
+        "CL-0001",
+        "CL-0002",
+        "CL-0003",
+        "CL-0004",
+        "CL-0005",
+        "CL-0006",
+        "CL-0007",
+        "CL-0008",
+        "CL-0009",
+        "CL-0010"
+      ],
+      "bossCellId": "CL-0010"
+    },
+    {
+      "id": "ST-002",
+      "regionId": "RG-01",
+      "order": 2,
+      "cellIds": [
+        "CL-0011",
+        "CL-0012",
+        "CL-0013",
+        "CL-0014",
+        "CL-0015",
+        "CL-0016",
+        "CL-0017",
+        "CL-0018",
+        "CL-0019",
+        "CL-0020"
+      ],
+      "bossCellId": "CL-0020"
+    },
+    {
+      "id": "ST-003",
+      "regionId": "RG-01",
+      "order": 3,
+      "cellIds": [
+        "CL-0021",
+        "CL-0022",
+        "CL-0023",
+        "CL-0024",
+        "CL-0025",
+        "CL-0026",
+        "CL-0027",
+        "CL-0028",
+        "CL-0029",
+        "CL-0030"
+      ],
+      "bossCellId": "CL-0030"
+    },
+    {
+      "id": "ST-004",
+      "regionId": "RG-01",
+      "order": 4,
+      "cellIds": [
+        "CL-0031",
+        "CL-0032",
+        "CL-0033",
+        "CL-0034",
+        "CL-0035",
+        "CL-0036",
+        "CL-0037",
+        "CL-0038",
+        "CL-0039",
+        "CL-0040"
+      ],
+      "bossCellId": "CL-0040"
+    },
+    {
+      "id": "ST-005",
+      "regionId": "RG-01",
+      "order": 5,
+      "cellIds": [
+        "CL-0041",
+        "CL-0042",
+        "CL-0043",
+        "CL-0044",
+        "CL-0045",
+        "CL-0046",
+        "CL-0047",
+        "CL-0048",
+        "CL-0049",
+        "CL-0050"
+      ],
+      "bossCellId": "CL-0050"
+    },
+    {
+      "id": "ST-006",
+      "regionId": "RG-01",
+      "order": 6,
+      "cellIds": [
+        "CL-0051",
+        "CL-0052",
+        "CL-0053",
+        "CL-0054",
+        "CL-0055",
+        "CL-0056",
+        "CL-0057",
+        "CL-0058",
+        "CL-0059",
+        "CL-0060"
+      ],
+      "bossCellId": "CL-0060"
+    },
+    {
+      "id": "ST-007",
+      "regionId": "RG-01",
+      "order": 7,
+      "cellIds": [
+        "CL-0061",
+        "CL-0062",
+        "CL-0063",
+        "CL-0064",
+        "CL-0065",
+        "CL-0066",
+        "CL-0067",
+        "CL-0068",
+        "CL-0069",
+        "CL-0070"
+      ],
+      "bossCellId": "CL-0070"
+    },
+    {
+      "id": "ST-008",
+      "regionId": "RG-01",
+      "order": 8,
+      "cellIds": [
+        "CL-0071",
+        "CL-0072",
+        "CL-0073",
+        "CL-0074",
+        "CL-0075",
+        "CL-0076",
+        "CL-0077",
+        "CL-0078",
+        "CL-0079",
+        "CL-0080"
+      ],
+      "bossCellId": "CL-0080"
+    },
+    {
+      "id": "ST-009",
+      "regionId": "RG-01",
+      "order": 9,
+      "cellIds": [
+        "CL-0081",
+        "CL-0082",
+        "CL-0083",
+        "CL-0084",
+        "CL-0085",
+        "CL-0086",
+        "CL-0087",
+        "CL-0088",
+        "CL-0089",
+        "CL-0090"
+      ],
+      "bossCellId": "CL-0090"
+    },
+    {
+      "id": "ST-010",
+      "regionId": "RG-01",
+      "order": 10,
+      "cellIds": [
+        "CL-0091",
+        "CL-0092",
+        "CL-0093",
+        "CL-0094",
+        "CL-0095",
+        "CL-0096",
+        "CL-0097",
+        "CL-0098",
+        "CL-0099",
+        "CL-0100"
+      ],
+      "bossCellId": "CL-0100"
+    },
+    {
+      "id": "ST-011",
+      "regionId": "RG-02",
+      "order": 11,
+      "cellIds": [
+        "CL-0101",
+        "CL-0102",
+        "CL-0103",
+        "CL-0104",
+        "CL-0105",
+        "CL-0106",
+        "CL-0107",
+        "CL-0108",
+        "CL-0109",
+        "CL-0110"
+      ],
+      "bossCellId": "CL-0110"
+    },
+    {
+      "id": "ST-012",
+      "regionId": "RG-02",
+      "order": 12,
+      "cellIds": [
+        "CL-0111",
+        "CL-0112",
+        "CL-0113",
+        "CL-0114",
+        "CL-0115",
+        "CL-0116",
+        "CL-0117",
+        "CL-0118",
+        "CL-0119",
+        "CL-0120"
+      ],
+      "bossCellId": "CL-0120"
+    },
+    {
+      "id": "ST-013",
+      "regionId": "RG-02",
+      "order": 13,
+      "cellIds": [
+        "CL-0121",
+        "CL-0122",
+        "CL-0123",
+        "CL-0124",
+        "CL-0125",
+        "CL-0126",
+        "CL-0127",
+        "CL-0128",
+        "CL-0129",
+        "CL-0130"
+      ],
+      "bossCellId": "CL-0130"
+    },
+    {
+      "id": "ST-014",
+      "regionId": "RG-02",
+      "order": 14,
+      "cellIds": [
+        "CL-0131",
+        "CL-0132",
+        "CL-0133",
+        "CL-0134",
+        "CL-0135",
+        "CL-0136",
+        "CL-0137",
+        "CL-0138",
+        "CL-0139",
+        "CL-0140"
+      ],
+      "bossCellId": "CL-0140"
+    },
+    {
+      "id": "ST-015",
+      "regionId": "RG-02",
+      "order": 15,
+      "cellIds": [
+        "CL-0141",
+        "CL-0142",
+        "CL-0143",
+        "CL-0144",
+        "CL-0145",
+        "CL-0146",
+        "CL-0147",
+        "CL-0148",
+        "CL-0149",
+        "CL-0150"
+      ],
+      "bossCellId": "CL-0150"
+    },
+    {
+      "id": "ST-016",
+      "regionId": "RG-02",
+      "order": 16,
+      "cellIds": [
+        "CL-0151",
+        "CL-0152",
+        "CL-0153",
+        "CL-0154",
+        "CL-0155",
+        "CL-0156",
+        "CL-0157",
+        "CL-0158",
+        "CL-0159",
+        "CL-0160"
+      ],
+      "bossCellId": "CL-0160"
+    },
+    {
+      "id": "ST-017",
+      "regionId": "RG-02",
+      "order": 17,
+      "cellIds": [
+        "CL-0161",
+        "CL-0162",
+        "CL-0163",
+        "CL-0164",
+        "CL-0165",
+        "CL-0166",
+        "CL-0167",
+        "CL-0168",
+        "CL-0169",
+        "CL-0170"
+      ],
+      "bossCellId": "CL-0170"
+    },
+    {
+      "id": "ST-018",
+      "regionId": "RG-02",
+      "order": 18,
+      "cellIds": [
+        "CL-0171",
+        "CL-0172",
+        "CL-0173",
+        "CL-0174",
+        "CL-0175",
+        "CL-0176",
+        "CL-0177",
+        "CL-0178",
+        "CL-0179",
+        "CL-0180"
+      ],
+      "bossCellId": "CL-0180"
+    },
+    {
+      "id": "ST-019",
+      "regionId": "RG-02",
+      "order": 19,
+      "cellIds": [
+        "CL-0181",
+        "CL-0182",
+        "CL-0183",
+        "CL-0184",
+        "CL-0185",
+        "CL-0186",
+        "CL-0187",
+        "CL-0188",
+        "CL-0189",
+        "CL-0190"
+      ],
+      "bossCellId": "CL-0190"
+    },
+    {
+      "id": "ST-020",
+      "regionId": "RG-02",
+      "order": 20,
+      "cellIds": [
+        "CL-0191",
+        "CL-0192",
+        "CL-0193",
+        "CL-0194",
+        "CL-0195",
+        "CL-0196",
+        "CL-0197",
+        "CL-0198",
+        "CL-0199",
+        "CL-0200"
+      ],
+      "bossCellId": "CL-0200"
+    },
+    {
+      "id": "ST-021",
+      "regionId": "RG-03",
+      "order": 21,
+      "cellIds": [
+        "CL-0201",
+        "CL-0202",
+        "CL-0203",
+        "CL-0204",
+        "CL-0205",
+        "CL-0206",
+        "CL-0207",
+        "CL-0208",
+        "CL-0209",
+        "CL-0210"
+      ],
+      "bossCellId": "CL-0210"
+    },
+    {
+      "id": "ST-022",
+      "regionId": "RG-03",
+      "order": 22,
+      "cellIds": [
+        "CL-0211",
+        "CL-0212",
+        "CL-0213",
+        "CL-0214",
+        "CL-0215",
+        "CL-0216",
+        "CL-0217",
+        "CL-0218",
+        "CL-0219",
+        "CL-0220"
+      ],
+      "bossCellId": "CL-0220"
+    },
+    {
+      "id": "ST-023",
+      "regionId": "RG-03",
+      "order": 23,
+      "cellIds": [
+        "CL-0221",
+        "CL-0222",
+        "CL-0223",
+        "CL-0224",
+        "CL-0225",
+        "CL-0226",
+        "CL-0227",
+        "CL-0228",
+        "CL-0229",
+        "CL-0230"
+      ],
+      "bossCellId": "CL-0230"
+    },
+    {
+      "id": "ST-024",
+      "regionId": "RG-03",
+      "order": 24,
+      "cellIds": [
+        "CL-0231",
+        "CL-0232",
+        "CL-0233",
+        "CL-0234",
+        "CL-0235",
+        "CL-0236",
+        "CL-0237",
+        "CL-0238",
+        "CL-0239",
+        "CL-0240"
+      ],
+      "bossCellId": "CL-0240"
+    },
+    {
+      "id": "ST-025",
+      "regionId": "RG-03",
+      "order": 25,
+      "cellIds": [
+        "CL-0241",
+        "CL-0242",
+        "CL-0243",
+        "CL-0244",
+        "CL-0245",
+        "CL-0246",
+        "CL-0247",
+        "CL-0248",
+        "CL-0249",
+        "CL-0250"
+      ],
+      "bossCellId": "CL-0250"
+    },
+    {
+      "id": "ST-026",
+      "regionId": "RG-03",
+      "order": 26,
+      "cellIds": [
+        "CL-0251",
+        "CL-0252",
+        "CL-0253",
+        "CL-0254",
+        "CL-0255",
+        "CL-0256",
+        "CL-0257",
+        "CL-0258",
+        "CL-0259",
+        "CL-0260"
+      ],
+      "bossCellId": "CL-0260"
+    },
+    {
+      "id": "ST-027",
+      "regionId": "RG-03",
+      "order": 27,
+      "cellIds": [
+        "CL-0261",
+        "CL-0262",
+        "CL-0263",
+        "CL-0264",
+        "CL-0265",
+        "CL-0266",
+        "CL-0267",
+        "CL-0268",
+        "CL-0269",
+        "CL-0270"
+      ],
+      "bossCellId": "CL-0270"
+    },
+    {
+      "id": "ST-028",
+      "regionId": "RG-03",
+      "order": 28,
+      "cellIds": [
+        "CL-0271",
+        "CL-0272",
+        "CL-0273",
+        "CL-0274",
+        "CL-0275",
+        "CL-0276",
+        "CL-0277",
+        "CL-0278",
+        "CL-0279",
+        "CL-0280"
+      ],
+      "bossCellId": "CL-0280"
+    },
+    {
+      "id": "ST-029",
+      "regionId": "RG-03",
+      "order": 29,
+      "cellIds": [
+        "CL-0281",
+        "CL-0282",
+        "CL-0283",
+        "CL-0284",
+        "CL-0285",
+        "CL-0286",
+        "CL-0287",
+        "CL-0288",
+        "CL-0289",
+        "CL-0290"
+      ],
+      "bossCellId": "CL-0290"
+    },
+    {
+      "id": "ST-030",
+      "regionId": "RG-03",
+      "order": 30,
+      "cellIds": [
+        "CL-0291",
+        "CL-0292",
+        "CL-0293",
+        "CL-0294",
+        "CL-0295",
+        "CL-0296",
+        "CL-0297",
+        "CL-0298",
+        "CL-0299",
+        "CL-0300"
+      ],
+      "bossCellId": "CL-0300"
+    }
+  ],
+  "cells": [
+    {
+      "id": "CL-0001",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 1,
+      "rewardKey": "reward.cell.0001"
+    },
+    {
+      "id": "CL-0002",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 2,
+      "rewardKey": "reward.cell.0002"
+    },
+    {
+      "id": "CL-0003",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 3,
+      "rewardKey": "reward.cell.0003"
+    },
+    {
+      "id": "CL-0004",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 4,
+      "rewardKey": "reward.cell.0004"
+    },
+    {
+      "id": "CL-0005",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 5,
+      "rewardKey": "reward.cell.0005"
+    },
+    {
+      "id": "CL-0006",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 6,
+      "rewardKey": "reward.cell.0006"
+    },
+    {
+      "id": "CL-0007",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 7,
+      "rewardKey": "reward.cell.0007"
+    },
+    {
+      "id": "CL-0008",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 8,
+      "rewardKey": "reward.cell.0008"
+    },
+    {
+      "id": "CL-0009",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 9,
+      "rewardKey": "reward.cell.0009"
+    },
+    {
+      "id": "CL-0010",
+      "regionId": "RG-01",
+      "stageId": "ST-001",
+      "order": 10,
+      "rewardKey": "reward.cell.0010"
+    },
+    {
+      "id": "CL-0011",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 1,
+      "rewardKey": "reward.cell.0011"
+    },
+    {
+      "id": "CL-0012",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 2,
+      "rewardKey": "reward.cell.0012"
+    },
+    {
+      "id": "CL-0013",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 3,
+      "rewardKey": "reward.cell.0013"
+    },
+    {
+      "id": "CL-0014",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 4,
+      "rewardKey": "reward.cell.0014"
+    },
+    {
+      "id": "CL-0015",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 5,
+      "rewardKey": "reward.cell.0015"
+    },
+    {
+      "id": "CL-0016",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 6,
+      "rewardKey": "reward.cell.0016"
+    },
+    {
+      "id": "CL-0017",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 7,
+      "rewardKey": "reward.cell.0017"
+    },
+    {
+      "id": "CL-0018",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 8,
+      "rewardKey": "reward.cell.0018"
+    },
+    {
+      "id": "CL-0019",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 9,
+      "rewardKey": "reward.cell.0019"
+    },
+    {
+      "id": "CL-0020",
+      "regionId": "RG-01",
+      "stageId": "ST-002",
+      "order": 10,
+      "rewardKey": "reward.cell.0020"
+    },
+    {
+      "id": "CL-0021",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 1,
+      "rewardKey": "reward.cell.0021"
+    },
+    {
+      "id": "CL-0022",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 2,
+      "rewardKey": "reward.cell.0022"
+    },
+    {
+      "id": "CL-0023",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 3,
+      "rewardKey": "reward.cell.0023"
+    },
+    {
+      "id": "CL-0024",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 4,
+      "rewardKey": "reward.cell.0024"
+    },
+    {
+      "id": "CL-0025",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 5,
+      "rewardKey": "reward.cell.0025"
+    },
+    {
+      "id": "CL-0026",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 6,
+      "rewardKey": "reward.cell.0026"
+    },
+    {
+      "id": "CL-0027",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 7,
+      "rewardKey": "reward.cell.0027"
+    },
+    {
+      "id": "CL-0028",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 8,
+      "rewardKey": "reward.cell.0028"
+    },
+    {
+      "id": "CL-0029",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 9,
+      "rewardKey": "reward.cell.0029"
+    },
+    {
+      "id": "CL-0030",
+      "regionId": "RG-01",
+      "stageId": "ST-003",
+      "order": 10,
+      "rewardKey": "reward.cell.0030"
+    },
+    {
+      "id": "CL-0031",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 1,
+      "rewardKey": "reward.cell.0031"
+    },
+    {
+      "id": "CL-0032",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 2,
+      "rewardKey": "reward.cell.0032"
+    },
+    {
+      "id": "CL-0033",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 3,
+      "rewardKey": "reward.cell.0033"
+    },
+    {
+      "id": "CL-0034",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 4,
+      "rewardKey": "reward.cell.0034"
+    },
+    {
+      "id": "CL-0035",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 5,
+      "rewardKey": "reward.cell.0035"
+    },
+    {
+      "id": "CL-0036",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 6,
+      "rewardKey": "reward.cell.0036"
+    },
+    {
+      "id": "CL-0037",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 7,
+      "rewardKey": "reward.cell.0037"
+    },
+    {
+      "id": "CL-0038",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 8,
+      "rewardKey": "reward.cell.0038"
+    },
+    {
+      "id": "CL-0039",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 9,
+      "rewardKey": "reward.cell.0039"
+    },
+    {
+      "id": "CL-0040",
+      "regionId": "RG-01",
+      "stageId": "ST-004",
+      "order": 10,
+      "rewardKey": "reward.cell.0040"
+    },
+    {
+      "id": "CL-0041",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 1,
+      "rewardKey": "reward.cell.0041"
+    },
+    {
+      "id": "CL-0042",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 2,
+      "rewardKey": "reward.cell.0042"
+    },
+    {
+      "id": "CL-0043",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 3,
+      "rewardKey": "reward.cell.0043"
+    },
+    {
+      "id": "CL-0044",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 4,
+      "rewardKey": "reward.cell.0044"
+    },
+    {
+      "id": "CL-0045",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 5,
+      "rewardKey": "reward.cell.0045"
+    },
+    {
+      "id": "CL-0046",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 6,
+      "rewardKey": "reward.cell.0046"
+    },
+    {
+      "id": "CL-0047",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 7,
+      "rewardKey": "reward.cell.0047"
+    },
+    {
+      "id": "CL-0048",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 8,
+      "rewardKey": "reward.cell.0048"
+    },
+    {
+      "id": "CL-0049",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 9,
+      "rewardKey": "reward.cell.0049"
+    },
+    {
+      "id": "CL-0050",
+      "regionId": "RG-01",
+      "stageId": "ST-005",
+      "order": 10,
+      "rewardKey": "reward.cell.0050"
+    },
+    {
+      "id": "CL-0051",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 1,
+      "rewardKey": "reward.cell.0051"
+    },
+    {
+      "id": "CL-0052",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 2,
+      "rewardKey": "reward.cell.0052"
+    },
+    {
+      "id": "CL-0053",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 3,
+      "rewardKey": "reward.cell.0053"
+    },
+    {
+      "id": "CL-0054",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 4,
+      "rewardKey": "reward.cell.0054"
+    },
+    {
+      "id": "CL-0055",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 5,
+      "rewardKey": "reward.cell.0055"
+    },
+    {
+      "id": "CL-0056",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 6,
+      "rewardKey": "reward.cell.0056"
+    },
+    {
+      "id": "CL-0057",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 7,
+      "rewardKey": "reward.cell.0057"
+    },
+    {
+      "id": "CL-0058",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 8,
+      "rewardKey": "reward.cell.0058"
+    },
+    {
+      "id": "CL-0059",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 9,
+      "rewardKey": "reward.cell.0059"
+    },
+    {
+      "id": "CL-0060",
+      "regionId": "RG-01",
+      "stageId": "ST-006",
+      "order": 10,
+      "rewardKey": "reward.cell.0060"
+    },
+    {
+      "id": "CL-0061",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 1,
+      "rewardKey": "reward.cell.0061"
+    },
+    {
+      "id": "CL-0062",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 2,
+      "rewardKey": "reward.cell.0062"
+    },
+    {
+      "id": "CL-0063",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 3,
+      "rewardKey": "reward.cell.0063"
+    },
+    {
+      "id": "CL-0064",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 4,
+      "rewardKey": "reward.cell.0064"
+    },
+    {
+      "id": "CL-0065",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 5,
+      "rewardKey": "reward.cell.0065"
+    },
+    {
+      "id": "CL-0066",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 6,
+      "rewardKey": "reward.cell.0066"
+    },
+    {
+      "id": "CL-0067",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 7,
+      "rewardKey": "reward.cell.0067"
+    },
+    {
+      "id": "CL-0068",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 8,
+      "rewardKey": "reward.cell.0068"
+    },
+    {
+      "id": "CL-0069",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 9,
+      "rewardKey": "reward.cell.0069"
+    },
+    {
+      "id": "CL-0070",
+      "regionId": "RG-01",
+      "stageId": "ST-007",
+      "order": 10,
+      "rewardKey": "reward.cell.0070"
+    },
+    {
+      "id": "CL-0071",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 1,
+      "rewardKey": "reward.cell.0071"
+    },
+    {
+      "id": "CL-0072",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 2,
+      "rewardKey": "reward.cell.0072"
+    },
+    {
+      "id": "CL-0073",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 3,
+      "rewardKey": "reward.cell.0073"
+    },
+    {
+      "id": "CL-0074",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 4,
+      "rewardKey": "reward.cell.0074"
+    },
+    {
+      "id": "CL-0075",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 5,
+      "rewardKey": "reward.cell.0075"
+    },
+    {
+      "id": "CL-0076",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 6,
+      "rewardKey": "reward.cell.0076"
+    },
+    {
+      "id": "CL-0077",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 7,
+      "rewardKey": "reward.cell.0077"
+    },
+    {
+      "id": "CL-0078",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 8,
+      "rewardKey": "reward.cell.0078"
+    },
+    {
+      "id": "CL-0079",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 9,
+      "rewardKey": "reward.cell.0079"
+    },
+    {
+      "id": "CL-0080",
+      "regionId": "RG-01",
+      "stageId": "ST-008",
+      "order": 10,
+      "rewardKey": "reward.cell.0080"
+    },
+    {
+      "id": "CL-0081",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 1,
+      "rewardKey": "reward.cell.0081"
+    },
+    {
+      "id": "CL-0082",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 2,
+      "rewardKey": "reward.cell.0082"
+    },
+    {
+      "id": "CL-0083",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 3,
+      "rewardKey": "reward.cell.0083"
+    },
+    {
+      "id": "CL-0084",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 4,
+      "rewardKey": "reward.cell.0084"
+    },
+    {
+      "id": "CL-0085",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 5,
+      "rewardKey": "reward.cell.0085"
+    },
+    {
+      "id": "CL-0086",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 6,
+      "rewardKey": "reward.cell.0086"
+    },
+    {
+      "id": "CL-0087",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 7,
+      "rewardKey": "reward.cell.0087"
+    },
+    {
+      "id": "CL-0088",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 8,
+      "rewardKey": "reward.cell.0088"
+    },
+    {
+      "id": "CL-0089",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 9,
+      "rewardKey": "reward.cell.0089"
+    },
+    {
+      "id": "CL-0090",
+      "regionId": "RG-01",
+      "stageId": "ST-009",
+      "order": 10,
+      "rewardKey": "reward.cell.0090"
+    },
+    {
+      "id": "CL-0091",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 1,
+      "rewardKey": "reward.cell.0091"
+    },
+    {
+      "id": "CL-0092",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 2,
+      "rewardKey": "reward.cell.0092"
+    },
+    {
+      "id": "CL-0093",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 3,
+      "rewardKey": "reward.cell.0093"
+    },
+    {
+      "id": "CL-0094",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 4,
+      "rewardKey": "reward.cell.0094"
+    },
+    {
+      "id": "CL-0095",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 5,
+      "rewardKey": "reward.cell.0095"
+    },
+    {
+      "id": "CL-0096",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 6,
+      "rewardKey": "reward.cell.0096"
+    },
+    {
+      "id": "CL-0097",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 7,
+      "rewardKey": "reward.cell.0097"
+    },
+    {
+      "id": "CL-0098",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 8,
+      "rewardKey": "reward.cell.0098"
+    },
+    {
+      "id": "CL-0099",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 9,
+      "rewardKey": "reward.cell.0099"
+    },
+    {
+      "id": "CL-0100",
+      "regionId": "RG-01",
+      "stageId": "ST-010",
+      "order": 10,
+      "rewardKey": "reward.cell.0100"
+    },
+    {
+      "id": "CL-0101",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 1,
+      "rewardKey": "reward.cell.0101"
+    },
+    {
+      "id": "CL-0102",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 2,
+      "rewardKey": "reward.cell.0102"
+    },
+    {
+      "id": "CL-0103",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 3,
+      "rewardKey": "reward.cell.0103"
+    },
+    {
+      "id": "CL-0104",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 4,
+      "rewardKey": "reward.cell.0104"
+    },
+    {
+      "id": "CL-0105",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 5,
+      "rewardKey": "reward.cell.0105"
+    },
+    {
+      "id": "CL-0106",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 6,
+      "rewardKey": "reward.cell.0106"
+    },
+    {
+      "id": "CL-0107",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 7,
+      "rewardKey": "reward.cell.0107"
+    },
+    {
+      "id": "CL-0108",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 8,
+      "rewardKey": "reward.cell.0108"
+    },
+    {
+      "id": "CL-0109",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 9,
+      "rewardKey": "reward.cell.0109"
+    },
+    {
+      "id": "CL-0110",
+      "regionId": "RG-02",
+      "stageId": "ST-011",
+      "order": 10,
+      "rewardKey": "reward.cell.0110"
+    },
+    {
+      "id": "CL-0111",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 1,
+      "rewardKey": "reward.cell.0111"
+    },
+    {
+      "id": "CL-0112",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 2,
+      "rewardKey": "reward.cell.0112"
+    },
+    {
+      "id": "CL-0113",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 3,
+      "rewardKey": "reward.cell.0113"
+    },
+    {
+      "id": "CL-0114",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 4,
+      "rewardKey": "reward.cell.0114"
+    },
+    {
+      "id": "CL-0115",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 5,
+      "rewardKey": "reward.cell.0115"
+    },
+    {
+      "id": "CL-0116",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 6,
+      "rewardKey": "reward.cell.0116"
+    },
+    {
+      "id": "CL-0117",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 7,
+      "rewardKey": "reward.cell.0117"
+    },
+    {
+      "id": "CL-0118",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 8,
+      "rewardKey": "reward.cell.0118"
+    },
+    {
+      "id": "CL-0119",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 9,
+      "rewardKey": "reward.cell.0119"
+    },
+    {
+      "id": "CL-0120",
+      "regionId": "RG-02",
+      "stageId": "ST-012",
+      "order": 10,
+      "rewardKey": "reward.cell.0120"
+    },
+    {
+      "id": "CL-0121",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 1,
+      "rewardKey": "reward.cell.0121"
+    },
+    {
+      "id": "CL-0122",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 2,
+      "rewardKey": "reward.cell.0122"
+    },
+    {
+      "id": "CL-0123",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 3,
+      "rewardKey": "reward.cell.0123"
+    },
+    {
+      "id": "CL-0124",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 4,
+      "rewardKey": "reward.cell.0124"
+    },
+    {
+      "id": "CL-0125",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 5,
+      "rewardKey": "reward.cell.0125"
+    },
+    {
+      "id": "CL-0126",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 6,
+      "rewardKey": "reward.cell.0126"
+    },
+    {
+      "id": "CL-0127",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 7,
+      "rewardKey": "reward.cell.0127"
+    },
+    {
+      "id": "CL-0128",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 8,
+      "rewardKey": "reward.cell.0128"
+    },
+    {
+      "id": "CL-0129",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 9,
+      "rewardKey": "reward.cell.0129"
+    },
+    {
+      "id": "CL-0130",
+      "regionId": "RG-02",
+      "stageId": "ST-013",
+      "order": 10,
+      "rewardKey": "reward.cell.0130"
+    },
+    {
+      "id": "CL-0131",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 1,
+      "rewardKey": "reward.cell.0131"
+    },
+    {
+      "id": "CL-0132",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 2,
+      "rewardKey": "reward.cell.0132"
+    },
+    {
+      "id": "CL-0133",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 3,
+      "rewardKey": "reward.cell.0133"
+    },
+    {
+      "id": "CL-0134",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 4,
+      "rewardKey": "reward.cell.0134"
+    },
+    {
+      "id": "CL-0135",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 5,
+      "rewardKey": "reward.cell.0135"
+    },
+    {
+      "id": "CL-0136",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 6,
+      "rewardKey": "reward.cell.0136"
+    },
+    {
+      "id": "CL-0137",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 7,
+      "rewardKey": "reward.cell.0137"
+    },
+    {
+      "id": "CL-0138",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 8,
+      "rewardKey": "reward.cell.0138"
+    },
+    {
+      "id": "CL-0139",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 9,
+      "rewardKey": "reward.cell.0139"
+    },
+    {
+      "id": "CL-0140",
+      "regionId": "RG-02",
+      "stageId": "ST-014",
+      "order": 10,
+      "rewardKey": "reward.cell.0140"
+    },
+    {
+      "id": "CL-0141",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 1,
+      "rewardKey": "reward.cell.0141"
+    },
+    {
+      "id": "CL-0142",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 2,
+      "rewardKey": "reward.cell.0142"
+    },
+    {
+      "id": "CL-0143",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 3,
+      "rewardKey": "reward.cell.0143"
+    },
+    {
+      "id": "CL-0144",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 4,
+      "rewardKey": "reward.cell.0144"
+    },
+    {
+      "id": "CL-0145",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 5,
+      "rewardKey": "reward.cell.0145"
+    },
+    {
+      "id": "CL-0146",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 6,
+      "rewardKey": "reward.cell.0146"
+    },
+    {
+      "id": "CL-0147",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 7,
+      "rewardKey": "reward.cell.0147"
+    },
+    {
+      "id": "CL-0148",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 8,
+      "rewardKey": "reward.cell.0148"
+    },
+    {
+      "id": "CL-0149",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 9,
+      "rewardKey": "reward.cell.0149"
+    },
+    {
+      "id": "CL-0150",
+      "regionId": "RG-02",
+      "stageId": "ST-015",
+      "order": 10,
+      "rewardKey": "reward.cell.0150"
+    },
+    {
+      "id": "CL-0151",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 1,
+      "rewardKey": "reward.cell.0151"
+    },
+    {
+      "id": "CL-0152",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 2,
+      "rewardKey": "reward.cell.0152"
+    },
+    {
+      "id": "CL-0153",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 3,
+      "rewardKey": "reward.cell.0153"
+    },
+    {
+      "id": "CL-0154",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 4,
+      "rewardKey": "reward.cell.0154"
+    },
+    {
+      "id": "CL-0155",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 5,
+      "rewardKey": "reward.cell.0155"
+    },
+    {
+      "id": "CL-0156",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 6,
+      "rewardKey": "reward.cell.0156"
+    },
+    {
+      "id": "CL-0157",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 7,
+      "rewardKey": "reward.cell.0157"
+    },
+    {
+      "id": "CL-0158",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 8,
+      "rewardKey": "reward.cell.0158"
+    },
+    {
+      "id": "CL-0159",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 9,
+      "rewardKey": "reward.cell.0159"
+    },
+    {
+      "id": "CL-0160",
+      "regionId": "RG-02",
+      "stageId": "ST-016",
+      "order": 10,
+      "rewardKey": "reward.cell.0160"
+    },
+    {
+      "id": "CL-0161",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 1,
+      "rewardKey": "reward.cell.0161"
+    },
+    {
+      "id": "CL-0162",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 2,
+      "rewardKey": "reward.cell.0162"
+    },
+    {
+      "id": "CL-0163",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 3,
+      "rewardKey": "reward.cell.0163"
+    },
+    {
+      "id": "CL-0164",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 4,
+      "rewardKey": "reward.cell.0164"
+    },
+    {
+      "id": "CL-0165",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 5,
+      "rewardKey": "reward.cell.0165"
+    },
+    {
+      "id": "CL-0166",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 6,
+      "rewardKey": "reward.cell.0166"
+    },
+    {
+      "id": "CL-0167",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 7,
+      "rewardKey": "reward.cell.0167"
+    },
+    {
+      "id": "CL-0168",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 8,
+      "rewardKey": "reward.cell.0168"
+    },
+    {
+      "id": "CL-0169",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 9,
+      "rewardKey": "reward.cell.0169"
+    },
+    {
+      "id": "CL-0170",
+      "regionId": "RG-02",
+      "stageId": "ST-017",
+      "order": 10,
+      "rewardKey": "reward.cell.0170"
+    },
+    {
+      "id": "CL-0171",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 1,
+      "rewardKey": "reward.cell.0171"
+    },
+    {
+      "id": "CL-0172",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 2,
+      "rewardKey": "reward.cell.0172"
+    },
+    {
+      "id": "CL-0173",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 3,
+      "rewardKey": "reward.cell.0173"
+    },
+    {
+      "id": "CL-0174",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 4,
+      "rewardKey": "reward.cell.0174"
+    },
+    {
+      "id": "CL-0175",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 5,
+      "rewardKey": "reward.cell.0175"
+    },
+    {
+      "id": "CL-0176",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 6,
+      "rewardKey": "reward.cell.0176"
+    },
+    {
+      "id": "CL-0177",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 7,
+      "rewardKey": "reward.cell.0177"
+    },
+    {
+      "id": "CL-0178",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 8,
+      "rewardKey": "reward.cell.0178"
+    },
+    {
+      "id": "CL-0179",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 9,
+      "rewardKey": "reward.cell.0179"
+    },
+    {
+      "id": "CL-0180",
+      "regionId": "RG-02",
+      "stageId": "ST-018",
+      "order": 10,
+      "rewardKey": "reward.cell.0180"
+    },
+    {
+      "id": "CL-0181",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 1,
+      "rewardKey": "reward.cell.0181"
+    },
+    {
+      "id": "CL-0182",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 2,
+      "rewardKey": "reward.cell.0182"
+    },
+    {
+      "id": "CL-0183",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 3,
+      "rewardKey": "reward.cell.0183"
+    },
+    {
+      "id": "CL-0184",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 4,
+      "rewardKey": "reward.cell.0184"
+    },
+    {
+      "id": "CL-0185",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 5,
+      "rewardKey": "reward.cell.0185"
+    },
+    {
+      "id": "CL-0186",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 6,
+      "rewardKey": "reward.cell.0186"
+    },
+    {
+      "id": "CL-0187",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 7,
+      "rewardKey": "reward.cell.0187"
+    },
+    {
+      "id": "CL-0188",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 8,
+      "rewardKey": "reward.cell.0188"
+    },
+    {
+      "id": "CL-0189",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 9,
+      "rewardKey": "reward.cell.0189"
+    },
+    {
+      "id": "CL-0190",
+      "regionId": "RG-02",
+      "stageId": "ST-019",
+      "order": 10,
+      "rewardKey": "reward.cell.0190"
+    },
+    {
+      "id": "CL-0191",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 1,
+      "rewardKey": "reward.cell.0191"
+    },
+    {
+      "id": "CL-0192",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 2,
+      "rewardKey": "reward.cell.0192"
+    },
+    {
+      "id": "CL-0193",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 3,
+      "rewardKey": "reward.cell.0193"
+    },
+    {
+      "id": "CL-0194",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 4,
+      "rewardKey": "reward.cell.0194"
+    },
+    {
+      "id": "CL-0195",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 5,
+      "rewardKey": "reward.cell.0195"
+    },
+    {
+      "id": "CL-0196",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 6,
+      "rewardKey": "reward.cell.0196"
+    },
+    {
+      "id": "CL-0197",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 7,
+      "rewardKey": "reward.cell.0197"
+    },
+    {
+      "id": "CL-0198",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 8,
+      "rewardKey": "reward.cell.0198"
+    },
+    {
+      "id": "CL-0199",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 9,
+      "rewardKey": "reward.cell.0199"
+    },
+    {
+      "id": "CL-0200",
+      "regionId": "RG-02",
+      "stageId": "ST-020",
+      "order": 10,
+      "rewardKey": "reward.cell.0200"
+    },
+    {
+      "id": "CL-0201",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 1,
+      "rewardKey": "reward.cell.0201"
+    },
+    {
+      "id": "CL-0202",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 2,
+      "rewardKey": "reward.cell.0202"
+    },
+    {
+      "id": "CL-0203",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 3,
+      "rewardKey": "reward.cell.0203"
+    },
+    {
+      "id": "CL-0204",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 4,
+      "rewardKey": "reward.cell.0204"
+    },
+    {
+      "id": "CL-0205",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 5,
+      "rewardKey": "reward.cell.0205"
+    },
+    {
+      "id": "CL-0206",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 6,
+      "rewardKey": "reward.cell.0206"
+    },
+    {
+      "id": "CL-0207",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 7,
+      "rewardKey": "reward.cell.0207"
+    },
+    {
+      "id": "CL-0208",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 8,
+      "rewardKey": "reward.cell.0208"
+    },
+    {
+      "id": "CL-0209",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 9,
+      "rewardKey": "reward.cell.0209"
+    },
+    {
+      "id": "CL-0210",
+      "regionId": "RG-03",
+      "stageId": "ST-021",
+      "order": 10,
+      "rewardKey": "reward.cell.0210"
+    },
+    {
+      "id": "CL-0211",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 1,
+      "rewardKey": "reward.cell.0211"
+    },
+    {
+      "id": "CL-0212",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 2,
+      "rewardKey": "reward.cell.0212"
+    },
+    {
+      "id": "CL-0213",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 3,
+      "rewardKey": "reward.cell.0213"
+    },
+    {
+      "id": "CL-0214",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 4,
+      "rewardKey": "reward.cell.0214"
+    },
+    {
+      "id": "CL-0215",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 5,
+      "rewardKey": "reward.cell.0215"
+    },
+    {
+      "id": "CL-0216",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 6,
+      "rewardKey": "reward.cell.0216"
+    },
+    {
+      "id": "CL-0217",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 7,
+      "rewardKey": "reward.cell.0217"
+    },
+    {
+      "id": "CL-0218",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 8,
+      "rewardKey": "reward.cell.0218"
+    },
+    {
+      "id": "CL-0219",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 9,
+      "rewardKey": "reward.cell.0219"
+    },
+    {
+      "id": "CL-0220",
+      "regionId": "RG-03",
+      "stageId": "ST-022",
+      "order": 10,
+      "rewardKey": "reward.cell.0220"
+    },
+    {
+      "id": "CL-0221",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 1,
+      "rewardKey": "reward.cell.0221"
+    },
+    {
+      "id": "CL-0222",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 2,
+      "rewardKey": "reward.cell.0222"
+    },
+    {
+      "id": "CL-0223",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 3,
+      "rewardKey": "reward.cell.0223"
+    },
+    {
+      "id": "CL-0224",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 4,
+      "rewardKey": "reward.cell.0224"
+    },
+    {
+      "id": "CL-0225",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 5,
+      "rewardKey": "reward.cell.0225"
+    },
+    {
+      "id": "CL-0226",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 6,
+      "rewardKey": "reward.cell.0226"
+    },
+    {
+      "id": "CL-0227",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 7,
+      "rewardKey": "reward.cell.0227"
+    },
+    {
+      "id": "CL-0228",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 8,
+      "rewardKey": "reward.cell.0228"
+    },
+    {
+      "id": "CL-0229",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 9,
+      "rewardKey": "reward.cell.0229"
+    },
+    {
+      "id": "CL-0230",
+      "regionId": "RG-03",
+      "stageId": "ST-023",
+      "order": 10,
+      "rewardKey": "reward.cell.0230"
+    },
+    {
+      "id": "CL-0231",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 1,
+      "rewardKey": "reward.cell.0231"
+    },
+    {
+      "id": "CL-0232",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 2,
+      "rewardKey": "reward.cell.0232"
+    },
+    {
+      "id": "CL-0233",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 3,
+      "rewardKey": "reward.cell.0233"
+    },
+    {
+      "id": "CL-0234",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 4,
+      "rewardKey": "reward.cell.0234"
+    },
+    {
+      "id": "CL-0235",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 5,
+      "rewardKey": "reward.cell.0235"
+    },
+    {
+      "id": "CL-0236",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 6,
+      "rewardKey": "reward.cell.0236"
+    },
+    {
+      "id": "CL-0237",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 7,
+      "rewardKey": "reward.cell.0237"
+    },
+    {
+      "id": "CL-0238",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 8,
+      "rewardKey": "reward.cell.0238"
+    },
+    {
+      "id": "CL-0239",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 9,
+      "rewardKey": "reward.cell.0239"
+    },
+    {
+      "id": "CL-0240",
+      "regionId": "RG-03",
+      "stageId": "ST-024",
+      "order": 10,
+      "rewardKey": "reward.cell.0240"
+    },
+    {
+      "id": "CL-0241",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 1,
+      "rewardKey": "reward.cell.0241"
+    },
+    {
+      "id": "CL-0242",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 2,
+      "rewardKey": "reward.cell.0242"
+    },
+    {
+      "id": "CL-0243",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 3,
+      "rewardKey": "reward.cell.0243"
+    },
+    {
+      "id": "CL-0244",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 4,
+      "rewardKey": "reward.cell.0244"
+    },
+    {
+      "id": "CL-0245",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 5,
+      "rewardKey": "reward.cell.0245"
+    },
+    {
+      "id": "CL-0246",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 6,
+      "rewardKey": "reward.cell.0246"
+    },
+    {
+      "id": "CL-0247",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 7,
+      "rewardKey": "reward.cell.0247"
+    },
+    {
+      "id": "CL-0248",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 8,
+      "rewardKey": "reward.cell.0248"
+    },
+    {
+      "id": "CL-0249",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 9,
+      "rewardKey": "reward.cell.0249"
+    },
+    {
+      "id": "CL-0250",
+      "regionId": "RG-03",
+      "stageId": "ST-025",
+      "order": 10,
+      "rewardKey": "reward.cell.0250"
+    },
+    {
+      "id": "CL-0251",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 1,
+      "rewardKey": "reward.cell.0251"
+    },
+    {
+      "id": "CL-0252",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 2,
+      "rewardKey": "reward.cell.0252"
+    },
+    {
+      "id": "CL-0253",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 3,
+      "rewardKey": "reward.cell.0253"
+    },
+    {
+      "id": "CL-0254",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 4,
+      "rewardKey": "reward.cell.0254"
+    },
+    {
+      "id": "CL-0255",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 5,
+      "rewardKey": "reward.cell.0255"
+    },
+    {
+      "id": "CL-0256",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 6,
+      "rewardKey": "reward.cell.0256"
+    },
+    {
+      "id": "CL-0257",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 7,
+      "rewardKey": "reward.cell.0257"
+    },
+    {
+      "id": "CL-0258",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 8,
+      "rewardKey": "reward.cell.0258"
+    },
+    {
+      "id": "CL-0259",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 9,
+      "rewardKey": "reward.cell.0259"
+    },
+    {
+      "id": "CL-0260",
+      "regionId": "RG-03",
+      "stageId": "ST-026",
+      "order": 10,
+      "rewardKey": "reward.cell.0260"
+    },
+    {
+      "id": "CL-0261",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 1,
+      "rewardKey": "reward.cell.0261"
+    },
+    {
+      "id": "CL-0262",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 2,
+      "rewardKey": "reward.cell.0262"
+    },
+    {
+      "id": "CL-0263",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 3,
+      "rewardKey": "reward.cell.0263"
+    },
+    {
+      "id": "CL-0264",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 4,
+      "rewardKey": "reward.cell.0264"
+    },
+    {
+      "id": "CL-0265",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 5,
+      "rewardKey": "reward.cell.0265"
+    },
+    {
+      "id": "CL-0266",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 6,
+      "rewardKey": "reward.cell.0266"
+    },
+    {
+      "id": "CL-0267",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 7,
+      "rewardKey": "reward.cell.0267"
+    },
+    {
+      "id": "CL-0268",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 8,
+      "rewardKey": "reward.cell.0268"
+    },
+    {
+      "id": "CL-0269",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 9,
+      "rewardKey": "reward.cell.0269"
+    },
+    {
+      "id": "CL-0270",
+      "regionId": "RG-03",
+      "stageId": "ST-027",
+      "order": 10,
+      "rewardKey": "reward.cell.0270"
+    },
+    {
+      "id": "CL-0271",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 1,
+      "rewardKey": "reward.cell.0271"
+    },
+    {
+      "id": "CL-0272",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 2,
+      "rewardKey": "reward.cell.0272"
+    },
+    {
+      "id": "CL-0273",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 3,
+      "rewardKey": "reward.cell.0273"
+    },
+    {
+      "id": "CL-0274",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 4,
+      "rewardKey": "reward.cell.0274"
+    },
+    {
+      "id": "CL-0275",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 5,
+      "rewardKey": "reward.cell.0275"
+    },
+    {
+      "id": "CL-0276",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 6,
+      "rewardKey": "reward.cell.0276"
+    },
+    {
+      "id": "CL-0277",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 7,
+      "rewardKey": "reward.cell.0277"
+    },
+    {
+      "id": "CL-0278",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 8,
+      "rewardKey": "reward.cell.0278"
+    },
+    {
+      "id": "CL-0279",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 9,
+      "rewardKey": "reward.cell.0279"
+    },
+    {
+      "id": "CL-0280",
+      "regionId": "RG-03",
+      "stageId": "ST-028",
+      "order": 10,
+      "rewardKey": "reward.cell.0280"
+    },
+    {
+      "id": "CL-0281",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 1,
+      "rewardKey": "reward.cell.0281"
+    },
+    {
+      "id": "CL-0282",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 2,
+      "rewardKey": "reward.cell.0282"
+    },
+    {
+      "id": "CL-0283",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 3,
+      "rewardKey": "reward.cell.0283"
+    },
+    {
+      "id": "CL-0284",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 4,
+      "rewardKey": "reward.cell.0284"
+    },
+    {
+      "id": "CL-0285",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 5,
+      "rewardKey": "reward.cell.0285"
+    },
+    {
+      "id": "CL-0286",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 6,
+      "rewardKey": "reward.cell.0286"
+    },
+    {
+      "id": "CL-0287",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 7,
+      "rewardKey": "reward.cell.0287"
+    },
+    {
+      "id": "CL-0288",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 8,
+      "rewardKey": "reward.cell.0288"
+    },
+    {
+      "id": "CL-0289",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 9,
+      "rewardKey": "reward.cell.0289"
+    },
+    {
+      "id": "CL-0290",
+      "regionId": "RG-03",
+      "stageId": "ST-029",
+      "order": 10,
+      "rewardKey": "reward.cell.0290"
+    },
+    {
+      "id": "CL-0291",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 1,
+      "rewardKey": "reward.cell.0291"
+    },
+    {
+      "id": "CL-0292",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 2,
+      "rewardKey": "reward.cell.0292"
+    },
+    {
+      "id": "CL-0293",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 3,
+      "rewardKey": "reward.cell.0293"
+    },
+    {
+      "id": "CL-0294",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 4,
+      "rewardKey": "reward.cell.0294"
+    },
+    {
+      "id": "CL-0295",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 5,
+      "rewardKey": "reward.cell.0295"
+    },
+    {
+      "id": "CL-0296",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 6,
+      "rewardKey": "reward.cell.0296"
+    },
+    {
+      "id": "CL-0297",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 7,
+      "rewardKey": "reward.cell.0297"
+    },
+    {
+      "id": "CL-0298",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 8,
+      "rewardKey": "reward.cell.0298"
+    },
+    {
+      "id": "CL-0299",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 9,
+      "rewardKey": "reward.cell.0299"
+    },
+    {
+      "id": "CL-0300",
+      "regionId": "RG-03",
+      "stageId": "ST-030",
+      "order": 10,
+      "rewardKey": "reward.cell.0300"
+    }
+  ],
+  "quests": {
+    "main": [
+      {
+        "id": "Q-MA-001",
+        "group": "main",
+        "sequence": 1,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "101"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1001"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "11"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5001"
+        },
+        "nextQuestId": "Q-MA-002"
+      },
+      {
+        "id": "Q-MA-002",
+        "group": "main",
+        "sequence": 2,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "102"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1002"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "12"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5002"
+        },
+        "nextQuestId": "Q-MA-003"
+      },
+      {
+        "id": "Q-MA-003",
+        "group": "main",
+        "sequence": 3,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "103"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1003"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "13"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5003"
+        },
+        "nextQuestId": "Q-MA-004"
+      },
+      {
+        "id": "Q-MA-004",
+        "group": "main",
+        "sequence": 4,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "104"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1004"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "14"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5004"
+        },
+        "nextQuestId": "Q-MA-005"
+      },
+      {
+        "id": "Q-MA-005",
+        "group": "main",
+        "sequence": 5,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "105"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1005"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "15"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5005"
+        },
+        "nextQuestId": "Q-MA-006"
+      },
+      {
+        "id": "Q-MA-006",
+        "group": "main",
+        "sequence": 6,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "106"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1006"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "16"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5006"
+        },
+        "nextQuestId": "Q-MA-007"
+      },
+      {
+        "id": "Q-MA-007",
+        "group": "main",
+        "sequence": 7,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "107"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1007"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "17"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5007"
+        },
+        "nextQuestId": "Q-MA-008"
+      },
+      {
+        "id": "Q-MA-008",
+        "group": "main",
+        "sequence": 8,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "108"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1008"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "18"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5008"
+        },
+        "nextQuestId": "Q-MA-009"
+      },
+      {
+        "id": "Q-MA-009",
+        "group": "main",
+        "sequence": 9,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "109"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1009"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "19"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5009"
+        },
+        "nextQuestId": "Q-MA-010"
+      },
+      {
+        "id": "Q-MA-010",
+        "group": "main",
+        "sequence": 10,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "110"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1010"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "20"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5010"
+        },
+        "nextQuestId": "Q-MA-011"
+      },
+      {
+        "id": "Q-MA-011",
+        "group": "main",
+        "sequence": 11,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "111"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1011"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "21"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5011"
+        },
+        "nextQuestId": "Q-MA-012"
+      },
+      {
+        "id": "Q-MA-012",
+        "group": "main",
+        "sequence": 12,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "112"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1012"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "22"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5012"
+        },
+        "nextQuestId": "Q-MA-013"
+      },
+      {
+        "id": "Q-MA-013",
+        "group": "main",
+        "sequence": 13,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "113"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1013"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "23"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5013"
+        },
+        "nextQuestId": "Q-MA-014"
+      },
+      {
+        "id": "Q-MA-014",
+        "group": "main",
+        "sequence": 14,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "114"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1014"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "24"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5014"
+        },
+        "nextQuestId": "Q-MA-015"
+      },
+      {
+        "id": "Q-MA-015",
+        "group": "main",
+        "sequence": 15,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "115"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1015"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "25"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5015"
+        },
+        "nextQuestId": "Q-MA-016"
+      },
+      {
+        "id": "Q-MA-016",
+        "group": "main",
+        "sequence": 16,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "116"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1016"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "26"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5016"
+        },
+        "nextQuestId": "Q-MA-017"
+      },
+      {
+        "id": "Q-MA-017",
+        "group": "main",
+        "sequence": 17,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "117"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1017"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "27"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5017"
+        },
+        "nextQuestId": "Q-MA-018"
+      },
+      {
+        "id": "Q-MA-018",
+        "group": "main",
+        "sequence": 18,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "118"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1018"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "28"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5018"
+        },
+        "nextQuestId": "Q-MA-019"
+      },
+      {
+        "id": "Q-MA-019",
+        "group": "main",
+        "sequence": 19,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "119"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1019"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "29"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5019"
+        },
+        "nextQuestId": "Q-MA-020"
+      },
+      {
+        "id": "Q-MA-020",
+        "group": "main",
+        "sequence": 20,
+        "objective": {
+          "kind": "ReachLevel",
+          "targetId": null,
+          "targetAmount": "120"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1020"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "30"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5020"
+        },
+        "nextQuestId": null
+      }
+    ],
+    "daily": [
+      {
+        "id": "Q-DA-001",
+        "group": "daily",
+        "sequence": 21,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "121"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1021"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "31"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5021"
+        },
+        "nextQuestId": "Q-DA-002"
+      },
+      {
+        "id": "Q-DA-002",
+        "group": "daily",
+        "sequence": 22,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "122"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1022"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "32"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5022"
+        },
+        "nextQuestId": "Q-DA-003"
+      },
+      {
+        "id": "Q-DA-003",
+        "group": "daily",
+        "sequence": 23,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "123"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1023"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "33"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5023"
+        },
+        "nextQuestId": "Q-DA-004"
+      },
+      {
+        "id": "Q-DA-004",
+        "group": "daily",
+        "sequence": 24,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "124"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1024"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "34"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5024"
+        },
+        "nextQuestId": "Q-DA-005"
+      },
+      {
+        "id": "Q-DA-005",
+        "group": "daily",
+        "sequence": 25,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "125"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1025"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "35"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5025"
+        },
+        "nextQuestId": "Q-DA-006"
+      },
+      {
+        "id": "Q-DA-006",
+        "group": "daily",
+        "sequence": 26,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "126"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1026"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "36"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5026"
+        },
+        "nextQuestId": "Q-DA-007"
+      },
+      {
+        "id": "Q-DA-007",
+        "group": "daily",
+        "sequence": 27,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "127"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1027"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "37"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5027"
+        },
+        "nextQuestId": "Q-DA-008"
+      },
+      {
+        "id": "Q-DA-008",
+        "group": "daily",
+        "sequence": 28,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "128"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1028"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "38"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5028"
+        },
+        "nextQuestId": null
+      }
+    ],
+    "weekly": [
+      {
+        "id": "Q-WE-001",
+        "group": "weekly",
+        "sequence": 29,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "129"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1029"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "39"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5029"
+        },
+        "nextQuestId": "Q-WE-002"
+      },
+      {
+        "id": "Q-WE-002",
+        "group": "weekly",
+        "sequence": 30,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "130"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1030"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "40"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5030"
+        },
+        "nextQuestId": "Q-WE-003"
+      },
+      {
+        "id": "Q-WE-003",
+        "group": "weekly",
+        "sequence": 31,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "131"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1031"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "41"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5031"
+        },
+        "nextQuestId": "Q-WE-004"
+      },
+      {
+        "id": "Q-WE-004",
+        "group": "weekly",
+        "sequence": 32,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "132"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1032"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "42"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5032"
+        },
+        "nextQuestId": "Q-WE-005"
+      },
+      {
+        "id": "Q-WE-005",
+        "group": "weekly",
+        "sequence": 33,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "133"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1033"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "43"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5033"
+        },
+        "nextQuestId": "Q-WE-006"
+      },
+      {
+        "id": "Q-WE-006",
+        "group": "weekly",
+        "sequence": 34,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "134"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1034"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "44"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5034"
+        },
+        "nextQuestId": null
+      }
+    ],
+    "achievement": [
+      {
+        "id": "Q-AC-001",
+        "group": "achievement",
+        "sequence": 35,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "135"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1035"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "45"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5035"
+        },
+        "nextQuestId": "Q-AC-002"
+      },
+      {
+        "id": "Q-AC-002",
+        "group": "achievement",
+        "sequence": 36,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "136"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1036"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "46"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5036"
+        },
+        "nextQuestId": "Q-AC-003"
+      },
+      {
+        "id": "Q-AC-003",
+        "group": "achievement",
+        "sequence": 37,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "137"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1037"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "47"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5037"
+        },
+        "nextQuestId": "Q-AC-004"
+      },
+      {
+        "id": "Q-AC-004",
+        "group": "achievement",
+        "sequence": 38,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "138"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1038"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "48"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5038"
+        },
+        "nextQuestId": "Q-AC-005"
+      },
+      {
+        "id": "Q-AC-005",
+        "group": "achievement",
+        "sequence": 39,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "139"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1039"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "49"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5039"
+        },
+        "nextQuestId": "Q-AC-006"
+      },
+      {
+        "id": "Q-AC-006",
+        "group": "achievement",
+        "sequence": 40,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "140"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1040"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "50"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5040"
+        },
+        "nextQuestId": "Q-AC-007"
+      },
+      {
+        "id": "Q-AC-007",
+        "group": "achievement",
+        "sequence": 41,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "141"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1041"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "51"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5041"
+        },
+        "nextQuestId": "Q-AC-008"
+      },
+      {
+        "id": "Q-AC-008",
+        "group": "achievement",
+        "sequence": 42,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "142"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1042"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "52"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5042"
+        },
+        "nextQuestId": "Q-AC-009"
+      },
+      {
+        "id": "Q-AC-009",
+        "group": "achievement",
+        "sequence": 43,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "143"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1043"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "53"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5043"
+        },
+        "nextQuestId": "Q-AC-010"
+      },
+      {
+        "id": "Q-AC-010",
+        "group": "achievement",
+        "sequence": 44,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "144"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1044"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "54"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5044"
+        },
+        "nextQuestId": "Q-AC-011"
+      },
+      {
+        "id": "Q-AC-011",
+        "group": "achievement",
+        "sequence": 45,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "145"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1045"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "55"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5045"
+        },
+        "nextQuestId": "Q-AC-012"
+      },
+      {
+        "id": "Q-AC-012",
+        "group": "achievement",
+        "sequence": 46,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "146"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1046"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "56"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5046"
+        },
+        "nextQuestId": "Q-AC-013"
+      },
+      {
+        "id": "Q-AC-013",
+        "group": "achievement",
+        "sequence": 47,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "147"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1047"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "57"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5047"
+        },
+        "nextQuestId": "Q-AC-014"
+      },
+      {
+        "id": "Q-AC-014",
+        "group": "achievement",
+        "sequence": 48,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "148"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1048"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "58"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5048"
+        },
+        "nextQuestId": "Q-AC-015"
+      },
+      {
+        "id": "Q-AC-015",
+        "group": "achievement",
+        "sequence": 49,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "149"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1049"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "59"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5049"
+        },
+        "nextQuestId": "Q-AC-016"
+      },
+      {
+        "id": "Q-AC-016",
+        "group": "achievement",
+        "sequence": 50,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "150"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1050"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "60"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5050"
+        },
+        "nextQuestId": "Q-AC-017"
+      },
+      {
+        "id": "Q-AC-017",
+        "group": "achievement",
+        "sequence": 51,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "151"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1051"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "61"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5051"
+        },
+        "nextQuestId": "Q-AC-018"
+      },
+      {
+        "id": "Q-AC-018",
+        "group": "achievement",
+        "sequence": 52,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "152"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1052"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "62"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5052"
+        },
+        "nextQuestId": "Q-AC-019"
+      },
+      {
+        "id": "Q-AC-019",
+        "group": "achievement",
+        "sequence": 53,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "153"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1053"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "63"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5053"
+        },
+        "nextQuestId": "Q-AC-020"
+      },
+      {
+        "id": "Q-AC-020",
+        "group": "achievement",
+        "sequence": 54,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "154"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1054"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "64"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5054"
+        },
+        "nextQuestId": "Q-AC-021"
+      },
+      {
+        "id": "Q-AC-021",
+        "group": "achievement",
+        "sequence": 55,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "155"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1055"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "65"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5055"
+        },
+        "nextQuestId": "Q-AC-022"
+      },
+      {
+        "id": "Q-AC-022",
+        "group": "achievement",
+        "sequence": 56,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "156"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1056"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "66"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5056"
+        },
+        "nextQuestId": "Q-AC-023"
+      },
+      {
+        "id": "Q-AC-023",
+        "group": "achievement",
+        "sequence": 57,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "157"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1057"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "67"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5057"
+        },
+        "nextQuestId": "Q-AC-024"
+      },
+      {
+        "id": "Q-AC-024",
+        "group": "achievement",
+        "sequence": 58,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "158"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1058"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "68"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5058"
+        },
+        "nextQuestId": "Q-AC-025"
+      },
+      {
+        "id": "Q-AC-025",
+        "group": "achievement",
+        "sequence": 59,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "159"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1059"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "69"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5059"
+        },
+        "nextQuestId": "Q-AC-026"
+      },
+      {
+        "id": "Q-AC-026",
+        "group": "achievement",
+        "sequence": 60,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "160"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1060"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "70"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5060"
+        },
+        "nextQuestId": "Q-AC-027"
+      },
+      {
+        "id": "Q-AC-027",
+        "group": "achievement",
+        "sequence": 61,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "161"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1061"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "71"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5061"
+        },
+        "nextQuestId": "Q-AC-028"
+      },
+      {
+        "id": "Q-AC-028",
+        "group": "achievement",
+        "sequence": 62,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "162"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1062"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "72"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5062"
+        },
+        "nextQuestId": "Q-AC-029"
+      },
+      {
+        "id": "Q-AC-029",
+        "group": "achievement",
+        "sequence": 63,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "163"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1063"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "73"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5063"
+        },
+        "nextQuestId": "Q-AC-030"
+      },
+      {
+        "id": "Q-AC-030",
+        "group": "achievement",
+        "sequence": 64,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "164"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1064"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "74"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5064"
+        },
+        "nextQuestId": "Q-AC-031"
+      },
+      {
+        "id": "Q-AC-031",
+        "group": "achievement",
+        "sequence": 65,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "165"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1065"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "75"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5065"
+        },
+        "nextQuestId": "Q-AC-032"
+      },
+      {
+        "id": "Q-AC-032",
+        "group": "achievement",
+        "sequence": 66,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "166"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1066"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "76"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5066"
+        },
+        "nextQuestId": "Q-AC-033"
+      },
+      {
+        "id": "Q-AC-033",
+        "group": "achievement",
+        "sequence": 67,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "167"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1067"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "77"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5067"
+        },
+        "nextQuestId": "Q-AC-034"
+      },
+      {
+        "id": "Q-AC-034",
+        "group": "achievement",
+        "sequence": 68,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "168"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1068"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "78"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5068"
+        },
+        "nextQuestId": "Q-AC-035"
+      },
+      {
+        "id": "Q-AC-035",
+        "group": "achievement",
+        "sequence": 69,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "169"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1069"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "79"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5069"
+        },
+        "nextQuestId": "Q-AC-036"
+      },
+      {
+        "id": "Q-AC-036",
+        "group": "achievement",
+        "sequence": 70,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "170"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1070"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "80"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5070"
+        },
+        "nextQuestId": "Q-AC-037"
+      },
+      {
+        "id": "Q-AC-037",
+        "group": "achievement",
+        "sequence": 71,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "171"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1071"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "81"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5071"
+        },
+        "nextQuestId": "Q-AC-038"
+      },
+      {
+        "id": "Q-AC-038",
+        "group": "achievement",
+        "sequence": 72,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "172"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1072"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "82"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5072"
+        },
+        "nextQuestId": "Q-AC-039"
+      },
+      {
+        "id": "Q-AC-039",
+        "group": "achievement",
+        "sequence": 73,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "173"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1073"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "83"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5073"
+        },
+        "nextQuestId": "Q-AC-040"
+      },
+      {
+        "id": "Q-AC-040",
+        "group": "achievement",
+        "sequence": 74,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "174"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1074"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "84"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5074"
+        },
+        "nextQuestId": null
+      }
+    ],
+    "tutorial": [
+      {
+        "id": "Q-TU-001",
+        "group": "tutorial",
+        "sequence": 75,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "175"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1075"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "85"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5075"
+        },
+        "nextQuestId": "Q-TU-002"
+      },
+      {
+        "id": "Q-TU-002",
+        "group": "tutorial",
+        "sequence": 76,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "176"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1076"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "86"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5076"
+        },
+        "nextQuestId": "Q-TU-003"
+      },
+      {
+        "id": "Q-TU-003",
+        "group": "tutorial",
+        "sequence": 77,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "177"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1077"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "87"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5077"
+        },
+        "nextQuestId": "Q-TU-004"
+      },
+      {
+        "id": "Q-TU-004",
+        "group": "tutorial",
+        "sequence": 78,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "178"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1078"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "88"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5078"
+        },
+        "nextQuestId": "Q-TU-005"
+      },
+      {
+        "id": "Q-TU-005",
+        "group": "tutorial",
+        "sequence": 79,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "179"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1079"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "89"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5079"
+        },
+        "nextQuestId": "Q-TU-006"
+      },
+      {
+        "id": "Q-TU-006",
+        "group": "tutorial",
+        "sequence": 80,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "180"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1080"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "90"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5080"
+        },
+        "nextQuestId": "Q-TU-007"
+      },
+      {
+        "id": "Q-TU-007",
+        "group": "tutorial",
+        "sequence": 81,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "181"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1081"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "91"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5081"
+        },
+        "nextQuestId": "Q-TU-008"
+      },
+      {
+        "id": "Q-TU-008",
+        "group": "tutorial",
+        "sequence": 82,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "182"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1082"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "92"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5082"
+        },
+        "nextQuestId": "Q-TU-009"
+      },
+      {
+        "id": "Q-TU-009",
+        "group": "tutorial",
+        "sequence": 83,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "183"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1083"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "93"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5083"
+        },
+        "nextQuestId": "Q-TU-010"
+      },
+      {
+        "id": "Q-TU-010",
+        "group": "tutorial",
+        "sequence": 84,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "184"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1084"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "94"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5084"
+        },
+        "nextQuestId": "Q-TU-011"
+      },
+      {
+        "id": "Q-TU-011",
+        "group": "tutorial",
+        "sequence": 85,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "185"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1085"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "95"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5085"
+        },
+        "nextQuestId": "Q-TU-012"
+      },
+      {
+        "id": "Q-TU-012",
+        "group": "tutorial",
+        "sequence": 86,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "186"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1086"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "96"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5086"
+        },
+        "nextQuestId": "Q-TU-013"
+      },
+      {
+        "id": "Q-TU-013",
+        "group": "tutorial",
+        "sequence": 87,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "187"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1087"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "97"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5087"
+        },
+        "nextQuestId": "Q-TU-014"
+      },
+      {
+        "id": "Q-TU-014",
+        "group": "tutorial",
+        "sequence": 88,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "188"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1088"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "98"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5088"
+        },
+        "nextQuestId": "Q-TU-015"
+      },
+      {
+        "id": "Q-TU-015",
+        "group": "tutorial",
+        "sequence": 89,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "189"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1089"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "99"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5089"
+        },
+        "nextQuestId": "Q-TU-016"
+      },
+      {
+        "id": "Q-TU-016",
+        "group": "tutorial",
+        "sequence": 90,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "190"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1090"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "100"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5090"
+        },
+        "nextQuestId": "Q-TU-017"
+      },
+      {
+        "id": "Q-TU-017",
+        "group": "tutorial",
+        "sequence": 91,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "191"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1091"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "101"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5091"
+        },
+        "nextQuestId": "Q-TU-018"
+      },
+      {
+        "id": "Q-TU-018",
+        "group": "tutorial",
+        "sequence": 92,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "192"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1092"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "102"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5092"
+        },
+        "nextQuestId": "Q-TU-019"
+      },
+      {
+        "id": "Q-TU-019",
+        "group": "tutorial",
+        "sequence": 93,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "193"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1093"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "103"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5093"
+        },
+        "nextQuestId": "Q-TU-020"
+      },
+      {
+        "id": "Q-TU-020",
+        "group": "tutorial",
+        "sequence": 94,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "194"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1094"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "104"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5094"
+        },
+        "nextQuestId": "Q-TU-021"
+      },
+      {
+        "id": "Q-TU-021",
+        "group": "tutorial",
+        "sequence": 95,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "195"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1095"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "105"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5095"
+        },
+        "nextQuestId": "Q-TU-022"
+      },
+      {
+        "id": "Q-TU-022",
+        "group": "tutorial",
+        "sequence": 96,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "196"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1096"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "106"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5096"
+        },
+        "nextQuestId": "Q-TU-023"
+      },
+      {
+        "id": "Q-TU-023",
+        "group": "tutorial",
+        "sequence": 97,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "197"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1097"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "107"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5097"
+        },
+        "nextQuestId": "Q-TU-024"
+      },
+      {
+        "id": "Q-TU-024",
+        "group": "tutorial",
+        "sequence": 98,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "198"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1098"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "108"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5098"
+        },
+        "nextQuestId": "Q-TU-025"
+      },
+      {
+        "id": "Q-TU-025",
+        "group": "tutorial",
+        "sequence": 99,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "199"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1099"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "109"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5099"
+        },
+        "nextQuestId": "Q-TU-026"
+      },
+      {
+        "id": "Q-TU-026",
+        "group": "tutorial",
+        "sequence": 100,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "200"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1100"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "110"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5100"
+        },
+        "nextQuestId": "Q-TU-027"
+      },
+      {
+        "id": "Q-TU-027",
+        "group": "tutorial",
+        "sequence": 101,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "201"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1101"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "111"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5101"
+        },
+        "nextQuestId": "Q-TU-028"
+      },
+      {
+        "id": "Q-TU-028",
+        "group": "tutorial",
+        "sequence": 102,
+        "objective": {
+          "kind": "ClearStage",
+          "targetId": null,
+          "targetAmount": "202"
+        },
+        "reward": {
+          "currencies": [
+            {
+              "currencyId": "BrassCoin",
+              "amount": "1102"
+            },
+            {
+              "currencyId": "MoonShard",
+              "amount": "112"
+            }
+          ],
+          "items": [],
+          "skillCopies": [],
+          "accountExp": "5102"
+        },
+        "nextQuestId": null
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": "SK-001",
+      "phase": "launch",
+      "rarity": "Common",
+      "targetRule": "Nearest",
+      "basePower": "10000",
+      "powerPerLevel": "100",
+      "targetCount": 1,
+      "cooldownMs": 1000,
+      "resourceCost": 10,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1000"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-001",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.001",
+      "localizationKey": "skill.name.001"
+    },
+    {
+      "id": "SK-002",
+      "phase": "launch",
+      "rarity": "Fine",
+      "targetRule": "LowestHp",
+      "basePower": "10001",
+      "powerPerLevel": "101",
+      "targetCount": 2,
+      "cooldownMs": 1010,
+      "resourceCost": 11,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1001"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-002",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.002",
+      "localizationKey": "skill.name.002"
+    },
+    {
+      "id": "SK-003",
+      "phase": "launch",
+      "rarity": "Rare",
+      "targetRule": "AreaAroundTarget",
+      "basePower": "10002",
+      "powerPerLevel": "102",
+      "targetCount": 3,
+      "cooldownMs": 1020,
+      "resourceCost": 12,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1002"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-003",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.003",
+      "localizationKey": "skill.name.003"
+    },
+    {
+      "id": "SK-004",
+      "phase": "launch",
+      "rarity": "Epic",
+      "targetRule": "Self",
+      "basePower": "10003",
+      "powerPerLevel": "103",
+      "targetCount": 1,
+      "cooldownMs": 1030,
+      "resourceCost": 13,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1003"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-004",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.004",
+      "localizationKey": "skill.name.004"
+    },
+    {
+      "id": "SK-005",
+      "phase": "launch",
+      "rarity": "Astral",
+      "targetRule": "Nearest",
+      "basePower": "10004",
+      "powerPerLevel": "104",
+      "targetCount": 2,
+      "cooldownMs": 1040,
+      "resourceCost": 14,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1004"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-005",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.005",
+      "localizationKey": "skill.name.005"
+    },
+    {
+      "id": "SK-006",
+      "phase": "launch",
+      "rarity": "Common",
+      "targetRule": "LowestHp",
+      "basePower": "10005",
+      "powerPerLevel": "105",
+      "targetCount": 3,
+      "cooldownMs": 1050,
+      "resourceCost": 15,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1005"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-006",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.006",
+      "localizationKey": "skill.name.006"
+    },
+    {
+      "id": "SK-007",
+      "phase": "launch",
+      "rarity": "Fine",
+      "targetRule": "AreaAroundTarget",
+      "basePower": "10006",
+      "powerPerLevel": "106",
+      "targetCount": 1,
+      "cooldownMs": 1060,
+      "resourceCost": 16,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1006"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-007",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.007",
+      "localizationKey": "skill.name.007"
+    },
+    {
+      "id": "SK-008",
+      "phase": "launch",
+      "rarity": "Rare",
+      "targetRule": "Self",
+      "basePower": "10007",
+      "powerPerLevel": "107",
+      "targetCount": 2,
+      "cooldownMs": 1070,
+      "resourceCost": 17,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1007"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-008",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.008",
+      "localizationKey": "skill.name.008"
+    },
+    {
+      "id": "SK-009",
+      "phase": "launch",
+      "rarity": "Epic",
+      "targetRule": "Nearest",
+      "basePower": "10008",
+      "powerPerLevel": "108",
+      "targetCount": 3,
+      "cooldownMs": 1080,
+      "resourceCost": 18,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1008"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-009",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.009",
+      "localizationKey": "skill.name.009"
+    },
+    {
+      "id": "SK-010",
+      "phase": "launch",
+      "rarity": "Astral",
+      "targetRule": "LowestHp",
+      "basePower": "10009",
+      "powerPerLevel": "109",
+      "targetCount": 1,
+      "cooldownMs": 1090,
+      "resourceCost": 19,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1009"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-010",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.010",
+      "localizationKey": "skill.name.010"
+    },
+    {
+      "id": "SK-011",
+      "phase": "launch",
+      "rarity": "Common",
+      "targetRule": "AreaAroundTarget",
+      "basePower": "10010",
+      "powerPerLevel": "110",
+      "targetCount": 2,
+      "cooldownMs": 1100,
+      "resourceCost": 20,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1010"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-011",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.011",
+      "localizationKey": "skill.name.011"
+    },
+    {
+      "id": "SK-012",
+      "phase": "launch",
+      "rarity": "Fine",
+      "targetRule": "Self",
+      "basePower": "10011",
+      "powerPerLevel": "111",
+      "targetCount": 3,
+      "cooldownMs": 1110,
+      "resourceCost": 21,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1011"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-012",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.012",
+      "localizationKey": "skill.name.012"
+    },
+    {
+      "id": "SK-013",
+      "phase": "launch",
+      "rarity": "Rare",
+      "targetRule": "Nearest",
+      "basePower": "10012",
+      "powerPerLevel": "112",
+      "targetCount": 1,
+      "cooldownMs": 1120,
+      "resourceCost": 22,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1012"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-013",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.013",
+      "localizationKey": "skill.name.013"
+    },
+    {
+      "id": "SK-014",
+      "phase": "launch",
+      "rarity": "Epic",
+      "targetRule": "LowestHp",
+      "basePower": "10013",
+      "powerPerLevel": "113",
+      "targetCount": 2,
+      "cooldownMs": 1130,
+      "resourceCost": 23,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1013"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-014",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.014",
+      "localizationKey": "skill.name.014"
+    },
+    {
+      "id": "SK-015",
+      "phase": "launch",
+      "rarity": "Astral",
+      "targetRule": "AreaAroundTarget",
+      "basePower": "10014",
+      "powerPerLevel": "114",
+      "targetCount": 3,
+      "cooldownMs": 1140,
+      "resourceCost": 24,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1014"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-015",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.015",
+      "localizationKey": "skill.name.015"
+    },
+    {
+      "id": "SK-016",
+      "phase": "launch",
+      "rarity": "Common",
+      "targetRule": "Self",
+      "basePower": "10015",
+      "powerPerLevel": "115",
+      "targetCount": 1,
+      "cooldownMs": 1150,
+      "resourceCost": 25,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1015"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-016",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.016",
+      "localizationKey": "skill.name.016"
+    },
+    {
+      "id": "SK-017",
+      "phase": "launch",
+      "rarity": "Fine",
+      "targetRule": "Nearest",
+      "basePower": "10016",
+      "powerPerLevel": "116",
+      "targetCount": 2,
+      "cooldownMs": 1160,
+      "resourceCost": 26,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1016"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-017",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.017",
+      "localizationKey": "skill.name.017"
+    },
+    {
+      "id": "SK-018",
+      "phase": "launch",
+      "rarity": "Rare",
+      "targetRule": "LowestHp",
+      "basePower": "10017",
+      "powerPerLevel": "117",
+      "targetCount": 3,
+      "cooldownMs": 1170,
+      "resourceCost": 27,
+      "learnCost": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "1017"
+        }
+      ],
+      "upgradeCostCurveId": "CURVE-SK-018",
+      "unlock": {
+        "kind": "Always"
+      },
+      "visualKey": "skill.visual.018",
+      "localizationKey": "skill.name.018"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "EQ-001",
+      "slot": "Weapon",
+      "rarity": "Common",
+      "tier": 1,
+      "baseStats": {
+        "attack": "1000",
+        "health": "2000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-001",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-002",
+      "visualKey": "equipment.visual.001",
+      "localizationKey": "equipment.name.001"
+    },
+    {
+      "id": "EQ-002",
+      "slot": "Weapon",
+      "rarity": "Common",
+      "tier": 2,
+      "baseStats": {
+        "attack": "2000",
+        "health": "4000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-002",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-003",
+      "visualKey": "equipment.visual.002",
+      "localizationKey": "equipment.name.002"
+    },
+    {
+      "id": "EQ-003",
+      "slot": "Weapon",
+      "rarity": "Common",
+      "tier": 3,
+      "baseStats": {
+        "attack": "3000",
+        "health": "6000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-003",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-004",
+      "visualKey": "equipment.visual.003",
+      "localizationKey": "equipment.name.003"
+    },
+    {
+      "id": "EQ-004",
+      "slot": "Weapon",
+      "rarity": "Common",
+      "tier": 4,
+      "baseStats": {
+        "attack": "4000",
+        "health": "8000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-004",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.004",
+      "localizationKey": "equipment.name.004"
+    },
+    {
+      "id": "EQ-005",
+      "slot": "Weapon",
+      "rarity": "Fine",
+      "tier": 1,
+      "baseStats": {
+        "attack": "5000",
+        "health": "10000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-005",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-006",
+      "visualKey": "equipment.visual.005",
+      "localizationKey": "equipment.name.005"
+    },
+    {
+      "id": "EQ-006",
+      "slot": "Weapon",
+      "rarity": "Fine",
+      "tier": 2,
+      "baseStats": {
+        "attack": "6000",
+        "health": "12000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-006",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-007",
+      "visualKey": "equipment.visual.006",
+      "localizationKey": "equipment.name.006"
+    },
+    {
+      "id": "EQ-007",
+      "slot": "Weapon",
+      "rarity": "Fine",
+      "tier": 3,
+      "baseStats": {
+        "attack": "7000",
+        "health": "14000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-007",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-008",
+      "visualKey": "equipment.visual.007",
+      "localizationKey": "equipment.name.007"
+    },
+    {
+      "id": "EQ-008",
+      "slot": "Weapon",
+      "rarity": "Fine",
+      "tier": 4,
+      "baseStats": {
+        "attack": "8000",
+        "health": "16000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-008",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.008",
+      "localizationKey": "equipment.name.008"
+    },
+    {
+      "id": "EQ-009",
+      "slot": "Weapon",
+      "rarity": "Rare",
+      "tier": 1,
+      "baseStats": {
+        "attack": "9000",
+        "health": "18000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-009",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-010",
+      "visualKey": "equipment.visual.009",
+      "localizationKey": "equipment.name.009"
+    },
+    {
+      "id": "EQ-010",
+      "slot": "Weapon",
+      "rarity": "Rare",
+      "tier": 2,
+      "baseStats": {
+        "attack": "10000",
+        "health": "20000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-010",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-011",
+      "visualKey": "equipment.visual.010",
+      "localizationKey": "equipment.name.010"
+    },
+    {
+      "id": "EQ-011",
+      "slot": "Weapon",
+      "rarity": "Rare",
+      "tier": 3,
+      "baseStats": {
+        "attack": "11000",
+        "health": "22000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-011",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-012",
+      "visualKey": "equipment.visual.011",
+      "localizationKey": "equipment.name.011"
+    },
+    {
+      "id": "EQ-012",
+      "slot": "Weapon",
+      "rarity": "Rare",
+      "tier": 4,
+      "baseStats": {
+        "attack": "12000",
+        "health": "24000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-012",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.012",
+      "localizationKey": "equipment.name.012"
+    },
+    {
+      "id": "EQ-013",
+      "slot": "Weapon",
+      "rarity": "Epic",
+      "tier": 1,
+      "baseStats": {
+        "attack": "13000",
+        "health": "26000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-013",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-014",
+      "visualKey": "equipment.visual.013",
+      "localizationKey": "equipment.name.013"
+    },
+    {
+      "id": "EQ-014",
+      "slot": "Weapon",
+      "rarity": "Epic",
+      "tier": 2,
+      "baseStats": {
+        "attack": "14000",
+        "health": "28000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-014",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-015",
+      "visualKey": "equipment.visual.014",
+      "localizationKey": "equipment.name.014"
+    },
+    {
+      "id": "EQ-015",
+      "slot": "Weapon",
+      "rarity": "Epic",
+      "tier": 3,
+      "baseStats": {
+        "attack": "15000",
+        "health": "30000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-015",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-016",
+      "visualKey": "equipment.visual.015",
+      "localizationKey": "equipment.name.015"
+    },
+    {
+      "id": "EQ-016",
+      "slot": "Weapon",
+      "rarity": "Epic",
+      "tier": 4,
+      "baseStats": {
+        "attack": "16000",
+        "health": "32000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-016",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.016",
+      "localizationKey": "equipment.name.016"
+    },
+    {
+      "id": "EQ-017",
+      "slot": "Weapon",
+      "rarity": "Astral",
+      "tier": 1,
+      "baseStats": {
+        "attack": "17000",
+        "health": "34000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-017",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-018",
+      "visualKey": "equipment.visual.017",
+      "localizationKey": "equipment.name.017"
+    },
+    {
+      "id": "EQ-018",
+      "slot": "Weapon",
+      "rarity": "Astral",
+      "tier": 2,
+      "baseStats": {
+        "attack": "18000",
+        "health": "36000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-018",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-019",
+      "visualKey": "equipment.visual.018",
+      "localizationKey": "equipment.name.018"
+    },
+    {
+      "id": "EQ-019",
+      "slot": "Weapon",
+      "rarity": "Astral",
+      "tier": 3,
+      "baseStats": {
+        "attack": "19000",
+        "health": "38000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-019",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-020",
+      "visualKey": "equipment.visual.019",
+      "localizationKey": "equipment.name.019"
+    },
+    {
+      "id": "EQ-020",
+      "slot": "Weapon",
+      "rarity": "Astral",
+      "tier": 4,
+      "baseStats": {
+        "attack": "20000",
+        "health": "40000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-020",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.020",
+      "localizationKey": "equipment.name.020"
+    },
+    {
+      "id": "EQ-021",
+      "slot": "Charm",
+      "rarity": "Common",
+      "tier": 1,
+      "baseStats": {
+        "attack": "21000",
+        "health": "42000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-021",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-022",
+      "visualKey": "equipment.visual.021",
+      "localizationKey": "equipment.name.021"
+    },
+    {
+      "id": "EQ-022",
+      "slot": "Charm",
+      "rarity": "Common",
+      "tier": 2,
+      "baseStats": {
+        "attack": "22000",
+        "health": "44000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-022",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-023",
+      "visualKey": "equipment.visual.022",
+      "localizationKey": "equipment.name.022"
+    },
+    {
+      "id": "EQ-023",
+      "slot": "Charm",
+      "rarity": "Common",
+      "tier": 3,
+      "baseStats": {
+        "attack": "23000",
+        "health": "46000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-023",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-024",
+      "visualKey": "equipment.visual.023",
+      "localizationKey": "equipment.name.023"
+    },
+    {
+      "id": "EQ-024",
+      "slot": "Charm",
+      "rarity": "Common",
+      "tier": 4,
+      "baseStats": {
+        "attack": "24000",
+        "health": "48000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-024",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.024",
+      "localizationKey": "equipment.name.024"
+    },
+    {
+      "id": "EQ-025",
+      "slot": "Charm",
+      "rarity": "Fine",
+      "tier": 1,
+      "baseStats": {
+        "attack": "25000",
+        "health": "50000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-025",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-026",
+      "visualKey": "equipment.visual.025",
+      "localizationKey": "equipment.name.025"
+    },
+    {
+      "id": "EQ-026",
+      "slot": "Charm",
+      "rarity": "Fine",
+      "tier": 2,
+      "baseStats": {
+        "attack": "26000",
+        "health": "52000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-026",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-027",
+      "visualKey": "equipment.visual.026",
+      "localizationKey": "equipment.name.026"
+    },
+    {
+      "id": "EQ-027",
+      "slot": "Charm",
+      "rarity": "Fine",
+      "tier": 3,
+      "baseStats": {
+        "attack": "27000",
+        "health": "54000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-027",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-028",
+      "visualKey": "equipment.visual.027",
+      "localizationKey": "equipment.name.027"
+    },
+    {
+      "id": "EQ-028",
+      "slot": "Charm",
+      "rarity": "Fine",
+      "tier": 4,
+      "baseStats": {
+        "attack": "28000",
+        "health": "56000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-028",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.028",
+      "localizationKey": "equipment.name.028"
+    },
+    {
+      "id": "EQ-029",
+      "slot": "Charm",
+      "rarity": "Rare",
+      "tier": 1,
+      "baseStats": {
+        "attack": "29000",
+        "health": "58000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-029",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-030",
+      "visualKey": "equipment.visual.029",
+      "localizationKey": "equipment.name.029"
+    },
+    {
+      "id": "EQ-030",
+      "slot": "Charm",
+      "rarity": "Rare",
+      "tier": 2,
+      "baseStats": {
+        "attack": "30000",
+        "health": "60000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-030",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-031",
+      "visualKey": "equipment.visual.030",
+      "localizationKey": "equipment.name.030"
+    },
+    {
+      "id": "EQ-031",
+      "slot": "Charm",
+      "rarity": "Rare",
+      "tier": 3,
+      "baseStats": {
+        "attack": "31000",
+        "health": "62000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-031",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-032",
+      "visualKey": "equipment.visual.031",
+      "localizationKey": "equipment.name.031"
+    },
+    {
+      "id": "EQ-032",
+      "slot": "Charm",
+      "rarity": "Rare",
+      "tier": 4,
+      "baseStats": {
+        "attack": "32000",
+        "health": "64000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-032",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.032",
+      "localizationKey": "equipment.name.032"
+    },
+    {
+      "id": "EQ-033",
+      "slot": "Charm",
+      "rarity": "Epic",
+      "tier": 1,
+      "baseStats": {
+        "attack": "33000",
+        "health": "66000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-033",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-034",
+      "visualKey": "equipment.visual.033",
+      "localizationKey": "equipment.name.033"
+    },
+    {
+      "id": "EQ-034",
+      "slot": "Charm",
+      "rarity": "Epic",
+      "tier": 2,
+      "baseStats": {
+        "attack": "34000",
+        "health": "68000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-034",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-035",
+      "visualKey": "equipment.visual.034",
+      "localizationKey": "equipment.name.034"
+    },
+    {
+      "id": "EQ-035",
+      "slot": "Charm",
+      "rarity": "Epic",
+      "tier": 3,
+      "baseStats": {
+        "attack": "35000",
+        "health": "70000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-035",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-036",
+      "visualKey": "equipment.visual.035",
+      "localizationKey": "equipment.name.035"
+    },
+    {
+      "id": "EQ-036",
+      "slot": "Charm",
+      "rarity": "Epic",
+      "tier": 4,
+      "baseStats": {
+        "attack": "36000",
+        "health": "72000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-036",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.036",
+      "localizationKey": "equipment.name.036"
+    },
+    {
+      "id": "EQ-037",
+      "slot": "Charm",
+      "rarity": "Astral",
+      "tier": 1,
+      "baseStats": {
+        "attack": "37000",
+        "health": "74000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-037",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-038",
+      "visualKey": "equipment.visual.037",
+      "localizationKey": "equipment.name.037"
+    },
+    {
+      "id": "EQ-038",
+      "slot": "Charm",
+      "rarity": "Astral",
+      "tier": 2,
+      "baseStats": {
+        "attack": "38000",
+        "health": "76000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-038",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-039",
+      "visualKey": "equipment.visual.038",
+      "localizationKey": "equipment.name.038"
+    },
+    {
+      "id": "EQ-039",
+      "slot": "Charm",
+      "rarity": "Astral",
+      "tier": 3,
+      "baseStats": {
+        "attack": "39000",
+        "health": "78000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-039",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-040",
+      "visualKey": "equipment.visual.039",
+      "localizationKey": "equipment.name.039"
+    },
+    {
+      "id": "EQ-040",
+      "slot": "Charm",
+      "rarity": "Astral",
+      "tier": 4,
+      "baseStats": {
+        "attack": "40000",
+        "health": "80000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-040",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.040",
+      "localizationKey": "equipment.name.040"
+    },
+    {
+      "id": "EQ-041",
+      "slot": "Tool",
+      "rarity": "Common",
+      "tier": 1,
+      "baseStats": {
+        "attack": "41000",
+        "health": "82000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-041",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-042",
+      "visualKey": "equipment.visual.041",
+      "localizationKey": "equipment.name.041"
+    },
+    {
+      "id": "EQ-042",
+      "slot": "Tool",
+      "rarity": "Common",
+      "tier": 2,
+      "baseStats": {
+        "attack": "42000",
+        "health": "84000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-042",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-043",
+      "visualKey": "equipment.visual.042",
+      "localizationKey": "equipment.name.042"
+    },
+    {
+      "id": "EQ-043",
+      "slot": "Tool",
+      "rarity": "Common",
+      "tier": 3,
+      "baseStats": {
+        "attack": "43000",
+        "health": "86000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-043",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-044",
+      "visualKey": "equipment.visual.043",
+      "localizationKey": "equipment.name.043"
+    },
+    {
+      "id": "EQ-044",
+      "slot": "Tool",
+      "rarity": "Common",
+      "tier": 4,
+      "baseStats": {
+        "attack": "44000",
+        "health": "88000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-044",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.044",
+      "localizationKey": "equipment.name.044"
+    },
+    {
+      "id": "EQ-045",
+      "slot": "Tool",
+      "rarity": "Fine",
+      "tier": 1,
+      "baseStats": {
+        "attack": "45000",
+        "health": "90000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-045",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-046",
+      "visualKey": "equipment.visual.045",
+      "localizationKey": "equipment.name.045"
+    },
+    {
+      "id": "EQ-046",
+      "slot": "Tool",
+      "rarity": "Fine",
+      "tier": 2,
+      "baseStats": {
+        "attack": "46000",
+        "health": "92000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-046",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-047",
+      "visualKey": "equipment.visual.046",
+      "localizationKey": "equipment.name.046"
+    },
+    {
+      "id": "EQ-047",
+      "slot": "Tool",
+      "rarity": "Fine",
+      "tier": 3,
+      "baseStats": {
+        "attack": "47000",
+        "health": "94000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-047",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-048",
+      "visualKey": "equipment.visual.047",
+      "localizationKey": "equipment.name.047"
+    },
+    {
+      "id": "EQ-048",
+      "slot": "Tool",
+      "rarity": "Fine",
+      "tier": 4,
+      "baseStats": {
+        "attack": "48000",
+        "health": "96000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-048",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.048",
+      "localizationKey": "equipment.name.048"
+    },
+    {
+      "id": "EQ-049",
+      "slot": "Tool",
+      "rarity": "Rare",
+      "tier": 1,
+      "baseStats": {
+        "attack": "49000",
+        "health": "98000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-049",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-050",
+      "visualKey": "equipment.visual.049",
+      "localizationKey": "equipment.name.049"
+    },
+    {
+      "id": "EQ-050",
+      "slot": "Tool",
+      "rarity": "Rare",
+      "tier": 2,
+      "baseStats": {
+        "attack": "50000",
+        "health": "100000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-050",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-051",
+      "visualKey": "equipment.visual.050",
+      "localizationKey": "equipment.name.050"
+    },
+    {
+      "id": "EQ-051",
+      "slot": "Tool",
+      "rarity": "Rare",
+      "tier": 3,
+      "baseStats": {
+        "attack": "51000",
+        "health": "102000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-051",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-052",
+      "visualKey": "equipment.visual.051",
+      "localizationKey": "equipment.name.051"
+    },
+    {
+      "id": "EQ-052",
+      "slot": "Tool",
+      "rarity": "Rare",
+      "tier": 4,
+      "baseStats": {
+        "attack": "52000",
+        "health": "104000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-052",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.052",
+      "localizationKey": "equipment.name.052"
+    },
+    {
+      "id": "EQ-053",
+      "slot": "Tool",
+      "rarity": "Epic",
+      "tier": 1,
+      "baseStats": {
+        "attack": "53000",
+        "health": "106000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-053",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-054",
+      "visualKey": "equipment.visual.053",
+      "localizationKey": "equipment.name.053"
+    },
+    {
+      "id": "EQ-054",
+      "slot": "Tool",
+      "rarity": "Epic",
+      "tier": 2,
+      "baseStats": {
+        "attack": "54000",
+        "health": "108000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-054",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-055",
+      "visualKey": "equipment.visual.054",
+      "localizationKey": "equipment.name.054"
+    },
+    {
+      "id": "EQ-055",
+      "slot": "Tool",
+      "rarity": "Epic",
+      "tier": 3,
+      "baseStats": {
+        "attack": "55000",
+        "health": "110000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-055",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-056",
+      "visualKey": "equipment.visual.055",
+      "localizationKey": "equipment.name.055"
+    },
+    {
+      "id": "EQ-056",
+      "slot": "Tool",
+      "rarity": "Epic",
+      "tier": 4,
+      "baseStats": {
+        "attack": "56000",
+        "health": "112000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-056",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.056",
+      "localizationKey": "equipment.name.056"
+    },
+    {
+      "id": "EQ-057",
+      "slot": "Tool",
+      "rarity": "Astral",
+      "tier": 1,
+      "baseStats": {
+        "attack": "57000",
+        "health": "114000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-057",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-058",
+      "visualKey": "equipment.visual.057",
+      "localizationKey": "equipment.name.057"
+    },
+    {
+      "id": "EQ-058",
+      "slot": "Tool",
+      "rarity": "Astral",
+      "tier": 2,
+      "baseStats": {
+        "attack": "58000",
+        "health": "116000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-058",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-059",
+      "visualKey": "equipment.visual.058",
+      "localizationKey": "equipment.name.058"
+    },
+    {
+      "id": "EQ-059",
+      "slot": "Tool",
+      "rarity": "Astral",
+      "tier": 3,
+      "baseStats": {
+        "attack": "59000",
+        "health": "118000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-059",
+      "fuseInputCount": 3,
+      "fuseOutputId": "EQ-060",
+      "visualKey": "equipment.visual.059",
+      "localizationKey": "equipment.name.059"
+    },
+    {
+      "id": "EQ-060",
+      "slot": "Tool",
+      "rarity": "Astral",
+      "tier": 4,
+      "baseStats": {
+        "attack": "60000",
+        "health": "120000"
+      },
+      "statGrowthCurveId": "CURVE-EQ-060",
+      "fuseInputCount": 3,
+      "fuseOutputId": null,
+      "visualKey": "equipment.visual.060",
+      "localizationKey": "equipment.name.060"
+    }
+  ],
+  "summonPools": [
+    {
+      "id": "POOL-01",
+      "version": 1,
+      "startsAt": "1711929600000",
+      "endsAt": null,
+      "costOne": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "100"
+        }
+      ],
+      "costTen": [
+        {
+          "currencyId": "BrassCoin",
+          "amount": "900"
+        }
+      ],
+      "entries": [
+        {
+          "equipmentId": "EQ-001",
+          "weight": "1010"
+        },
+        {
+          "equipmentId": "EQ-002",
+          "weight": "1020"
+        },
+        {
+          "equipmentId": "EQ-003",
+          "weight": "1030"
+        },
+        {
+          "equipmentId": "EQ-004",
+          "weight": "1040"
+        },
+        {
+          "equipmentId": "EQ-005",
+          "weight": "1050"
+        },
+        {
+          "equipmentId": "EQ-006",
+          "weight": "1060"
+        },
+        {
+          "equipmentId": "EQ-007",
+          "weight": "1070"
+        },
+        {
+          "equipmentId": "EQ-008",
+          "weight": "1080"
+        },
+        {
+          "equipmentId": "EQ-009",
+          "weight": "1090"
+        },
+        {
+          "equipmentId": "EQ-010",
+          "weight": "1100"
+        }
+      ],
+      "guaranteedRarityOnTen": "Rare",
+      "pityAt": 60,
+      "pityRarity": "Epic",
+      "duplicateConversion": {
+        "Common": 1,
+        "Fine": 2,
+        "Rare": 3,
+        "Epic": 4,
+        "Astral": 5
+      },
+      "validationSecret": "server-only-weight-secret"
+    }
+  ],
+  "storeProducts": [
+    {
+      "id": "PROD-01",
+      "kind": "FreeDaily",
+      "storeProductId": null,
+      "priceCurrency": null,
+      "priceAmount": null,
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1001"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "11"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5001"
+      },
+      "dailyLimit": 1,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-02",
+      "kind": "RewardedAd",
+      "storeProductId": null,
+      "priceCurrency": null,
+      "priceAmount": null,
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1002"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "12"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5002"
+      },
+      "dailyLimit": 1,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-03",
+      "kind": "RewardedAd",
+      "storeProductId": null,
+      "priceCurrency": null,
+      "priceAmount": null,
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1003"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "13"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5003"
+      },
+      "dailyLimit": 1,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-04",
+      "kind": "SoftCurrency",
+      "storeProductId": null,
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "4000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1004"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "14"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5004"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-05",
+      "kind": "SoftCurrency",
+      "storeProductId": null,
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "5000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1005"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "15"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5005"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-06",
+      "kind": "SoftCurrency",
+      "storeProductId": null,
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "6000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1006"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "16"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5006"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-07",
+      "kind": "SoftCurrency",
+      "storeProductId": null,
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "7000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1007"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "17"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5007"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-08",
+      "kind": "IapConsumable",
+      "storeProductId": "store.prod.08",
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "8000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1008"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "18"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5008"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    },
+    {
+      "id": "PROD-09",
+      "kind": "IapNonConsumable",
+      "storeProductId": "store.prod.09",
+      "priceCurrency": "BrassCoin",
+      "priceAmount": "9000",
+      "reward": {
+        "currencies": [
+          {
+            "currencyId": "BrassCoin",
+            "amount": "1009"
+          },
+          {
+            "currencyId": "MoonShard",
+            "amount": "19"
+          }
+        ],
+        "items": [],
+        "skillCopies": [],
+        "accountExp": "5009"
+      },
+      "dailyLimit": null,
+      "startsAt": null,
+      "endsAt": null,
+      "eligibilityRule": {
+        "kind": "Always"
+      }
+    }
+  ],
+  "promotions": [
+    {
+      "id": "PROMO-01",
+      "kind": "launch",
+      "componentId": "RC-COMP-01",
+      "startsAt": "17119296010000",
+      "endsAt": null
+    },
+    {
+      "id": "PROMO-02",
+      "kind": "launch",
+      "componentId": "RC-COMP-02",
+      "startsAt": "17119296020000",
+      "endsAt": null
+    },
+    {
+      "id": "PROMO-03",
+      "kind": "launch",
+      "componentId": "RC-COMP-03",
+      "startsAt": "17119296030000",
+      "endsAt": null
+    },
+    {
+      "id": "PROMO-04",
+      "kind": "launch",
+      "componentId": "RC-COMP-04",
+      "startsAt": "17119296040000",
+      "endsAt": null
+    },
+    {
+      "id": "PROMO-05",
+      "kind": "launch",
+      "componentId": "RC-COMP-05",
+      "startsAt": "17119296050000",
+      "endsAt": null
+    },
+    {
+      "id": "PROMO-06",
+      "kind": "scheduled",
+      "componentId": "RC-COMP-06",
+      "startsAt": "17119296060000",
+      "endsAt": null
+    }
+  ],
+  "localeCatalogs": [
+    {
+      "locale": "ko",
+      "keyCount": 2,
+      "keys": [
+        "ui.title",
+        "ui.start"
+      ]
+    },
+    {
+      "locale": "en",
+      "keyCount": 2,
+      "keys": [
+        "ui.title",
+        "ui.start"
+      ]
+    },
+    {
+      "locale": "ja",
+      "keyCount": 2,
+      "keys": [
+        "ui.title",
+        "ui.start"
+      ]
+    },
+    {
+      "locale": "zh-CN",
+      "keyCount": 2,
+      "keys": [
+        "ui.title",
+        "ui.start"
+      ]
+    },
+    {
+      "locale": "zh-TW",
+      "keyCount": 2,
+      "keys": [
+        "ui.title",
+        "ui.start"
+      ]
+    }
+  ],
+  "manifests": [
+    {
+      "id": "MAN-launch-01",
+      "bundle": "core_ui",
+      "sizeBytes": 1024,
+      "dependencies": [],
+      "minAppBuild": "1.0.0"
+    },
+    {
+      "id": "MAN-launch-02",
+      "bundle": "region_01",
+      "sha256": "78b1f67da5a793a6325c4902f394c49c0b6643c202de15c5940b0cbd88a080c0",
+      "sizeBytes": 2048,
+      "dependencies": [
+        "core_ui"
+      ],
+      "minAppBuild": "1.0.0"
+    },
+    {
+      "id": "MAN-launch-03",
+      "bundle": "hero_base",
+      "sha256": "71c48f24cd556963e41e6e5ddfa6c5d9c152fb33c2dabeb601b682a22ac45793",
+      "sizeBytes": 3072,
+      "dependencies": [
+        "core_ui"
+      ],
+      "minAppBuild": "1.0.0"
+    },
+    {
+      "id": "MAN-launch-04",
+      "bundle": "region_02_03",
+      "sha256": "0b988030f1003cb0123d2085fda1b4cc1843ec38be2e608e73635e3b26b7c9a7",
+      "sizeBytes": 4096,
+      "dependencies": [
+        "core_ui",
+        "region_01"
+      ],
+      "minAppBuild": "1.0.0"
+    },
+    {
+      "id": "MAN-launch-05",
+      "bundle": "cosmetic_optional",
+      "sha256": "93af7b4327f48f1347158d32d502253df22ad71d68501438c40e537f431070f2",
+      "sizeBytes": 5120,
+      "dependencies": [
+        "core_ui"
+      ],
+      "minAppBuild": "1.0.0"
+    },
+    {
+      "id": "MAN-launch-06",
+      "bundle": "voice_optional",
+      "sha256": "99de13355a7abeb1251f7f7ff0166c79bbb669d21f403ff00c725348ac56f6a1",
+      "sizeBytes": 6144,
+      "dependencies": [
+        "core_ui"
+      ],
+      "minAppBuild": "1.0.0"
+    }
+  ],
+  "releaseCandidates": [
+    {
+      "id": "RC-launch-01",
+      "kind": "schemas",
+      "componentId": "MAN-launch-01",
+      "sourceHash": "f2e0ee353853b25967897a20598e1e770328a611eb78c227054eedd770abb24c",
+      "artifactHash": "8429264e91fb73bb526ac8f6c735cf511ee3373ead1d83b5718ff44c9a833e95"
+    },
+    {
+      "id": "RC-launch-02",
+      "kind": "client",
+      "componentId": "MAN-launch-02",
+      "sourceHash": "0fc226f19e88c6bc94f3928161b170a945703c85271b697dccfc4a89af6d5938",
+      "artifactHash": "d4b9035953c46fa7f4389eb0adf0b23393ba52772643805526606a552cf43e08"
+    },
+    {
+      "id": "RC-launch-03",
+      "kind": "server",
+      "componentId": "MAN-launch-03",
+      "sourceHash": "2354e7030a539702ea9434b4a4e9aeaeee79db3c2a56d90331e7ed643a5d2aae",
+      "artifactHash": "afe573a2f1b8a5cb4b165a6cf30ed6539c95387974cafa4f0181caade9a9f9ab"
+    },
+    {
+      "id": "RC-launch-04",
+      "kind": "public-odds",
+      "componentId": "MAN-launch-04",
+      "sourceHash": "49b57b54df36a573b3d092d346100f65dbc8f304eca2f47b25733143b1f735be",
+      "artifactHash": "a3e9298793a3c7a7f62438521cf51b76ec534ff883e57e77a894636383275b4d"
+    },
+    {
+      "id": "RC-launch-05",
+      "kind": "typescript-models",
+      "componentId": "MAN-launch-05",
+      "sourceHash": "e14563be0d7489985dfc9b35f0c9097f4ae5e731a09ddae04779ecaaba09f6d7",
+      "artifactHash": "5a75858aa886b6bd37d6f42c01d2022dbcc3b27b33b1ec9ba336843bcd62f043"
+    },
+    {
+      "id": "RC-launch-06",
+      "kind": "csharp-models",
+      "componentId": "MAN-launch-06",
+      "sourceHash": "21aa8aa69d0156759f699008df924ee8d62dd87208d9f811be51e7e81312c33f",
+      "artifactHash": "e08b7216eee62740034221e8f08546528e4a3717f3985f86cbbcbaf37d1b4051"
+    }
+  ],
+  "ownership": {
+    "requirements": [
+      "R-IIHNMM",
+      "R-FXPTCH",
+      "R-PCGQUK",
+      "R-GBZSDW",
+      "R-QYFYBC",
+      "NR-LOCAL-A11Y"
+    ],
+    "featureCount": 18,
+    "specCount": 55,
+    "features": [
+      "F-THXTSZ",
+      "F-ACWSGP",
+      "F-PBSUSF",
+      "F-HWZUUP",
+      "F-GXOCUU",
+      "F-WCYUBV",
+      "F-MPWRJX",
+      "F-QBEEMX",
+      "F-KZWEOI",
+      "F-DXKNLU",
+      "F-HMVZDT",
+      "F-TIQUNR",
+      "F-NHEIDC",
+      "F-CGHLJL",
+      "NF-PLAYER-LIVEOPS",
+      "NF-LOCALE",
+      "NF-A11Y-POWER",
+      "NF-RESPONSIVE-UI"
+    ],
+    "specs": [
+      "S-LVWHIB",
+      "NS-SESSION-RECONNECT",
+      "S-TGKDXL",
+      "S-RVSTQT",
+      "S-XJSOJJ",
+      "NS-WEB-DELETE",
+      "S-YFLBRX",
+      "NS-AUTO-FARM",
+      "S-VLJARV",
+      "S-LXSNDL",
+      "NS-DAILY-WEEKLY",
+      "NS-ACHIEVEMENT",
+      "NS-ATTENDANCE",
+      "S-TWOQHT",
+      "NS-RESEARCH",
+      "NS-PROMOTION",
+      "S-LPEJNI",
+      "NS-SKILL-UPGRADE",
+      "NS-SKILL-LOADOUT",
+      "NS-SKILL-AUTO",
+      "S-XANCZD",
+      "NS-EQUIP-LOCK",
+      "NS-EQUIP-UPGRADE",
+      "NS-EQUIP-FUSION",
+      "S-AOQYYC",
+      "NS-DRAW-TEN",
+      "NS-DRAW-ODDS",
+      "NS-DRAW-RECOVERY",
+      "S-UHNSOK",
+      "NS-CELL-PROGRESS",
+      "S-AJNKBZ",
+      "NS-CONTENT-ROLLBACK",
+      "NS-SCHEDULED-UNLOCK",
+      "S-IRLFRY",
+      "S-OJRSXR",
+      "NS-IAP-RECOVERY",
+      "NS-IAP-REFUND",
+      "NS-STORE-DAILY",
+      "S-AJLBYA",
+      "NS-MAIL-PUBLISH",
+      "NS-MAINTENANCE",
+      "S-AHBKUR",
+      "NS-ATTENDANCE-GATE",
+      "NS-SEASON-GATE",
+      "S-MXZRCE",
+      "S-BSTFCP",
+      "NS-COST-ALERT",
+      "NS-NOTICE-VIEW",
+      "NS-EVENT-PARTICIPATE",
+      "NS-MAIL-CLAIM",
+      "NS-LOCALE-SELECT",
+      "NS-LOCALE-RENDER",
+      "NS-A11Y-SETTINGS",
+      "NS-POWER-SAVE",
+      "NS-SAFEAREA-PANEL"
+    ]
+  }
+}

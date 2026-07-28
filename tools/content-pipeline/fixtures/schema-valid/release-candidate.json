@@ -1,0 +1,9 @@
+[
+  {
+    "id": "RC-valid-01",
+    "kind": "schemas",
+    "componentId": "MAN-valid-01",
+    "sourceHash": "f2e0ee353853b25967897a20598e1e770328a611eb78c227054eedd770abb24c",
+    "artifactHash": "8429264e91fb73bb526ac8f6c735cf511ee3373ead1d83b5718ff44c9a833e95"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "commandId": "cmd-001",
+  "stateVersion": "2",
+  "serverTime": "1711929600000",
+  "walletDelta": [
+    {
+      "currencyId": "BrassCoin",
+      "amount": "1"
+    }
+  ],
+  "payload": {
+    "ok": true
+  },
+  "snapshotRequired": false
+}

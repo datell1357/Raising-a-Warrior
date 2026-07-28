@@ -1,0 +1,10 @@
+[
+  {
+    "id": "MAN-valid-01",
+    "bundle": "core_ui",
+    "sha256": "74c2858f555613a536c507c7a9d52cb8f891d4ac1c58d207d697b879e67f38eb",
+    "sizeBytes": 1024,
+    "dependencies": [],
+    "minAppBuild": "1.0.0"
+  }
+]
