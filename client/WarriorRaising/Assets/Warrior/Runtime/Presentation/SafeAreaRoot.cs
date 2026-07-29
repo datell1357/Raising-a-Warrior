@@ -103,9 +103,17 @@ namespace Warrior.Presentation
                 return 0f;
             }
 
+            using var buildVersion = new AndroidJavaClass("android.os.Build$VERSION");
+            if (buildVersion.GetStatic<int>("SDK_INT") < 30)
+            {
+                return windowInsets.Call<int>("getSystemWindowInsetBottom");
+            }
+
             using var insetType = new AndroidJavaClass("android.view.WindowInsets$Type");
-            var systemGestures = insetType.CallStatic<int>("systemGestures");
-            using var insets = windowInsets.Call<AndroidJavaObject>("getInsets", systemGestures);
+            var bottomTypes =
+                insetType.CallStatic<int>("systemGestures")
+                | insetType.CallStatic<int>("navigationBars");
+            using var insets = windowInsets.Call<AndroidJavaObject>("getInsets", bottomTypes);
             return insets.Get<int>("bottom");
         }
     }

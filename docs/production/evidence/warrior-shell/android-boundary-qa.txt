@@ -1,6 +1,6 @@
 Warrior shell Android boundary QA
 Date: 2026-07-29
-Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T221919722Z-8303
+Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T223902351Z-22576
 
 Real Android captures:
 - android-20x9.png: 1080x2400.
@@ -14,7 +14,7 @@ Observed on every target:
 - Four generated skill icons and AUTO control remain visible.
 - Lower feature content is visible and masked inside one vertical ScrollRect.
 - All six navigation destinations remain visible above the bottom edge.
-- Runtime `WindowInsets.Type.systemGestures()` reports and reserves the qualified 84px Android gesture inset; no navigation-mode constant is used.
+- API 30+ unions runtime `WindowInsets.Type.systemGestures()` and `navigationBars()`; API 28-29 uses `getSystemWindowInsetBottom()`. The qualified device reports and reserves 84px without a navigation-mode constant.
 - The 16:9 target yields lower feature height first and exposes the remaining rows through scrolling.
 
 EditMode boundary proof:

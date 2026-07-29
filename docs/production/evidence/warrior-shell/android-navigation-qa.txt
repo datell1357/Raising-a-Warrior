@@ -2,8 +2,8 @@ Warrior shell Android navigation QA
 Date: 2026-07-29
 Device: Pixel_6a emulator-5554, 1080x2400
 Package: com.warriorraising.dev
-Installed artifact: client/WarriorRaising/android/build/WarriorRaising-dev-1785363688566.apks
-Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T221919722Z-8303
+Installed artifact: client/WarriorRaising/android/build/WarriorRaising-dev-1785364862180.apks
+Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T223902351Z-22576
 
 Observed through adb input and real emulator screenshots:
 - Growth selected at index 0 with Power/Vitality/Aether progression rows.
@@ -22,7 +22,7 @@ Observed through adb input and real emulator screenshots:
   - summon.png: b263fc8f7f22f2f1ad89fb37a16d3e8f6ef3a625af01483c42e66c7f7d6e37d2
 - A 400px upward swipe exposed the third Growth row.
 - Scroll-before SHA-256: 36dc86e9e3236e3115977e02d0e7408232f26f36d93e635219eccde19fb0d250.
-- Scroll-after SHA-256: dbdb5273dbb120c034d726a4fa3f417d618cdeda57a3e13bb7fd3a3b1ad32d94.
+- Scroll-after SHA-256: 41c95151565cf8c4c9a9363d6d47c8fc43577a564867ad13a4591747e2e61ab7.
 - Force-stop and monkey relaunch returned com.warriorraising.dev/com.unity3d.player.UnityPlayerActivity to topResumedActivity.
-- Navigation is positioned above the qualified 84px Android gesture inset read dynamically from `WindowInsets.Type.systemGestures()`.
+- Navigation is positioned above the qualified 84px Android inset. API 30+ combines runtime system-gesture and navigation-bar insets; API 28-29 uses the reported system-window bottom inset.
 - Final package logcat: zero fatal exception, ANR, fatal signal, or NullReferenceException matches.

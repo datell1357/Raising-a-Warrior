@@ -8,6 +8,7 @@ const presentationAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets
 const playModeAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets/Warrior/Tests/PlayMode/Tests.PlayMode.asmdef', 'utf8'));
 const applicationAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets/Warrior/Runtime/Application/Application.asmdef', 'utf8'));
 const playModeBuildModifier = readFileSync('client/WarriorRaising/Assets/Warrior/Tests/EditMode/CleanAndroidTestPlayerBuildModifier.cs', 'utf8');
+const safeAreaRoot = readFileSync('client/WarriorRaising/Assets/Warrior/Runtime/Presentation/SafeAreaRoot.cs', 'utf8');
 
 test('dev Android build uses the saved Bootstrap scene without regenerating it', () => {
   expect(buildSource).not.toContain('L5ShellSceneBuilder.Build();');
@@ -50,6 +51,13 @@ test('Android PlayMode declares NUnit as an explicit precompiled test dependency
 test('Android PlayMode invalidates stale Bee IL2CPP partitions before linking', () => {
   expect(playModeBuildModifier).toContain('[assembly: TestPlayerBuildModifier');
   expect(playModeBuildModifier).toContain('BuildOptions.CleanBuildCache');
+});
+
+test('Android safe-area inset supports the API 28 project minimum', () => {
+  expect(safeAreaRoot).toContain('android.os.Build$VERSION');
+  expect(safeAreaRoot).toContain('SDK_INT');
+  expect(safeAreaRoot).toContain('getSystemWindowInsetBottom');
+  expect(safeAreaRoot).toContain('navigationBars');
 });
 
 test('Unity build backups are ignored without hiding Android metadata', () => {

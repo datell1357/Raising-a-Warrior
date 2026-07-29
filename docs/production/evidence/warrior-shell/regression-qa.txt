@@ -4,20 +4,21 @@ Date: 2026-07-29
 PASS bun run audit:clean-room -- --strict
   clean-room assets=5 vendors=2
 PASS bun test tools/qa/android/t6-android-build-source.test.mjs
-  10 tests, including CleanBuildCache regression protection
+  11 tests, including CleanBuildCache and API 28 inset fallback protection
 PASS bun run test:android-contract
 PASS bun run test:unity:editmode
   28/28
 PASS bun run test:unity:playmode
   3/3
-  evidence: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/playmode-runs/20260729T221538951Z-5220-32dbd93b-c332-49c3-bbb1-b4827e4e3a3f
+  evidence: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/playmode-runs/20260729T223555269Z-20022-2128d74a-f41d-45c9-8b58-b958d7651920
 PASS bun run verify:android -- --variant=dev
-  evidence: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T221919722Z-8303
+  evidence: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T223902351Z-22576
 
 Recovered regression:
 - Interrupted product builds left stale Bee/IL2CPP generic partitions and caused nondeterministic duplicate symbols.
 - CleanAndroidTestPlayerBuildModifier now applies BuildOptions.CleanBuildCache for Android test-player builds.
 - The clean-cache Android PlayMode build installed, launched, returned fresh 3/3 XML, and exited zero.
+- Android API 28-29 now uses the compatible system-window bottom inset API; API 30+ unions gesture and navigation-bar insets.
 
 Manual runtime QA:
 - Six distinct destination bodies tapped and persisted under `screenshots/`.
