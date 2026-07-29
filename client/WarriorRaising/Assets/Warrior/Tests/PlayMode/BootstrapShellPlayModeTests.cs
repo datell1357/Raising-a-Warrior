@@ -3,9 +3,11 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using UnityEngine.UI;
 using Warrior.Application;
 using Warrior.Core;
 using Warrior.Domain;
+using Warrior.Presentation;
 
 namespace Warrior.Tests.PlayMode
 {
@@ -52,6 +54,22 @@ namespace Warrior.Tests.PlayMode
             Assert.That(restart.Session.Uid, Is.EqualTo(firstLaunch.Session.Uid));
             Assert.That(restart.Session.IsAnonymous, Is.False);
             Assert.That(restart.Progress.Marker, Is.EqualTo(firstLaunch.Progress.Marker));
+        }
+
+        [UnityTest]
+        public IEnumerator S_LVWHIB_BootstrapScene_entersGuestMain()
+        {
+            PlayerPrefs.DeleteKey(DeviceIdentityAuthAdapter.UidKey);
+            PlayerPrefs.DeleteKey(DeviceIdentityProgressAdapter.MarkerKey);
+            var host = new GameObject("AccountEntryPresenterTest", typeof(RectTransform), typeof(Text));
+            var label = host.GetComponent<Text>();
+            host.AddComponent<AccountEntryPresenter>();
+
+            yield return null;
+
+            Assert.That(label.text, Is.EqualTo("Guest active"));
+            Assert.That(PlayerPrefs.HasKey(DeviceIdentityAuthAdapter.UidKey), Is.True);
+            Object.Destroy(host);
         }
 
         private sealed class PlayModeVersionGate : IIdentityVersionGate

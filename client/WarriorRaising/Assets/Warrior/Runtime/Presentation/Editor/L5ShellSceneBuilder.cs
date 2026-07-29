@@ -72,8 +72,9 @@ public static class L5ShellSceneBuilder
     private static void CreateQuestRibbon(RectTransform parent)
     {
         var bar = CreateTopBand("QuestRibbon", parent, ShellMetrics.StatusBarDp, ShellMetrics.QuestRibbonDp, ShellColorToken.Navy800);
-        CreateText("QuestPrimary", bar, ShellCopyKey.QuestEmpty, ShellMetrics.TypeBodySp, ShellColorToken.TextPrimary,
+        var questPrimary = CreateText("QuestPrimary", bar, ShellCopyKey.QuestEmpty, ShellMetrics.TypeBodySp, ShellColorToken.TextPrimary,
             new Vector2(0f, 0f), new Vector2(0.58f, 1f), new Vector2(ShellMetrics.Space4Dp, 0f), Vector2.zero, TextAnchor.MiddleLeft);
+        questPrimary.gameObject.AddComponent<AccountEntryPresenter>();
         CreateText("QuestSecondary", bar, ShellCopyKey.QuestHint, ShellMetrics.TypeLabelSp, ShellColorToken.TextSecondary,
             new Vector2(0.58f, 0f), new Vector2(1f, 1f), Vector2.zero, new Vector2(-ShellMetrics.Space4Dp, 0f), TextAnchor.MiddleRight);
     }

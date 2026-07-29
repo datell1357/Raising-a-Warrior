@@ -30,6 +30,12 @@ const source = [
   '    Assert.That(restart.Session.IsAnonymous, Is.False);',
   '    Assert.That(restart.Progress.Marker, Is.EqualTo(firstLaunch.Progress.Marker));',
   '  }',
+  '  [UnityTest]',
+  '  public IEnumerator S_LVWHIB_BootstrapScene_entersGuestMain()',
+  '  {',
+  '    Assert.That(label.text, Is.EqualTo("Guest active"));',
+  '    Assert.That(PlayerPrefs.HasKey(DeviceIdentityAuthAdapter.UidKey), Is.True);',
+  '  }',
   '}',
 ].join('\n');
 
@@ -69,13 +75,14 @@ test('Given externally hidden Unity assets when tests start then the runner rest
 
 function xml(overrides = {}) {
   const values = {
-    total: '2', passed: '2', failed: '0', skipped: '0', inconclusive: '0', result: 'Passed',
+    total: '3', passed: '3', failed: '0', skipped: '0', inconclusive: '0', result: 'Passed',
     assembly: 'Tests.PlayMode.dll', platform: 'PlayMode', editorOnly: 'False',
     leaf: 'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.BootstrapShell_whenInitialized_inPlayMode_remainsEmpty',
     identityLeaf: 'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_NS_SESSION_RECONNECT_S_TGKDXL_preserveIdentityProgress',
+    guestMainLeaf: 'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_BootstrapScene_entersGuestMain',
     ...overrides,
   };
-  return `<test-run result="${values.result}" total="${values.total}" passed="${values.passed}" failed="${values.failed}" skipped="${values.skipped}" inconclusive="${values.inconclusive}" start-time="2026-07-29 10:00:00Z" end-time="2026-07-29 10:00:01Z"><test-suite type="Assembly" name="${values.assembly}" fullname="/system/bin/${values.assembly}" result="Passed" start-time="2026-07-29 10:00:00Z" end-time="2026-07-29 10:00:01Z"><properties><property name="_APPDOMAIN" value="IL2CPP Root Domain"/><property name="platform" value="${values.platform}"/><property name="EditorOnly" value="${values.editorOnly}"/></properties><test-case fullname="${values.leaf}" result="Passed"/><test-case fullname="${values.identityLeaf}" result="Passed"/></test-suite></test-run>`;
+  return `<test-run result="${values.result}" total="${values.total}" passed="${values.passed}" failed="${values.failed}" skipped="${values.skipped}" inconclusive="${values.inconclusive}" start-time="2026-07-29 10:00:00Z" end-time="2026-07-29 10:00:01Z"><test-suite type="Assembly" name="${values.assembly}" fullname="/system/bin/${values.assembly}" result="Passed" start-time="2026-07-29 10:00:00Z" end-time="2026-07-29 10:00:01Z"><properties><property name="_APPDOMAIN" value="IL2CPP Root Domain"/><property name="platform" value="${values.platform}"/><property name="EditorOnly" value="${values.editorOnly}"/></properties><test-case fullname="${values.leaf}" result="Passed"/><test-case fullname="${values.guestMainLeaf}" result="Passed"/><test-case fullname="${values.identityLeaf}" result="Passed"/></test-suite></test-run>`;
 }
 
 test('Given PlayMode evidence when its directory is created then it is unique to the invocation', () => {
@@ -96,10 +103,11 @@ test('Given fresh exact Android XML when PlayMode evidence is verified then it r
     resultMtime: finishedAt,
   });
 
-  expect(receipt.counts).toEqual({ total: 2, passed: 2, failed: 0, skipped: 0, inconclusive: 0 });
+  expect(receipt.counts).toEqual({ total: 3, passed: 3, failed: 0, skipped: 0, inconclusive: 0 });
   expect(receipt.assembly).toBe('Tests.PlayMode.dll');
   expect(receipt.leaves).toEqual([
     'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.BootstrapShell_whenInitialized_inPlayMode_remainsEmpty',
+    'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_BootstrapScene_entersGuestMain',
     'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_NS_SESSION_RECONNECT_S_TGKDXL_preserveIdentityProgress',
   ]);
 });
@@ -123,6 +131,7 @@ test('Given misleading Android XML when PlayMode evidence is verified then ident
     { skipped: '1' },
     { leaf: 'Other.Test' },
     { identityLeaf: 'Other.IdentityTest' },
+    { guestMainLeaf: 'Other.GuestMainTest' },
     { assembly: 'Tests.EditMode.dll' },
     { platform: 'EditMode' },
     { editorOnly: 'True' },
@@ -136,6 +145,8 @@ test('Given the Android test source when its identity and assertions drift then 
   expect(() => assertPlayModeSourceContract(source.replace('Assert.That(initialization.Lifecycle, Is.EqualTo(ShellLifecycle.Empty));', ''))).toThrow();
   expect(() => assertPlayModeSourceContract(source.replace('S_LVWHIB_NS_SESSION_RECONNECT_S_TGKDXL_preserveIdentityProgress', 'OtherIdentityFlow'))).toThrow();
   expect(() => assertPlayModeSourceContract(source.replace('Assert.That(restart.Session.IsAnonymous, Is.False);', ''))).toThrow();
+  expect(() => assertPlayModeSourceContract(source.replace('S_LVWHIB_BootstrapScene_entersGuestMain', 'OtherGuestFlow'))).toThrow();
+  expect(() => assertPlayModeSourceContract(source.replace('Assert.That(label.text, Is.EqualTo("Guest active"));', ''))).toThrow();
 });
 
 test('Given current test-package logcat when it contains a fatal test-runner event then it is rejected', () => {

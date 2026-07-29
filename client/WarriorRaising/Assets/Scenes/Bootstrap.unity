@@ -3731,6 +3731,7 @@ GameObject:
   - component: {fileID: 391996325}
   - component: {fileID: 391996324}
   - component: {fileID: 391996323}
+  - component: {fileID: 391996327}
   m_Layer: 0
   m_Name: QuestPrimary
   m_TagString: Untagged
@@ -3770,6 +3771,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Presentation::Warrior.Presentation.ShellLocalizedText
   key: 2
+--- !u!114 &391996327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391996321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b41e2630304e418aeaa3b5084cb17a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Presentation::Warrior.Presentation.AccountEntryPresenter
 --- !u!114 &391996324
 MonoBehaviour:
   m_ObjectHideFlags: 0

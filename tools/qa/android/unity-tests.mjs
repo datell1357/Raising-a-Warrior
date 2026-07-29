@@ -8,6 +8,7 @@ import { execute, hashFile, QualificationError, runLogged, tools } from './qa-co
 
 const playModeLeaves = [
   'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.BootstrapShell_whenInitialized_inPlayMode_remainsEmpty',
+  'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_BootstrapScene_entersGuestMain',
   'Warrior.Tests.PlayMode.BootstrapShellPlayModeTests.S_LVWHIB_NS_SESSION_RECONNECT_S_TGKDXL_preserveIdentityProgress',
 ];
 
@@ -111,6 +112,9 @@ export function assertPlayModeSourceContract(source) {
     'Assert.That(restart.Session.Uid, Is.EqualTo(firstLaunch.Session.Uid));',
     'Assert.That(restart.Session.IsAnonymous, Is.False);',
     'Assert.That(restart.Progress.Marker, Is.EqualTo(firstLaunch.Progress.Marker));',
+    'S_LVWHIB_BootstrapScene_entersGuestMain',
+    'Assert.That(label.text, Is.EqualTo("Guest active"));',
+    'Assert.That(PlayerPrefs.HasKey(DeviceIdentityAuthAdapter.UidKey), Is.True);',
   ]) if (!source.includes(required)) throw new QualificationError(`PlayMode source contract is missing ${required}.`);
 }
 
@@ -124,7 +128,7 @@ export function assertPlayModeEvidence({ xml, log, resultPath, startedAt, finish
 
   const root = requiredElement(xml, /<test-run\b([^>]*)>/, 'test-run');
   const counts = Object.fromEntries(['total', 'passed', 'failed', 'skipped', 'inconclusive'].map((name) => [name, requiredCount(root, name)]));
-  if (counts.total !== 2 || counts.passed !== 2 || counts.failed !== 0 || counts.skipped !== 0 || counts.inconclusive !== 0 || root.result !== 'Passed') {
+  if (counts.total !== 3 || counts.passed !== 3 || counts.failed !== 0 || counts.skipped !== 0 || counts.inconclusive !== 0 || root.result !== 'Passed') {
     throw new QualificationError(`PlayMode XML counts were ${JSON.stringify(counts)} with result ${root.result}.`);
   }
 
