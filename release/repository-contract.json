@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "warrior-repository-contract/v1",
+  "schemaVersion": "warrior-repository-contract/v2",
   "requiredT5Roots": [
     "client/WarriorRaising",
     "backend/functions",
@@ -12,8 +12,14 @@
     ".github/workflows"
   ],
   "requiredT5Files": [
+    "firebase.json",
+    ".firebaserc",
     "backend/firestore.rules",
     "backend/firestore.indexes.json",
+    "backend/functions/package.json",
+    "backend/functions/tsconfig.json",
+    "backend/functions/src/index.ts",
+    "backend/functions/src/runtime-policy.ts",
     "release/repository-contract.json",
     "release/environments/environment.schema.json",
     "release/environments/dev.json",
@@ -59,7 +65,8 @@
     "bun run audit:clean-room -- --strict",
     "bun run test:schema",
     "bun run validate:adr",
-    "bun run verify:repo"
+    "bun run verify:repo",
+    "bun run verify:harness"
   ],
   "t5T6Boundary": {
     "t5": [
@@ -70,8 +77,88 @@
     "t6": [
       "Unity project initialization",
       "Android application configuration",
-      "AAB build, signing, and ARM64 artifact production"
+      "AAB build, signing, and ARM64 artifact production",
+      "exact nine-node asmdef graph, Addressables, and PAD metadata"
     ]
+  },
+  "t6UnityAndroid": {
+    "policyPath": "client/WarriorRaising/asmdef-policy.json",
+    "editorVersion": "6000.5.4f1",
+    "targetApi": 36,
+    "androidAbi": "ARM64",
+    "scriptingBackend": "IL2CPP",
+    "artifactFormat": "AAB",
+    "symbols": "public",
+    "testAssemblyOptionalUnityReferences": ["TestAssemblies"],
+    "packages": {
+      "com.unity.addressables": "2.9.1",
+      "com.unity.addressables.android": "1.0.10",
+      "com.unity.inputsystem": "1.20.0",
+      "com.unity.localization": "1.5.12",
+      "com.unity.test-framework": "1.7.0",
+      "com.unity.ugui": "2.5.0"
+    },
+    "assemblyCount": 9,
+    "playFeatureDelivery": false,
+    "iosReleaseTarget": false
+  },
+  "t7Firebase": {
+    "firebaseJson": {
+      "functions": {
+        "source": "backend/functions",
+        "predeploy": ["bun run build:functions"]
+      },
+      "firestore": {
+        "rules": "backend/firestore.rules",
+        "indexes": "backend/firestore.indexes.json"
+      },
+      "emulators": {
+        "singleProjectMode": true,
+        "ui": { "enabled": false },
+        "functions": { "host": "127.0.0.1", "port": 5007 },
+        "auth": { "host": "127.0.0.1", "port": 9099 },
+        "firestore": { "host": "127.0.0.1", "port": 8087 },
+        "hub": { "host": "127.0.0.1", "port": 4407 },
+        "logging": { "host": "127.0.0.1", "port": 4507 }
+      }
+    },
+    "firebaserc": {
+      "projects": { "default": "demo-warrior-t7" }
+    },
+    "firestoreRulesSha256": "e3e7ae3ff796ad18e1d46504365abe409fd2cd291b81bcd8d571418ed1891878",
+    "package": {
+      "name": "@raising-a-warrior/functions",
+      "private": true,
+      "type": "module",
+      "main": "dist/index.js",
+      "engines": { "node": "22" },
+      "scripts": { "typecheck": "tsc -b --pretty false", "build": "tsc -p tsconfig.json" },
+      "dependencies": { "firebase-admin": "14.2.0", "firebase-functions": "7.3.2", "zod": "4.4.3" },
+      "devDependencies": { "@firebase/rules-unit-testing": "5.0.1", "firebase": "12.16.0" }
+    },
+    "tsconfig": {
+      "extends": "../../tsconfig.base.json",
+      "compilerOptions": {
+        "composite": true,
+        "strict": true,
+        "emitDeclarationOnly": false,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo"
+      },
+      "include": ["src/**/*.ts"]
+    },
+    "callable": { "name": "claimAuthorityBaseline", "enforceAppCheck": true },
+    "runtimePolicy": {
+      "requiredSourceFragments": [
+        "production forbids demo, debug, and emulator inputs",
+        "demo emulator requires the fixed demo project and loopback ports",
+        "environment.WARRIOR_APP_CHECK_PROVIDER === \"debug\"",
+        "environment.FIREBASE_APP_CHECK_DEBUG_TOKEN !== undefined",
+        "environment.FIRESTORE_EMULATOR_HOST !== \"127.0.0.1:8087\"",
+        "environment.FUNCTIONS_EMULATOR !== \"true\""
+      ]
+    }
   },
   "forbiddenInfrastructure": [
     "microservices",

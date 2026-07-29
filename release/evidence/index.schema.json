@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "warrior-evidence-index/v1",
+  "type": "object",
+  "required": [
+    "schemaVersion", "session", "goal", "attempt", "root", "head",
+    "dirtyStateSha256", "createdAt", "requiredFamilyIds", "reports",
+    "canaryMatrix", "artifacts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": "warrior-evidence-index/v1" },
+    "session": { "type": "string", "minLength": 1 },
+    "goal": { "type": "string", "minLength": 1 },
+    "attempt": { "type": "integer", "minimum": 1 },
+    "root": { "type": "string", "minLength": 1 },
+    "head": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "dirtyStateSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "requiredFamilyIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string" }
+    },
+    "reports": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "report.schema.json" }
+    },
+    "canaryMatrix": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["familyId", "canaryId", "executed"],
+        "additionalProperties": false,
+        "properties": {
+          "familyId": { "type": "string" },
+          "canaryId": { "type": "string" },
+          "executed": { "const": true }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "warrior-evidence-report/v1",
+  "type": "object",
+  "required": [
+    "schemaVersion", "familyId", "root", "head", "dirtyStateSha256",
+    "argv", "cwd", "executable", "toolVersion", "startedAt", "finishedAt",
+    "exitCode", "signal", "inputs", "artifacts", "status", "cleanup", "canaryIds"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": "warrior-evidence-report/v1" },
+    "familyId": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "root": { "type": "string", "minLength": 1 },
+    "head": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "dirtyStateSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "argv": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "cwd": { "type": "string", "minLength": 1 },
+    "executable": { "type": "string", "minLength": 1 },
+    "toolVersion": { "type": "string", "minLength": 1 },
+    "startedAt": { "type": "string", "format": "date-time" },
+    "finishedAt": { "type": "string", "format": "date-time" },
+    "exitCode": { "type": ["integer", "null"] },
+    "signal": { "type": ["string", "null"] },
+    "inputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/hashedPath" }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "status": { "enum": ["PASS", "FAIL", "BLOCKED"] },
+    "cleanup": {
+      "type": "object",
+      "required": ["status", "details"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "const": "PASS" },
+        "details": { "type": "string", "minLength": 1 }
+      }
+    },
+    "canaryIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+    },
+    "bindings": { "type": "object", "additionalProperties": { "type": "string" } },
+    "issue": {
+      "type": "object",
+      "required": ["code", "pointer", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string", "minLength": 1 },
+        "pointer": { "type": "string" },
+        "message": { "type": "string", "minLength": 1 }
+      }
+    },
+    "blocked": { "$ref": "blocked.schema.json" }
+  },
+  "$defs": {
+    "hashedPath": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["path", "sha256", "size", "mediaType"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "size": { "type": "integer", "minimum": 1 },
+        "mediaType": { "type": "string", "minLength": 1 }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "PASS" } } },
+      "then": {
+        "properties": { "exitCode": { "const": 0 }, "signal": { "type": "null" } },
+        "not": { "anyOf": [{ "required": ["issue"] }, { "required": ["blocked"] }] }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "FAIL" } } },
+      "then": { "required": ["issue"] }
+    },
+    {
+      "if": { "properties": { "status": { "const": "BLOCKED" } } },
+      "then": {
+        "required": ["blocked"],
+        "properties": { "artifacts": { "maxItems": 0 } }
+      }
+    }
+  ]
+}

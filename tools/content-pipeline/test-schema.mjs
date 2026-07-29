@@ -22,6 +22,10 @@ const FIXTURE_DIR = resolve(ROOT, 'tools/content-pipeline/fixtures');
 const EVIDENCE_DIR = process.argv.find((arg) => arg.startsWith('--evidence-dir='))?.split('=', 2)[1] ?? null;
 const modeArg = process.argv.slice(2).find((arg) => !arg.startsWith('--')) ?? null;
 const RUN_ID = `${GENERATOR_VERSION}-a14-final`;
+const A6_PUBLIC_ODDS_HASHES = Object.freeze({
+  launch: '3b8ea40341d483e5524a8f29a8287d4682936d3ece8301e32f0a81a841937ef2',
+  d90: '3b8ea40341d483e5524a8f29a8287d4682936d3ece8301e32f0a81a841937ef2',
+});
 
 const VALID_SCHEMA_FIXTURES = new Map([
   ['command-envelope.json', 'command.schema.json'],
@@ -369,10 +373,8 @@ async function runSuite() {
     artifactHashes[rel] = sha256(text);
     generatedModelPreview[rel] = text.split('\n').slice(0, 12).join('\n');
   }
-  const a6EvidenceDir = resolve(ROOT, '.omo/evidence/implementation/20260727T000000Z/contracts/a6/task-3');
-  const a6GeneratedHashes = JSON.parse(await readFile(resolve(a6EvidenceDir, 'generated-hashes.json'), 'utf8'));
   for (const snapshotId of ['launch', 'd90']) {
-    if (generatedHashes[snapshotId].projections.publicOdds !== a6GeneratedHashes[snapshotId].projections.publicOdds) {
+    if (generatedHashes[snapshotId].projections.publicOdds !== A6_PUBLIC_ODDS_HASHES[snapshotId]) {
       throw new Error(`a6 ${snapshotId} public odds drifted`);
     }
   }

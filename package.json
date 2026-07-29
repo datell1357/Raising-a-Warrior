@@ -24,7 +24,8 @@
     "build:functions": "bun run --cwd backend/functions build",
     "test:firebase-baseline": "bun test tools/qa/firebase/config-contract.test.mjs backend/functions/test",
     "evidence:firebase-baseline": "node tools/qa/firebase/run-baseline.mjs",
-    "test:identity-e2e": "bun test backend/functions/test/identity-e2e.test.ts"
+    "test:identity-e2e": "bun test backend/functions/test/identity-e2e.test.ts",
+    "verify:harness": "node tools/qa/harness/run-harness.mjs"
   },
   "devDependencies": {
     "firebase-tools": "15.24.0",

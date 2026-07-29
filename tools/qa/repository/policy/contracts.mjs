@@ -3,7 +3,7 @@ import { SyntaxKind } from 'typescript/unstable/ast';
 export const projects = ['tools/content-pipeline', 'backend/functions', 'web/account', 'web/ops'];
 export const workflows = ['client.yml', 'backend.yml', 'content.yml', 'security.yml', 'release.yml'];
 export const parameterKeys = ['firebaseConfiguration', 'runtimeConfiguration', 'telemetryConfiguration'];
-export const repositoryContractSha256 = 'c59694b86c6c149c9cf968fcac8879afe5924ecfbdd2276b8c33a3de563f06e6';
+export const repositoryContractSha256 = '32d442765ee7c6e8f8ff2bf9c9f11db3bd7901ce9ac69b01535198b0ace9917c';
 export const lockfilePolicyContract = { packageManager: 'bun', lockfile: 'bun.lock', singleRootLockfile: true, frozenInstallCommand: 'bun ci', workspaceLockfilesForbidden: true };
 export const validationCommandsContract = ['bun run validate:scope', 'bun run audit:clean-room -- --strict', 'bun run test:schema', 'bun run validate:adr', 'bun run verify:repo', 'bun run verify:harness'];
 export const regularExpressionPrefixKinds = new Set([SyntaxKind.OpenParenToken, SyntaxKind.OpenBracketToken, SyntaxKind.OpenBraceToken, SyntaxKind.CommaToken, SyntaxKind.ColonToken, SyntaxKind.SemicolonToken, SyntaxKind.QuestionToken, SyntaxKind.ReturnKeyword, SyntaxKind.ThrowKeyword, SyntaxKind.CaseKeyword, SyntaxKind.DeleteKeyword, SyntaxKind.VoidKeyword, SyntaxKind.TypeOfKeyword, SyntaxKind.NewKeyword, SyntaxKind.YieldKeyword, SyntaxKind.AwaitKeyword, SyntaxKind.ArrowToken]);

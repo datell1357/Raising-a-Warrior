@@ -1,0 +1,8 @@
+{
+  "groups": [
+    {
+      "name": "content",
+      "deliveryType": "install-time"
+    }
+  ]
+}

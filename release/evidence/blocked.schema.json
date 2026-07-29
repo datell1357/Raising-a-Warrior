@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "warrior-evidence-blocked/v1",
+  "type": "object",
+  "required": ["status", "code", "prerequisite", "owner", "evidenceNeeded"],
+  "additionalProperties": false,
+  "properties": {
+    "status": { "const": "BLOCKED" },
+    "code": { "type": "string", "pattern": "^BLOCKED:[a-z0-9][a-z0-9-]*$" },
+    "prerequisite": { "type": "string", "minLength": 1 },
+    "owner": { "type": "string", "minLength": 1 },
+    "evidenceNeeded": { "type": "string", "minLength": 1 }
+  }
+}
