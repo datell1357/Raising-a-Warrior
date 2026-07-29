@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/callableSource","value":"export const claimAuthorityBaseline = onCall({ region: 'asia-northeast3', enforceAppCheck: false }, async () => null);"}]}

@@ -127,7 +127,7 @@ export const CANONICAL_BINDINGS = [
   ['docs/Manyfast/워리어 키우기_유저플로우.md', 'd641842f326d9643fb48a43fdaf0fef28e90ba963859bd595db8bfbaad5ca406'],
   ['docs/production/scope-contract.json', '96a98565799a4f042ceb8ad5e6b72af16b738c468d816ed046b76b819923e0c2'],
   ['content/contracts/command.schema.json', '233d8a0ed5d4a8e04273661c5c0e74a7d8a89b7d59233c2d80cacbd787f8b3c9'],
-  ['.omo/evidence/implementation/20260727T000000Z/contracts/a14/task-3/artifact-hashes.json', '9718320d9dc99bcfef744956b1279fcc99cb3982cd731b73611293d63f5d18b5'],
+  ['content/contracts/generated-artifact-hashes.json', '9718320d9dc99bcfef744956b1279fcc99cb3982cd731b73611293d63f5d18b5'],
 ];
 
 export const ADR_CLAIMS = {

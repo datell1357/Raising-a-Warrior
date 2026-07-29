@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/runtimePolicySource","value":"export function parseRuntimePolicy() { const debugEnabled = false; const emulatorEnabled = false; return { kind: 'production', projectId: 'demo-warrior-t7' }; }"}]}

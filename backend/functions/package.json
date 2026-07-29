@@ -2,7 +2,21 @@
   "name": "@raising-a-warrior/functions",
   "private": true,
   "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
-    "typecheck": "tsc -b --pretty false"
+    "typecheck": "tsc -b --pretty false",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "firebase-admin": "14.2.0",
+    "firebase-functions": "7.3.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.1",
+    "firebase": "12.16.0"
   }
 }

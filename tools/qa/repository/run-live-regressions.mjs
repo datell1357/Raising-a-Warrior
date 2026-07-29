@@ -9,6 +9,7 @@ import { assertSafePath, repositoryPath } from './path-safety.mjs';
 
 const root = resolve(process.cwd());
 const defaultManifest = 'tools/qa/repository/live-regressions.json';
+const firebaseManifest = 'tools/qa/repository/firebase-live-regressions.json';
 const liveFixtureDirectory = 'tools/qa/repository/fixtures/live';
 const canonicalFixtureCount = 36;
 const requiredTextInventoryPaths = ['backend/main.tf', 'backend/deploy.sh', 'backend/deploy.bash', 'backend/deploy.zsh', 'backend/runtime.toml', 'client/WarriorRaising/build.gradle', 'backend/application.properties', 'backend/Dockerfile', 'backend/Dockerfile.release'];
@@ -83,6 +84,31 @@ function apply(model, value, at) {
   if (patch.op === 'remove') delete parent[key]; else parent[key] = patch.value;
 }
 
+function copyContainer(value, pointer) {
+  if (Array.isArray(value)) return value.slice();
+  if (value && Object.getPrototypeOf(value) === Object.prototype) return { ...value };
+  fail('LIVE_MODEL_CONTAINER_UNSUPPORTED', pointer, 'live regression model must contain only plain objects and arrays along patch paths');
+}
+
+export function applyCopyOnWrite(baseline, patches, fixtureId = 'fixture') {
+  const model = copyContainer(baseline, `/fixtures/${fixtureId}`);
+  for (const [index, patch] of patches.entries()) {
+    const at = `/fixtures/${fixtureId}/patches/${index}`;
+    const parts = patchParts(patch.pointer, `${at}/pointer`);
+    let source = model;
+    let target = model;
+    for (const part of parts.slice(0, -1)) {
+      if (!source || typeof source !== 'object' || !(part in source)) fail('INVALID_PATCH_POINTER', `${at}/pointer`, 'patch parent does not exist');
+      const copied = copyContainer(source[part], `${at}/pointer`);
+      target[part] = copied;
+      source = source[part];
+      target = copied;
+    }
+    apply(model, patch, at);
+  }
+  return model;
+}
+
 function assertTextInventoryCoverage() {
   const missing = [...requiredTextInventoryPaths, ...requiredTextClassifierPaths].filter((path) => !isTextInventoryPath(path));
   if (missing.length > 0) fail('REPOSITORY_TEXT_INVENTORY_INCOMPLETE', '/model/textInventory', `text inventory excludes ${missing.join(', ')}`);
@@ -148,16 +174,42 @@ async function loadFixture(fixture) {
   return patches;
 }
 
+async function loadFirebaseSuite() {
+  const manifest = safeRepositoryJsonPath(firebaseManifest, '/firebaseManifest', 'MANIFEST_PATH_INVALID');
+  const suite = await loadSuite(manifest);
+  if (suite.fixtures.length !== 7 || suite.fixtures.some(({ path }) => !path.startsWith('tools/qa/repository/fixtures/firebase-live/'))) {
+    fail('FIREBASE_FIXTURE_COVERAGE_INCOMPLETE', '/firebaseManifest/fixtures', 'Firebase fixture coverage must be exact');
+  }
+  return suite.fixtures;
+}
+
+async function runFirebaseFixtures(baselineModel, fixtures) {
+  const results = [];
+  for (const fixture of fixtures) {
+    const model = applyCopyOnWrite(baselineModel, await loadFixture(fixture), fixture.id);
+    try {
+      validateCandidate(Object.fromEntries(['files', 'assemblies', 'environments', 'typescript', 'lockfile', 'provenance'].map((key) => [key, model[key]])));
+      await validateRepositoryPolicy(model);
+      fail('LIVE_REGRESSION_PASSED', `/fixtures/${fixture.id}`, 'Firebase regression unexpectedly passed');
+    } catch (error) {
+      if (!(error instanceof ContractError) || error.code !== fixture.expect.code || error.pointer !== fixture.expect.pointer) throw error;
+      results.push({ id: fixture.id, ...fixture.expect });
+    }
+  }
+  return results;
+}
+
 async function main() {
   const options = parseArguments(process.argv.slice(2));
   const manifest = safeRepositoryJsonPath(options.manifest, '/manifest', 'MANIFEST_PATH_INVALID');
   const suite = await loadSuite(manifest);
+  const firebaseFixtures = await loadFirebaseSuite();
   const inventoryCoverage = assertTextInventoryCoverage();
+  const baselineModel = await buildRepositoryModel(root);
   const results = [];
   for (const fixture of suite.fixtures) {
-    const model = structuredClone(await buildRepositoryModel(root));
     const patches = await loadFixture(fixture);
-    patches.forEach((patch, index) => apply(model, patch, `/fixtures/${fixture.id}/patches/${index}`));
+    const model = applyCopyOnWrite(baselineModel, patches, fixture.id);
     try {
       validateCandidate(Object.fromEntries(['files', 'assemblies', 'environments', 'typescript', 'lockfile', 'provenance'].map((key) => [key, model[key]])));
       await validateRepositoryPolicy(model);
@@ -169,6 +221,7 @@ async function main() {
       results.push({ id: fixture.id, ...fixture.expect });
     }
   }
-  process.stdout.write(`${JSON.stringify({ phase: 'GREEN', fixtureCount: suite.fixtures.length, discoveredFixtureIds: suite.fixtures.map(({ id }) => id), distinctFixturePathCount: new Set(suite.fixtures.map(({ path }) => path)).size, pathCoverage: suite.pathCoverage, inventoryCoverage, results })}\nPASS\n`);
+  const firebaseResults = await runFirebaseFixtures(baselineModel, firebaseFixtures);
+  process.stdout.write(`${JSON.stringify({ phase: 'GREEN', fixtureCount: suite.fixtures.length, discoveredFixtureIds: suite.fixtures.map(({ id }) => id), distinctFixturePathCount: new Set(suite.fixtures.map(({ path }) => path)).size, pathCoverage: suite.pathCoverage, inventoryCoverage, results, firebaseResults })}\nPASS\n`);
 }
-main().catch((error) => { process.stderr.write(`${JSON.stringify({ code: error instanceof ContractError ? error.code : 'LIVE_REGRESSION_FAILURE', pointer: error instanceof ContractError ? error.pointer : '', message: error instanceof Error ? error.message : String(error) })}\n`); process.exitCode = 1; });
+if (process.env.LIVE_REGRESSION_UNIT_TEST !== '1') main().catch((error) => { process.stderr.write(`${JSON.stringify({ code: error instanceof ContractError ? error.code : 'LIVE_REGRESSION_FAILURE', pointer: error instanceof ContractError ? error.pointer : '', message: error instanceof Error ? error.message : String(error) })}\n`); process.exitCode = 1; });

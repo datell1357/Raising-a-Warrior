@@ -1,0 +1,1 @@
+{"patches":[{"op":"add","pointer":"/workspacePackages/backend~1functions/dependencies/fixture-extra","value":"1.0.0"}]}

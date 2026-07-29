@@ -2,7 +2,7 @@
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { lstat, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
-import { relative, resolve } from 'node:path';
+import { dirname, relative, resolve } from 'node:path';
 import { SECRET_RULES, scanSecrets } from './candidate-validator.mjs';
 import { buildRepositoryModel } from './repository-model.mjs';
 
@@ -12,19 +12,26 @@ const defaultEvidenceDirectory = '.omo/evidence/implementation/20260728T000000Z/
 const defaultLiveVerifier = 'tools/qa/repository/verify-repository.mjs';
 const rootArtifacts = ['repo-bootstrap.json', 'dependency-graph.html', 'secret-scan.sarif', 'scope-hash-verification.json', 'cleanup-receipt.json'];
 const preRemediationInventory = '.omo/evidence/implementation/20260728T000000Z/repository/a2/task-5/lanes/p1/pre-remediation-sha256-inventory.json';
-const canonicalRepositoryContractSha256 = '756b8b514f195ebfe6ca9ec0f473a4aa85224291de62152a637aac20f9f0d491';
+const canonicalRepositoryContractSha256 = 'c59694b86c6c149c9cf968fcac8879afe5924ecfbdd2276b8c33a3de563f06e6';
 const canonicalCandidateFixtureInventorySha256 = '1ef282943e84e3173c9cee7bddef2c21ebdcdfce3e70e3fb4c23985d85fb480e';
 const candidateFixtureInventoryRegressionLabels = ['remove-missing-files', 'remove-base64-secret', 'remove-assembly-cycle', 'remove-incomplete-provenance', 'replace-same-count', 'swap-order', 'drift-expectation'];
 const plannedChanges = Object.freeze({
-  package: ['package.json'],
+  package: ['package.json', 'bun.lock'],
   validator: [
     'tools/qa/repository/candidate-validator.mjs',
     'tools/qa/repository/repository-model.mjs',
     'tools/qa/repository/repository-policy.mjs',
     'tools/qa/repository/run-live-regressions.mjs',
     'tools/qa/repository/run-validation-suite.mjs',
+    'tools/qa/repository/firebase-policy.mjs',
+    'tools/qa/repository/policy/contracts.mjs',
+    'tools/qa/repository/policy/repository-sections.mjs',
+    'tools/qa/repository/policy/shared.mjs',
+    'tools/qa/repository/policy/unity.mjs',
+    'tools/qa/repository/policy/workflow-boundaries.mjs',
   ],
   fixture: [
+    'tools/qa/repository/firebase-live-regressions.json',
     'tools/qa/repository/live-regressions.json',
     'tools/qa/repository/negative-fixtures.json',
     'tools/qa/repository/fixtures/candidate-suite/duplicate-secret-rule-binding.json',
@@ -75,8 +82,23 @@ const plannedChanges = Object.freeze({
     'tools/qa/repository/fixtures/regression/fake-play-test-sku.json',
     'tools/qa/repository/fixtures/regression/fake-slack-token.json',
     'tools/qa/repository/fixtures/regression/fake-stripe-key.json',
+    'tools/qa/repository/fixtures/firebase-live/callable-app-check-missing.json',
+    'tools/qa/repository/fixtures/firebase-live/emulator-port-drift.json',
+    'tools/qa/repository/fixtures/firebase-live/functions-extra-dependency.json',
+    'tools/qa/repository/fixtures/firebase-live/nonempty-indexes.json',
+    'tools/qa/repository/fixtures/firebase-live/permissive-extra-allow.json',
+    'tools/qa/repository/fixtures/firebase-live/production-debug-token-emulator-drift.json',
+    'tools/qa/repository/fixtures/firebase-live/real-project-alias.json',
   ],
-  capture: ['tools/qa/repository/capture-evidence.mjs'],
+  regression: [
+    'tools/qa/repository/repository-characterization.test.mjs',
+    'tools/qa/repository/run-live-regressions.test.mjs',
+    'tools/qa/repository/unity-build-backup.test.mjs',
+  ],
+  capture: [
+    'tools/qa/repository/capture-evidence.mjs',
+    'tools/qa/repository/capture-evidence.test.mjs',
+  ],
 });
 const malformedLiveManifestProbes = Object.freeze([
   { label: 'malformed-live-empty', manifest: 'tools/qa/repository/fixtures/live-suite/empty.json', expected: { code: 'LIVE_SUITE_EMPTY', pointer: '/manifest/fixtures' } },
@@ -358,7 +380,7 @@ function plannedChange(path) {
 }
 
 function scopePath(path) {
-  return path === 'package.json' || path.startsWith('tools/qa/repository/');
+  return path === 'package.json' || path === 'bun.lock' || path.startsWith('tools/qa/repository/');
 }
 
 async function currentScopeFiles() {
@@ -377,8 +399,26 @@ async function currentScopeFiles() {
   return walk();
 }
 
+async function preRemediationInventoryPath() {
+  const local = resolve(root, preRemediationInventory);
+  try {
+    const stats = await lstat(local);
+    if (stats.isFile() && !stats.isSymbolicLink()) return local;
+  } catch (error) {
+    if (!(error instanceof Error) || !('code' in error) || error.code !== 'ENOENT') throw error;
+  }
+
+  const common = spawnSync('git', ['rev-parse', '--path-format=absolute', '--git-common-dir'], { cwd: root, encoding: 'utf8' });
+  if (common.status !== 0 || common.error) fail('EVIDENCE_CAPTURE_FAILURE', '', `unable to resolve git common directory: ${common.error?.message ?? common.stderr}`);
+  const gitCommonDir = common.stdout.trim();
+  const shared = resolve(dirname(gitCommonDir), preRemediationInventory);
+  const stats = await lstat(shared);
+  if (!stats.isFile() || stats.isSymbolicLink()) fail('EVIDENCE_CAPTURE_FAILURE', '', 'pre-remediation inventory must be a regular file');
+  return shared;
+}
+
 async function scopeHashVerification(evidenceDirectory) {
-  const before = JSON.parse(await readFile(resolve(root, preRemediationInventory), 'utf8'));
+  const before = JSON.parse(await readFile(await preRemediationInventoryPath(), 'utf8'));
   const original = new Map(before.files.filter((entry) => scopePath(entry.path)).map((entry) => [entry.path, entry.sha256]));
   const current = new Map((await currentScopeFiles()).map((entry) => [entry.path, entry.sha256]));
   const added = [...current].filter(([path]) => !original.has(path)).map(([path, sha256]) => ({ path, sha256, allowedChange: plannedChange(path) }));
@@ -390,17 +430,14 @@ async function scopeHashVerification(evidenceDirectory) {
     return added.filter((entry) => entry.sha256 === priorHash).map((entry) => ({ from: path, to: entry.path, sha256: priorHash }));
   });
   const unauthorized = [...added, ...changed].filter((entry) => !entry.allowedChange);
-  const priorLockfile = before.files.find((entry) => entry.path === 'bun.lock');
-  const currentLockfileSha256 = createHash('sha256').update(await readFile(resolve(root, 'bun.lock'))).digest('hex');
-  if (!priorLockfile || currentLockfileSha256 !== priorLockfile.sha256) fail('EVIDENCE_SCOPE_HASH_FAILED', '/scopeHashVerification/bun.lock', 'excluded bun.lock must remain unchanged and unallowed');
   if (unauthorized.length !== 0 || deleted.length !== 0 || moved.length !== 0) fail('EVIDENCE_SCOPE_HASH_FAILED', '/scopeHashVerification', 'scope comparison found an unplanned change, deletion, or move');
   return {
     status: 'PASS',
     baseline: { path: preRemediationInventory, algorithm: before.algorithm, fileCount: before.fileCount },
-    comparisonScope: ['package.json', 'tools/qa/repository/**'],
+    comparisonScope: ['package.json', 'bun.lock', 'tools/qa/repository/**'],
     excludedPreexistingWorkspaceState: ['.git/**', '.omo/evidence/**', 'node_modules/**', 'dist/**', 'coverage/**', '.cache/**', '.tmp/**', '.pytest_cache/**', '.ruff_cache/**'],
     allowedPlannedChanges: { ...plannedChanges, evidence: [relative(evidenceRoot, evidenceDirectory)] },
-    excludedUnallowedUnchanged: [{ path: 'bun.lock', sha256: currentLockfileSha256 }],
+    excludedUnallowedUnchanged: [],
     added,
     changed,
     unchanged,
@@ -446,7 +483,7 @@ async function main() {
   requireResult(malformed, { code: 'CANDIDATE_INVALID_JSON', pointer: '' });
   const traversal = run('fixture-traversal', process.execPath, ['tools/qa/repository/verify-repository.mjs', '--fixture=../outside.json']);
   requireResult(traversal, { code: 'PATH_OUTSIDE_REPOSITORY', pointer: '/fixture' });
-  const symlink = run('fixture-symlink', process.execPath, ['tools/qa/repository/verify-repository.mjs', '--fixture=.codegraph']);
+  const symlink = run('fixture-symlink', process.execPath, ['tools/qa/repository/verify-repository.mjs', '--fixture=node_modules/.bin/tsc']);
   requireResult(symlink, { code: 'SYMLINK_FORBIDDEN', pointer: '/fixture' });
   const timeout = run('hung-validator', process.execPath, ['tools/qa/repository/run-validation-suite.mjs', '--validator=tools/qa/repository/fixtures/hung-validator.mjs']);
   requireResult(timeout, { code: 'VALIDATOR_TIMEOUT', pointer: '/validator' });

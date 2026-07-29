@@ -1,0 +1,12 @@
+{
+  "kind": "repository-live-policy-suite",
+  "fixtures": [
+    {"id":"firebase-real-project-alias","path":"tools/qa/repository/fixtures/firebase-live/real-project-alias.json","expect":{"code":"FIREBASE_PROJECT_ALIAS_DRIFT","pointer":"/.firebaserc/projects/default"}},
+    {"id":"firebase-emulator-port-drift","path":"tools/qa/repository/fixtures/firebase-live/emulator-port-drift.json","expect":{"code":"FIREBASE_CONFIG_DRIFT","pointer":"/firebase.json/emulators/functions/port"}},
+    {"id":"firestore-permissive-extra-allow","path":"tools/qa/repository/fixtures/firebase-live/permissive-extra-allow.json","expect":{"code":"FIRESTORE_RULES_PERMISSIVE","pointer":"/firestore/rules"}},
+    {"id":"functions-extra-dependency","path":"tools/qa/repository/fixtures/firebase-live/functions-extra-dependency.json","expect":{"code":"FUNCTIONS_PACKAGE_DRIFT","pointer":"/backend/functions/package.json/dependencies"}},
+    {"id":"production-debug-token-emulator-drift","path":"tools/qa/repository/fixtures/firebase-live/production-debug-token-emulator-drift.json","expect":{"code":"RUNTIME_POLICY_INVALID","pointer":"/backend/functions/src/runtime-policy.ts"}},
+    {"id":"firestore-nonempty-indexes","path":"tools/qa/repository/fixtures/firebase-live/nonempty-indexes.json","expect":{"code":"FIRESTORE_INDEXES_NONEMPTY","pointer":"/firestore/indexes"}},
+    {"id":"callable-app-check-missing","path":"tools/qa/repository/fixtures/firebase-live/callable-app-check-missing.json","expect":{"code":"CALLABLE_APP_CHECK_MISSING","pointer":"/backend/functions/src/index.ts"}}
+  ]
+}

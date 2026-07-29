@@ -14,11 +14,21 @@
     "test:schema": "node tools/content-pipeline/test-schema.mjs",
     "validate:adr": "node tools/qa/architecture/run-validation-suite.mjs",
     "typecheck": "tsc -b --pretty false",
-    "test:repo": "node tools/qa/repository/run-validation-suite.mjs && node tools/qa/repository/run-live-regressions.mjs",
-    "verify:repo": "bun run typecheck && bun run test:repo && node tools/qa/repository/verify-repository.mjs",
-    "evidence:repo": "node tools/qa/repository/capture-evidence.mjs"
+    "test:repo": "node tools/qa/android/run-repository-red.mjs",
+    "test:android-contract": "node tools/qa/android/test-contract.mjs",
+    "test:unity:editmode": "node tools/qa/android/test-contract.mjs --mode=editmode",
+    "test:unity:playmode": "node tools/qa/android/test-contract.mjs --mode=playmode",
+    "verify:android": "node tools/qa/android/test-contract.mjs --verify-android",
+    "verify:repo": "node tools/qa/android/run-verify-repository-red.mjs",
+    "evidence:repo": "node tools/qa/repository/capture-evidence.mjs",
+    "build:functions": "bun run --cwd backend/functions build",
+    "test:firebase-baseline": "bun test tools/qa/firebase/config-contract.test.mjs backend/functions/test",
+    "evidence:firebase-baseline": "node tools/qa/firebase/run-baseline.mjs",
+    "test:identity-e2e": "bun test backend/functions/test/identity-e2e.test.ts"
   },
   "devDependencies": {
+    "firebase-tools": "15.24.0",
+    "node": "22.18.0",
     "typescript": "7.0.2",
     "yaml": "2.9.0"
   }

@@ -1,0 +1,1 @@
+{"patches":[{"op":"replace","pointer":"/firestore/indexes/indexes","value":[{"collectionGroup":"authoritySnapshots","queryScope":"COLLECTION","fields":[{"fieldPath":"uid","order":"ASCENDING"}]}]}]}
