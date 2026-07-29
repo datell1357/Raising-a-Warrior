@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"missing-editmode","expect":{"code":"UNITY_ASMDEF_TEST_MISSING","pointer":"/asmdefs/Tests.EditMode"},"patches":[{"op":"remove","pointer":"/asmdefs/7","value":null}]}

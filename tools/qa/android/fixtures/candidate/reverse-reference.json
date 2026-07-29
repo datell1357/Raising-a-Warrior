@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"reverse-reference","expect":{"code":"UNITY_ASMDEF_REVERSE_REFERENCE","pointer":"/asmdefs/Domain/references/1"},"patches":[{"op":"add","pointer":"/asmdefs/1/references/-","value":"Presentation"}]}

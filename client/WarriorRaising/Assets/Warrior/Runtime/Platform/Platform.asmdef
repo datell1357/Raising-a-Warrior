@@ -1,0 +1,19 @@
+{
+  "name": "Platform",
+  "rootNamespace": "",
+  "references": [
+    "Core",
+    "Domain",
+    "Application"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": []
+}

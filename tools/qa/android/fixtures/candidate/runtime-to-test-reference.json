@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"runtime-to-test-reference","expect":{"code":"UNITY_ASMDEF_RUNTIME_TO_TEST","pointer":"/asmdefs/Core/references/0"},"patches":[{"op":"add","pointer":"/asmdefs/0/references/-","value":"Tests.EditMode"}]}

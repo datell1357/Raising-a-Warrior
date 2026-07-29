@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"android-aab-drift","expect":{"code":"ANDROID_AAB_REQUIRED","pointer":"/android/build/output"},"changes":[{"path":"android/build/output.json","content":"{\"format\":\"APK\"}\n"},{"path":"android/build/symbols.json","content":"{\"enabled\":true,\"level\":\"public\"}\n"}]}

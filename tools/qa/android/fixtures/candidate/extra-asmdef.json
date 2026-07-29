@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"extra-asmdef","expect":{"code":"UNITY_ASMDEF_EXTRA","pointer":"/asmdefs/Extra"},"patches":[{"op":"add","pointer":"/asmdefs/-","value":{"name":"Extra","kind":"runtime","references":[],"includePlatforms":[]}}]}

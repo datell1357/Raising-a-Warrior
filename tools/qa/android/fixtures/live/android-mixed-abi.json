@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"android-mixed-abi","expect":{"code":"ANDROID_ABI_INVALID","pointer":"/ProjectSettings/ProjectSettings.asset/AndroidTargetArchitectures"},"changes":[{"path":"ProjectSettings/ProjectSettings.asset","content":"AndroidTargetArchitectures: ARM64,x86_64\n"}]}

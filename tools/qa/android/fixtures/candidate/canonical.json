@@ -1,0 +1,25 @@
+{
+  "kind": "unity-android-contract-canonical",
+  "unity": {
+    "editorMajor": 6000,
+    "requiredPackages": ["com.unity.addressables"],
+    "targetApi": 36,
+    "androidAbi": "ARM64",
+    "artifactFormat": "AAB",
+    "symbols": "public",
+    "pad": "asset-pack",
+    "playFeatureDelivery": false,
+    "iosReleaseTarget": false
+  },
+  "asmdefs": [
+    { "name": "Core", "kind": "runtime", "references": [], "includePlatforms": [] },
+    { "name": "Domain", "kind": "runtime", "references": ["Core"], "includePlatforms": [] },
+    { "name": "Application", "kind": "runtime", "references": ["Core", "Domain"], "includePlatforms": [] },
+    { "name": "Combat", "kind": "runtime", "references": ["Core", "Domain"], "includePlatforms": [] },
+    { "name": "Content", "kind": "runtime", "references": ["Core", "Domain"], "includePlatforms": [] },
+    { "name": "Platform", "kind": "runtime", "references": ["Core", "Domain", "Application"], "includePlatforms": [] },
+    { "name": "Presentation", "kind": "runtime", "references": ["Core", "Domain", "Application", "Combat", "Content"], "includePlatforms": [] },
+    { "name": "Tests.EditMode", "kind": "test-editmode", "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"], "includePlatforms": ["Editor"] },
+    { "name": "Tests.PlayMode", "kind": "test-playmode", "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"], "includePlatforms": [] }
+  ]
+}

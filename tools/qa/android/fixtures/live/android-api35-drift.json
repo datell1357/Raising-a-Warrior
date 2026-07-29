@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"android-target-35-drift","expect":{"code":"ANDROID_TARGET_API_INVALID","pointer":"/ProjectSettings/ProjectSettings.asset/AndroidTargetSdkVersion"},"changes":[{"path":"ProjectSettings/ProjectSettings.asset","content":"AndroidTargetSdkVersion: 35\n"}]}

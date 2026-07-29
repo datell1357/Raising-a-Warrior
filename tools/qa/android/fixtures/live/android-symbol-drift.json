@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"android-symbol-drift","expect":{"code":"ANDROID_SYMBOLS_REQUIRED","pointer":"/android/build/symbols"},"changes":[{"path":"android/build/output.json","content":"{\"format\":\"AAB\"}\n"},{"path":"android/build/symbols.json","content":"{\"enabled\":false}\n"}]}

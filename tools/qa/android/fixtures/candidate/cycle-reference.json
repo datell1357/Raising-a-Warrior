@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"cycle-reference","expect":{"code":"UNITY_ASMDEF_CYCLE","pointer":"/asmdefs"},"patches":[{"op":"add","pointer":"/asmdefs/0/references/-","value":"Domain"}]}

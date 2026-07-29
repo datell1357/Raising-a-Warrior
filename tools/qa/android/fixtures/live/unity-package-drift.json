@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"unity-package-drift","expect":{"code":"UNITY_PACKAGE_REQUIRED","pointer":"/Packages/manifest.json/dependencies/com.unity.addressables"},"changes":[{"path":"Packages/manifest.json","content":"{\"dependencies\":{},\"enableLockFile\":true,\"resolutionStrategy\":\"lowest\"}\n"}]}

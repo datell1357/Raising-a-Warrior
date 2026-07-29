@@ -1,0 +1,27 @@
+{
+  "name": "Tests.PlayMode",
+  "rootNamespace": "",
+  "references": [
+    "Core",
+    "Domain",
+    "Application",
+    "Combat",
+    "Content",
+    "Platform",
+    "Presentation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

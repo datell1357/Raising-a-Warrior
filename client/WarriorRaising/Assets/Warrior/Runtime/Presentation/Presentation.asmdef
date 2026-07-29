@@ -1,0 +1,22 @@
+{
+  "name": "Presentation",
+  "rootNamespace": "",
+  "references": [
+    "Core",
+    "Domain",
+    "Application",
+    "Combat",
+    "Content",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": []
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "unity-android-red-contract-suite",
+  "canonical": "tools/qa/android/fixtures/candidate/canonical.json",
+  "fixtureInventorySha256": "224da790deed5332b67901a95fb89fc769f498c014e04544e6b8f699d4dd1fcc",
+  "candidateFixtures": [
+    { "id": "missing-runtime", "path": "tools/qa/android/fixtures/candidate/missing-runtime.json", "expect": { "code": "UNITY_ASMDEF_RUNTIME_MISSING", "pointer": "/asmdefs/Combat" } },
+    { "id": "missing-editmode", "path": "tools/qa/android/fixtures/candidate/missing-editmode.json", "expect": { "code": "UNITY_ASMDEF_TEST_MISSING", "pointer": "/asmdefs/Tests.EditMode" } },
+    { "id": "missing-playmode", "path": "tools/qa/android/fixtures/candidate/missing-playmode.json", "expect": { "code": "UNITY_ASMDEF_TEST_MISSING", "pointer": "/asmdefs/Tests.PlayMode" } },
+    { "id": "extra-asmdef", "path": "tools/qa/android/fixtures/candidate/extra-asmdef.json", "expect": { "code": "UNITY_ASMDEF_EXTRA", "pointer": "/asmdefs/Extra" } },
+    { "id": "reverse-reference", "path": "tools/qa/android/fixtures/candidate/reverse-reference.json", "expect": { "code": "UNITY_ASMDEF_REVERSE_REFERENCE", "pointer": "/asmdefs/Domain/references/1" } },
+    { "id": "cycle-reference", "path": "tools/qa/android/fixtures/candidate/cycle-reference.json", "expect": { "code": "UNITY_ASMDEF_CYCLE", "pointer": "/asmdefs" } },
+    { "id": "runtime-to-test-reference", "path": "tools/qa/android/fixtures/candidate/runtime-to-test-reference.json", "expect": { "code": "UNITY_ASMDEF_RUNTIME_TO_TEST", "pointer": "/asmdefs/Core/references/0" } },
+    { "id": "test-platform-drift", "path": "tools/qa/android/fixtures/candidate/test-platform-drift.json", "expect": { "code": "UNITY_TEST_PLATFORM_INVALID", "pointer": "/asmdefs/Tests.EditMode/includePlatforms/0" } }
+  ],
+  "liveFixtures": [
+    { "id": "unity-version-drift", "path": "tools/qa/android/fixtures/live/unity-version-drift.json", "expect": { "code": "UNITY_VERSION_INVALID", "pointer": "/ProjectSettings/ProjectVersion.txt" } },
+    { "id": "unity-package-drift", "path": "tools/qa/android/fixtures/live/unity-package-drift.json", "expect": { "code": "UNITY_PACKAGE_REQUIRED", "pointer": "/Packages/manifest.json/dependencies/com.unity.addressables" } },
+    { "id": "android-target-35-drift", "path": "tools/qa/android/fixtures/live/android-api35-drift.json", "expect": { "code": "ANDROID_TARGET_API_INVALID", "pointer": "/ProjectSettings/ProjectSettings.asset/AndroidTargetSdkVersion" } },
+    { "id": "android-mixed-abi", "path": "tools/qa/android/fixtures/live/android-mixed-abi.json", "expect": { "code": "ANDROID_ABI_INVALID", "pointer": "/ProjectSettings/ProjectSettings.asset/AndroidTargetArchitectures" } },
+    { "id": "android-aab-drift", "path": "tools/qa/android/fixtures/live/android-aab-drift.json", "expect": { "code": "ANDROID_AAB_REQUIRED", "pointer": "/android/build/output" } },
+    { "id": "android-symbol-drift", "path": "tools/qa/android/fixtures/live/android-symbol-drift.json", "expect": { "code": "ANDROID_SYMBOLS_REQUIRED", "pointer": "/android/build/symbols" } },
+    { "id": "android-pad-drift", "path": "tools/qa/android/fixtures/live/android-pad-drift.json", "expect": { "code": "ANDROID_PAD_REQUIRED", "pointer": "/android/pad" } },
+    { "id": "forbidden-pfd", "path": "tools/qa/android/fixtures/live/forbidden-pfd.json", "expect": { "code": "PLAY_FEATURE_DELIVERY_FORBIDDEN", "pointer": "/Packages/manifest.json/dependencies/com.unity.modules.pfd" } },
+    { "id": "forbidden-ios", "path": "tools/qa/android/fixtures/live/forbidden-ios.json", "expect": { "code": "IOS_TARGET_FORBIDDEN", "pointer": "/ProjectSettings/ProjectSettings.asset/iOS" } },
+    { "id": "playmode-runtime-platform-drift", "path": "tools/qa/android/fixtures/live/playmode-runtime-platform-drift.json", "expect": { "code": "UNITY_PLAYMODE_RUNTIME_PLATFORM_INVALID", "pointer": "/Assets/Warrior/Tests/PlayMode/BootstrapShellPlayModeTests.cs" } }
+  ]
+}

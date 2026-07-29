@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"forbidden-pfd","expect":{"code":"PLAY_FEATURE_DELIVERY_FORBIDDEN","pointer":"/Packages/manifest.json/dependencies/com.unity.modules.pfd"},"changes":[{"path":"Packages/manifest.json","content":"{\"dependencies\":{\"com.unity.modules.pfd\":\"1.0.0\"},\"enableLockFile\":true,\"resolutionStrategy\":\"lowest\"}\n"}]}

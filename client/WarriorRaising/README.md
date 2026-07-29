@@ -1,22 +1,20 @@
-# WarriorRaising Client Boundary
+# WarriorRaising T6 Unity Android Contract
 
-T5 owns the client boundary contract only. This folder defines the canonical Unity assembly policy for the future client, but it is not a Unity project and does not contain runtime project scaffolding yet.
+This folder defines the exact T6 Unity 6000.5.4f1 Android shell contract. L2 supplies independent repository parsing and policy validation; it deliberately does not create Unity project artifacts. The next artifact-owning lane must create the declared paths exactly.
 
-T6 creates the Unity 6 Android shell against this contract.
+T6 requires:
+- Unity `6000.5.4f1`
+- ARM64-only IL2CPP Android builds at API 36
+- AAB output with public symbols
+- the pinned Addressables, Android Addressables, Input System, Localization, Test Framework, and UGUI `2.5.0` packages declared in the policy
+- one Bootstrap scene and exactly nine declared asmdefs
+- `Tests.EditMode` and `Tests.PlayMode` declare only `TestAssemblies` as optional Unity references
 
-Allowed at T5:
-- policy documentation
-- canonical assembly dependency rules
-
-Not allowed at T5:
-- iOS
-- gameplay implementation
-- Firebase writes from `Presentation`
-- package manifests
-- scenes
-- actual SDK configuration
-- any actual `.asmdef` files
-- `Assets/`, `Packages/`, or `ProjectSettings/`
+T6 forbids:
+- iOS release targets
+- Play Feature Delivery / `com.unity.modules.pfd`
+- runtime-to-test assembly references
+- extra asmdefs, asmrefs, unpinned packages, and undeclared scenes
 
 Assembly contract:
 - `Core` -> `[]`
@@ -26,6 +24,7 @@ Assembly contract:
 - `Content` -> `Core`, `Domain`
 - `Platform` -> `Core`, `Domain`, `Application`
 - `Presentation` -> `Core`, `Domain`, `Application`, `Combat`, `Content`
-- `Tests` -> all seven runtime assemblies
+- `Tests.EditMode` -> all seven runtime assemblies, `Editor` only
+- `Tests.PlayMode` -> all seven runtime assemblies, editor-discoverable with an Android-only test class
 
-The JSON policy in this folder is the machine-readable source of truth. Future actual asmdefs must match it exactly.
+`asmdef-policy.json` is an auditable declaration, not authorization for files on disk. The repository model independently reads actual asmdefs, Unity settings, package data, scenes, Addressables, and PAD metadata before the policy compares them with the fixed T6 contract.

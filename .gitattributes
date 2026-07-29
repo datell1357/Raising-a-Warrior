@@ -1,0 +1,5 @@
+# Unity serializes empty YAML scalars as "key: ". Treat that canonical form
+# as data while retaining Git's default whitespace checks for source files.
+*.asset whitespace=-blank-at-eol
+*.meta whitespace=-blank-at-eol
+*.unity whitespace=-blank-at-eol

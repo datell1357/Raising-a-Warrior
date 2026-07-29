@@ -1,0 +1,27 @@
+{
+  "name": "Tests.EditMode",
+  "rootNamespace": "",
+  "references": [
+    "Core",
+    "Domain",
+    "Application",
+    "Combat",
+    "Content",
+    "Platform",
+    "Presentation"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

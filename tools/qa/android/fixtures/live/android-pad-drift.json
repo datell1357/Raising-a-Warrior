@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"android-pad-drift","expect":{"code":"ANDROID_PAD_REQUIRED","pointer":"/android/pad"},"changes":[{"path":"android/pad/manifest.json","content":"{\"groups\":[]}\n"}]}

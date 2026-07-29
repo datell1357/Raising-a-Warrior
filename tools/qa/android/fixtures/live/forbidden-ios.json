@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"forbidden-ios","expect":{"code":"IOS_TARGET_FORBIDDEN","pointer":"/ProjectSettings/ProjectSettings.asset/iOS"},"changes":[{"path":"ProjectSettings/ProjectSettings.asset","content":"iOS: enabled\n"}]}

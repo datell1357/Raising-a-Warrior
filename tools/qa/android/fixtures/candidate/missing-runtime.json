@@ -1,0 +1,1 @@
+{"kind":"unity-android-candidate-fixture","id":"missing-runtime","expect":{"code":"UNITY_ASMDEF_RUNTIME_MISSING","pointer":"/asmdefs/Combat"},"patches":[{"op":"remove","pointer":"/asmdefs/3","value":null}]}

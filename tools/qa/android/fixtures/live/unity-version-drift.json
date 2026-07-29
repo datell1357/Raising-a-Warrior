@@ -1,0 +1,1 @@
+{"kind":"unity-android-live-fixture","id":"unity-version-drift","expect":{"code":"UNITY_VERSION_INVALID","pointer":"/ProjectSettings/ProjectVersion.txt"},"changes":[{"path":"ProjectSettings/ProjectVersion.txt","content":"m_EditorVersion: 2022.3.0f1\n"}]}

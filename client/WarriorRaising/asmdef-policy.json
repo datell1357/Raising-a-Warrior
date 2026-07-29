@@ -1,12 +1,11 @@
 {
   "kind": "unity-asmdef-policy",
-  "contract": "T5-P3",
+  "contract": "T6-P1",
   "scope": {
-    "stage": "T5",
-    "nextStage": "T6",
-    "boundary": "policy-only"
+    "stage": "T6",
+    "boundary": "unity-android-shell"
   },
-  "referenceForms": ["name", "guid"],
+  "referenceForms": ["name"],
   "rules": {
     "explicitReferencesRequired": true,
     "uniqueAssemblyNames": true,
@@ -14,48 +13,112 @@
     "noDanglingEdges": true,
     "noRuntimeToTests": true,
     "noCustomToPredefinedReferences": true,
-    "futureActualAsmdefsMustMatchPolicy": true
+    "actualAsmdefsMustMatchPolicy": true,
+    "androidOnly": true,
+    "il2cppRequired": true,
+    "playFeatureDeliveryForbidden": true,
+    "iosReleaseForbidden": true
+  },
+  "unity": {
+    "editorVersion": "6000.5.4f1",
+    "packages": {
+      "com.unity.addressables": "2.9.1",
+      "com.unity.addressables.android": "1.0.10",
+      "com.unity.inputsystem": "1.20.0",
+      "com.unity.localization": "1.5.12",
+      "com.unity.test-framework": "1.7.0",
+      "com.unity.ugui": "2.5.0"
+    },
+    "android": {
+      "targetApi": 36,
+      "architectures": ["ARM64"],
+      "scriptingBackend": "IL2CPP",
+      "artifactFormat": "AAB",
+      "symbols": "public"
+    },
+    "scenePaths": ["Assets/Scenes/Bootstrap.unity"],
+    "addressables": {
+      "settingsPath": "Assets/AddressableAssetsData/AddressableAssetSettings.asset",
+      "padManifestPath": "android/pad/manifest.json",
+      "padGroups": [{"name": "content", "deliveryType": "install-time"}]
+    },
+    "buildMetadata": {
+      "outputPath": "android/build/output.json",
+      "symbolsPath": "android/build/symbols.json"
+    }
   },
   "assemblies": [
     {
       "name": "Core",
       "kind": "runtime",
-      "references": []
+      "path": "Assets/Warrior/Runtime/Core/Core.asmdef",
+      "references": [],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Domain",
       "kind": "runtime",
-      "references": ["Core"]
+      "path": "Assets/Warrior/Runtime/Domain/Domain.asmdef",
+      "references": ["Core"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Application",
       "kind": "runtime",
-      "references": ["Core", "Domain"]
+      "path": "Assets/Warrior/Runtime/Application/Application.asmdef",
+      "references": ["Core", "Domain"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Combat",
       "kind": "runtime",
-      "references": ["Core", "Domain"]
+      "path": "Assets/Warrior/Runtime/Combat/Combat.asmdef",
+      "references": ["Core", "Domain"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Content",
       "kind": "runtime",
-      "references": ["Core", "Domain"]
+      "path": "Assets/Warrior/Runtime/Content/Content.asmdef",
+      "references": ["Core", "Domain"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Platform",
       "kind": "runtime",
-      "references": ["Core", "Domain", "Application"]
+      "path": "Assets/Warrior/Runtime/Platform/Platform.asmdef",
+      "references": ["Core", "Domain", "Application"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
       "name": "Presentation",
       "kind": "runtime",
-      "references": ["Core", "Domain", "Application", "Combat", "Content"]
+      "path": "Assets/Warrior/Runtime/Presentation/Presentation.asmdef",
+      "references": ["Core", "Domain", "Application", "Combat", "Content"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": []
     },
     {
-      "name": "Tests",
-      "kind": "tests",
-      "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"]
+      "name": "Tests.EditMode",
+      "kind": "test-editmode",
+      "path": "Assets/Warrior/Tests/EditMode/Tests.EditMode.asmdef",
+      "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"],
+      "includePlatforms": ["Editor"],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": ["TestAssemblies"]
+    },
+    {
+      "name": "Tests.PlayMode",
+      "kind": "test-playmode",
+      "path": "Assets/Warrior/Tests/PlayMode/Tests.PlayMode.asmdef",
+      "references": ["Core", "Domain", "Application", "Combat", "Content", "Platform", "Presentation"],
+      "includePlatforms": [],
+      "rootNamespace": "", "excludePlatforms": [], "allowUnsafeCode": false, "overrideReferences": false, "precompiledReferences": [], "autoReferenced": true, "defineConstraints": [], "versionDefines": [], "noEngineReferences": false, "optionalUnityReferences": ["TestAssemblies"]
     }
   ]
 }
