@@ -22,6 +22,12 @@ namespace Warrior.Presentation
                 new Vector2(safeArea.xMin / screenSize.x, safeArea.yMin / screenSize.y),
                 new Vector2(safeArea.xMax / screenSize.x, safeArea.yMax / screenSize.y));
         }
+
+        public static Rect WithBottomInset(Rect safeArea, float bottomInsetPixels)
+        {
+            var minimumY = Mathf.Clamp(Mathf.Max(safeArea.yMin, bottomInsetPixels), safeArea.yMin, safeArea.yMax);
+            return Rect.MinMaxRect(safeArea.xMin, minimumY, safeArea.xMax, safeArea.yMax);
+        }
     }
 
     public static class ShellReadiness
@@ -62,13 +68,46 @@ namespace Warrior.Presentation
 
         private void OnEnable()
         {
-            Apply(Screen.safeArea, new Vector2(Screen.width, Screen.height));
+            Apply(CurrentSafeArea(), new Vector2(Screen.width, Screen.height));
             Debug.Log(ShellReadiness.Marker(Screen.width, Screen.height));
         }
 
         private void Update()
         {
-            Apply(Screen.safeArea, new Vector2(Screen.width, Screen.height));
+            Apply(CurrentSafeArea(), new Vector2(Screen.width, Screen.height));
+        }
+
+        private static Rect CurrentSafeArea()
+        {
+            var safeArea = Screen.safeArea;
+#if UNITY_ANDROID && !UNITY_EDITOR
+            return SafeAreaMath.WithBottomInset(safeArea, AndroidSystemInsets.BottomGesturePixels());
+#else
+            return safeArea;
+#endif
         }
     }
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+    internal static class AndroidSystemInsets
+    {
+        public static float BottomGesturePixels()
+        {
+            using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            using var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+            using var window = activity.Call<AndroidJavaObject>("getWindow");
+            using var decorView = window.Call<AndroidJavaObject>("getDecorView");
+            using var windowInsets = decorView.Call<AndroidJavaObject>("getRootWindowInsets");
+            if (windowInsets == null)
+            {
+                return 0f;
+            }
+
+            using var insetType = new AndroidJavaClass("android.view.WindowInsets$Type");
+            var systemGestures = insetType.CallStatic<int>("systemGestures");
+            using var insets = windowInsets.Call<AndroidJavaObject>("getInsets", systemGestures);
+            return insets.Get<int>("bottom");
+        }
+    }
+#endif
 }

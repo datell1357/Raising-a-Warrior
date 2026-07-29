@@ -7,6 +7,7 @@ const configuratorSource = readFileSync('client/WarriorRaising/Assets/Editor/T6P
 const presentationAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets/Warrior/Runtime/Presentation/Presentation.asmdef', 'utf8'));
 const playModeAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets/Warrior/Tests/PlayMode/Tests.PlayMode.asmdef', 'utf8'));
 const applicationAsmdef = JSON.parse(readFileSync('client/WarriorRaising/Assets/Warrior/Runtime/Application/Application.asmdef', 'utf8'));
+const playModeBuildModifier = readFileSync('client/WarriorRaising/Assets/Warrior/Tests/EditMode/CleanAndroidTestPlayerBuildModifier.cs', 'utf8');
 
 test('dev Android build uses the saved Bootstrap scene without regenerating it', () => {
   expect(buildSource).not.toContain('L5ShellSceneBuilder.Build();');
@@ -44,6 +45,11 @@ test('Android PlayMode injects the runtime test runner once through the TestAsse
 test('Android PlayMode declares NUnit as an explicit precompiled test dependency', () => {
   expect(playModeAsmdef.overrideReferences).toBe(true);
   expect(playModeAsmdef.precompiledReferences).toEqual(['nunit.framework.dll']);
+});
+
+test('Android PlayMode invalidates stale Bee IL2CPP partitions before linking', () => {
+  expect(playModeBuildModifier).toContain('[assembly: TestPlayerBuildModifier');
+  expect(playModeBuildModifier).toContain('BuildOptions.CleanBuildCache');
 });
 
 test('Unity build backups are ignored without hiding Android metadata', () => {

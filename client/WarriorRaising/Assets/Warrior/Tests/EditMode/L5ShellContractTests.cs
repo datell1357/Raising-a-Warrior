@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using NUnit.Framework;
@@ -43,13 +44,13 @@ namespace Warrior.Tests.EditMode
         [Test]
         public void ShellTokenMap_whenQueried_matchesDesignContract()
         {
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.Void), Is.EqualTo(new Color32(0x07, 0x14, 0x21, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.Navy900), Is.EqualTo(new Color32(0x0C, 0x1C, 0x2A, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.Line), Is.EqualTo(new Color32(0x34, 0x52, 0x68, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.TextPrimary), Is.EqualTo(new Color32(0xF2, 0xF7, 0xF8, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.TextSecondary), Is.EqualTo(new Color32(0xA9, 0xBD, 0xC6, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.Teal500), Is.EqualTo(new Color32(0x2B, 0xCB, 0xBB, 0xFF)));
-            Assert.That(ShellDesignTokens.Color(ShellColorToken.Ember500), Is.EqualTo(new Color32(0xF2, 0x8A, 0x45, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.Void), Is.EqualTo(new Color32(0x09, 0x06, 0x04, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.Navy900), Is.EqualTo(new Color32(0x17, 0x11, 0x0E, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.Line), Is.EqualTo(new Color32(0x6B, 0x4A, 0x2E, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.TextPrimary), Is.EqualTo(new Color32(0xF7, 0xF1, 0xE8, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.TextSecondary), Is.EqualTo(new Color32(0xC8, 0xBB, 0xA8, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.Teal500), Is.EqualTo(new Color32(0x17, 0xC8, 0xE6, 0xFF)));
+            Assert.That(ShellDesignTokens.Color(ShellColorToken.Ember500), Is.EqualTo(new Color32(0xF5, 0xA6, 0x23, 0xFF)));
         }
 
         [Test]
@@ -89,9 +90,33 @@ namespace Warrior.Tests.EditMode
                 .OrderBy(transform => transform.name)
                 .ToArray();
 
-            Assert.That(destinations, Has.Length.EqualTo(5));
+            Assert.That(destinations, Has.Length.EqualTo(6));
             Assert.That(destinations[0].Find("SelectedIndicator"), Is.Not.Null);
             Assert.That(destinations.Skip(1).All(destination => destination.Find("SelectedIndicator") == null), Is.True);
+
+            var controller = scene.GetRootGameObjects()
+                .SelectMany(root => root.GetComponentsInChildren<ShellNavigationController>(true))
+                .Single();
+            controller.Select(1);
+
+            Assert.That(destinations[1].Find("SelectedIndicator"), Is.Not.Null);
+            Assert.That(destinations[0].Find("SelectedIndicator"), Is.Null);
+            Assert.That((Color32)destinations[1].Find("Label").GetComponent<Text>().color, Is.EqualTo((Color32)ShellDesignTokens.Color(ShellColorToken.Ember500)));
+            Assert.That((Color32)destinations[0].Find("Label").GetComponent<Text>().color, Is.EqualTo((Color32)ShellDesignTokens.Color(ShellColorToken.TextSecondary)));
+            Assert.That(controller.transform.Find("FeatureSheet/Viewport/Content/SkillPanel").gameObject.activeSelf, Is.True);
+            Assert.That(controller.transform.Find("FeatureSheet/Viewport/Content/GrowthPanel").gameObject.activeSelf, Is.False);
+            Assert.Throws<ArgumentOutOfRangeException>(() => controller.Select(6));
+
+            var panelNames = new[] { "GrowthPanel", "SkillPanel", "GearPanel", "WorldPanel", "StorePanel", "SummonPanel" };
+            var firstRowTitles = panelNames.Select((panelName, index) =>
+            {
+                controller.Select(index);
+                return controller.transform.Find($"FeatureSheet/Viewport/Content/{panelName}/UpgradeRow1/Title")
+                    .GetComponent<Text>()
+                    .text;
+            }).ToArray();
+
+            Assert.That(firstRowTitles.Distinct().Count(), Is.EqualTo(6));
         }
 
         [Test]
@@ -117,14 +142,50 @@ namespace Warrior.Tests.EditMode
                 .ToArray();
 
             Assert.That(names, Does.Contain("SafeAreaRoot"));
+            Assert.That(names, Does.Contain("EventSystem"));
             Assert.That(names, Does.Contain("StatusBar"));
             Assert.That(names, Does.Contain("QuestRibbon"));
             Assert.That(names, Does.Contain("CombatRegion"));
             Assert.That(names, Does.Contain("CombatViewportOverlay"));
+            Assert.That(names, Does.Contain("CombatBackdrop"));
+            Assert.That(names, Does.Contain("CombatHero"));
+            Assert.That(names, Does.Contain("CoinResource"));
+            Assert.That(names, Does.Contain("AetherResource"));
+            Assert.That(names, Does.Contain("LevelProgress"));
             Assert.That(names, Does.Contain("FeatureSheet"));
+            Assert.That(names, Does.Contain("Viewport"));
+            Assert.That(names, Does.Contain("Content"));
             Assert.That(names, Does.Contain("BottomNav"));
             Assert.That(names.Count(name => name.StartsWith("QuickSlot")), Is.EqualTo(4));
-            Assert.That(names.Count(name => name.StartsWith("NavDestination")), Is.EqualTo(5));
+            Assert.That(names.Count(name => name.StartsWith("NavDestination")), Is.EqualTo(6));
+            var scroll = scene.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<ScrollRect>(true)).Single();
+            Assert.That(scroll.vertical, Is.True);
+            Assert.That(scroll.horizontal, Is.False);
+            Assert.That(scroll.content.sizeDelta.y, Is.EqualTo(ShellMetrics.FeaturePanelDp));
+            Assert.That(scroll.viewport.GetComponent<Image>().color.a, Is.GreaterThan(0f));
+            Assert.That(scroll.content.Find("GrowthPanel/UpgradeRow1").GetComponent<RectTransform>().anchorMax.y, Is.GreaterThanOrEqualTo(0.83f));
+            var eventSystem = scene.GetRootGameObjects()
+                .SelectMany(root => root.GetComponentsInChildren<Transform>(true))
+                .Single(transform => transform.name == "EventSystem");
+            Assert.That(eventSystem.GetComponents<Component>().Any(component => component.GetType().Name == "InputSystemUIInputModule"), Is.True);
+
+            var combat = scene.GetRootGameObjects()
+                .SelectMany(root => root.GetComponentsInChildren<Transform>(true))
+                .Single(transform => transform.name == "CombatRegion")
+                .GetComponent<RectTransform>();
+            var navigation = scene.GetRootGameObjects()
+                .SelectMany(root => root.GetComponentsInChildren<Transform>(true))
+                .Single(transform => transform.name == "BottomNav")
+                .GetComponent<RectTransform>();
+
+            Assert.That(combat.anchorMin.y, Is.EqualTo(0.55f));
+            Assert.That(combat.anchorMax.y, Is.EqualTo(1f));
+            Assert.That(combat.offsetMin.y, Is.EqualTo(-ShellMetrics.StatusBarDp - ShellMetrics.QuestRibbonDp));
+            Assert.That(combat.offsetMax.y, Is.EqualTo(-ShellMetrics.StatusBarDp - ShellMetrics.QuestRibbonDp));
+            Assert.That(navigation.anchorMin.y, Is.Zero);
+            Assert.That(navigation.anchorMax.y, Is.Zero);
+            Assert.That(navigation.offsetMin.y, Is.Zero);
+            Assert.That(navigation.offsetMax.y, Is.EqualTo(ShellMetrics.BottomNavDp));
         }
 
         [Test]
@@ -145,7 +206,7 @@ namespace Warrior.Tests.EditMode
 
             Assert.That(copy.RequestedLocale, Is.EqualTo("ko"));
             Assert.That(copy.ResolvedLocale, Is.EqualTo("en"));
-            Assert.That(copy.Value, Is.EqualTo("No active quest"));
+            Assert.That(copy.Value, Is.EqualTo("Guest active"));
             Assert.That(copy.UsedFallback, Is.True);
         }
 
@@ -174,16 +235,19 @@ namespace Warrior.Tests.EditMode
                 Is.EqualTo("{\"groups\":[{\"name\":\"content\",\"deliveryType\":\"install-time\"}]}"));
         }
 
-        [TestCase(1080f, 2400f, 0.32f)]
-        [TestCase(1080f, 2340f, 0.30f)]
-        [TestCase(1080f, 1920f, 0.26f)]
-        public void CombatLayout_whenTargetAspectUsed_preservesMinimumRegion(float width, float height, float minimumRatio)
+        [TestCase(1080f, 2400f)]
+        [TestCase(1080f, 2340f)]
+        [TestCase(1080f, 1920f)]
+        public void CombatLayout_whenTargetAspectUsed_reservesExactFortyFivePercent(float width, float height)
         {
             var layout = ShellLayout.Calculate(new Vector2(width, height), ShellSheetState.Peek);
+            var adjustedSafeArea = SafeAreaMath.WithBottomInset(new Rect(0f, 0f, width, height), 84f);
 
-            Assert.That(layout.CombatHeight / height, Is.GreaterThanOrEqualTo(minimumRatio));
+            Assert.That(layout.CombatHeight / height, Is.EqualTo(0.45f).Within(0.001f));
             Assert.That(layout.BottomNavHeight, Is.EqualTo(ShellMetrics.BottomNavDp));
             Assert.That(layout.FeatureSheetYieldsFirst, Is.True);
+            Assert.That(adjustedSafeArea.yMin, Is.EqualTo(84f));
+            Assert.That(adjustedSafeArea.height, Is.EqualTo(height - 84f));
         }
 
         private static float ContrastRatio(Color foreground, Color background)

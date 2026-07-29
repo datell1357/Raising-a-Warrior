@@ -27,20 +27,15 @@ namespace Warrior.Presentation
     {
         public static ShellLayoutResult Calculate(Vector2 safeSize, ShellSheetState state)
         {
-            var fixedBands = ShellMetrics.StatusBarDp + ShellMetrics.QuestRibbonDp + ShellMetrics.BottomNavDp;
-            var requestedSheet = state == ShellSheetState.Peek ? ShellMetrics.BottomNavDp : 0f;
-            var minimumCombat = safeSize.y * MinimumCombatRatio(safeSize.x / safeSize.y);
-            var available = safeSize.y - fixedBands;
-            var sheet = Mathf.Min(requestedSheet, Mathf.Max(0f, available - minimumCombat));
-            return new ShellLayoutResult(available - sheet, ShellMetrics.BottomNavDp, sheet < requestedSheet || state == ShellSheetState.Peek);
-        }
+            if (safeSize.x <= 0f || safeSize.y <= 0f)
+            {
+                throw new ArgumentOutOfRangeException(nameof(safeSize), safeSize, "Safe size must be positive.");
+            }
 
-        private static float MinimumCombatRatio(float widthToHeight)
-        {
-            if (widthToHeight <= 9f / 20f + 0.001f) return 0.32f;
-            if (widthToHeight <= 9f / 19.5f + 0.001f) return 0.30f;
-            if (widthToHeight <= 9f / 16f + 0.001f) return 0.26f;
-            throw new ArgumentOutOfRangeException(nameof(widthToHeight), widthToHeight, "Portrait shell ratio is outside the L5 target matrix.");
+            return new ShellLayoutResult(
+                safeSize.y * ShellMetrics.CombatViewportRatio,
+                ShellMetrics.BottomNavDp,
+                state == ShellSheetState.Peek);
         }
     }
 }

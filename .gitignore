@@ -18,4 +18,9 @@ client/WarriorRaising/Assets/InitTestScene*.unity
 client/WarriorRaising/Assets/InitTestScene*.unity.meta
 client/WarriorRaising/Assets/PlayAssetDelivery/Build/
 client/WarriorRaising/Assets/PlayAssetDelivery/Build.meta
-client/WarriorRaising/android/build/
+client/WarriorRaising/android/build/*_BackUpThisFolder_ButDontShipItWithYourGame/
+client/WarriorRaising/android/build/*.aab
+client/WarriorRaising/android/build/*.apk
+client/WarriorRaising/android/build/*.apks
+client/WarriorRaising/android/build/*_symbols/
+client/WarriorRaising/android/build/*.symbols.zip

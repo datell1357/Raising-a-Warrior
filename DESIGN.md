@@ -1,6 +1,6 @@
 # Raising a Warrior UI Design Contract
 
-Status: implementation contract for the future Unity Android client. This document defines presentation and interaction only. It does not authorize asset production or product-scope expansion.
+Status: implemented Unity Android shell contract. This document defines presentation and interaction only and does not authorize product-scope expansion.
 
 ## 0. Research Log
 
@@ -9,8 +9,8 @@ Status: implementation contract for the future Unity Android client. This docume
 - Reference handling: no source screenshot, asset, sampled color, pixel measurement, protected copy, identifier, icon, or silhouette was used as a design token.
 - Existing UI system: none. The repository contains specifications and analysis but no Unity product UI or reusable UI components to preserve.
 - Direction: Android-native portrait game shell with a persistent combat context, compact navigation, and scroll-owning feature sheets.
-- Visual identity: independently authored astral mobile forge in a night mineral archipelago, with engraved dark-navy materials, teal navigation energy, ember-orange action heat, and original tool-and-star iconography.
-- Skipped image generation and emulator recapture: this task creates the contract only. Approved abstract interaction grammar was already available, and new source imagery would add clean-room risk without resolving a contract decision.
+- Visual identity: independently authored celestial forge garden with black-brown plates, oxidized-bronze dividers, cyan aether, ember-orange progression actions, and original geometric navigation marks.
+- Generated art: the four GPT Image 2 exports in `docs/production/provenance/warrior-shell-imagegen2.md` are production assets with ledger admission and independent clean-room review.
 
 ## 1. Atmosphere, Identity, and Reference Boundary
 
@@ -41,18 +41,18 @@ All values below are independently selected project values. They are not measure
 
 | Role | Token | Value | Use |
 | --- | --- | --- | --- |
-| Deep background | `color.void` | `#071421` | Safe-area fill and combat-night backdrop support |
-| Base plate | `color.navy.900` | `#0C1C2A` | Root feature sheet and navigation |
-| Raised plate | `color.navy.800` | `#132A3B` | Rows, filters, selected containers |
-| High plate | `color.navy.700` | `#1B394D` | Modal and floating HUD surfaces |
-| Engraved line | `color.line` | `#345268` | Dividers, inactive outlines, icon cuts |
-| Primary text | `color.text.primary` | `#F2F7F8` | Titles, values, actionable labels |
-| Secondary text | `color.text.secondary` | `#A9BDC6` | Supporting labels and metadata |
-| Disabled text | `color.text.disabled` | `#667D88` | Disabled and unavailable content |
-| Stable energy | `color.teal.500` | `#2BCBBB` | Selected navigation, focus, resource energy |
-| Stable pressed | `color.teal.700` | `#16988F` | Pressed teal control |
-| Forge action | `color.ember.500` | `#F28A45` | Primary CTA, claim, upgrade, summon |
-| Forge pressed | `color.ember.700` | `#BE5E2D` | Pressed ember control |
+| Deep background | `color.void` | `#090604` | Safe-area fill and combat-night backdrop support |
+| Base plate | `color.navy.900` | `#17110E` | Root feature sheet and navigation |
+| Raised plate | `color.navy.800` | `#241A14` | Rows, filters, selected containers |
+| High plate | `color.navy.700` | `#33241A` | Modal and floating HUD surfaces |
+| Engraved line | `color.line` | `#6B4A2E` | Dividers, inactive outlines, icon cuts |
+| Primary text | `color.text.primary` | `#F7F1E8` | Titles, values, actionable labels |
+| Secondary text | `color.text.secondary` | `#C8BBA8` | Supporting labels and metadata |
+| Disabled text | `color.text.disabled` | `#7D7062` | Disabled and unavailable content |
+| Stable energy | `color.teal.500` | `#17C8E6` | Aether, focus, and resource energy |
+| Stable pressed | `color.teal.700` | `#0A8FA8` | Pressed cyan control |
+| Forge action | `color.ember.500` | `#F5A623` | Selected navigation, upgrade, summon |
+| Forge pressed | `color.ember.700` | `#B86716` | Pressed ember control |
 | Success | `color.success` | `#63D39A` | Confirmed server result |
 | Warning | `color.warning` | `#F2C65C` | Near-limit and expiring state |
 | Error | `color.error` | `#FF747C` | Failure and destructive confirmation |
@@ -139,8 +139,12 @@ The base unit is 4dp. These are independent implementation values, not reconstru
 | `size.control` | 48dp | Minimum target height and width |
 | `size.controlLg` | 56dp | Primary CTA and two-line localized action |
 | `size.bottomNav` | 64dp | Navigation content, excluding system inset |
-| `size.statusBar` | 56dp | Compact player status header |
-| `size.questRibbon` | 48dp | Active quest summary; may grow to 56dp for two lines |
+| `size.systemGestureInset` | runtime | `WindowInsets.Type.systemGestures()` reserved below navigation |
+| `size.statusBar` | 44dp | Compact player and three-resource status header |
+| `size.questRibbon` | 36dp | Active account, quest, and stage summary |
+| `size.combatViewport` | 360dp | Exact 45% of the 800dp logical portrait height |
+| `size.quickBar` | 72dp | Four generated skill actions plus auto control |
+| `size.featurePanel` | 224dp | Single-scroll lower feature region |
 | `stroke.default` | 1dp | Engraved divider and inactive outline |
 | `stroke.emphasis` | 2dp | Focus ring, selected edge, and rarity notch |
 
@@ -160,10 +164,11 @@ The base unit is 4dp. These are independent implementation values, not reconstru
 1. System top inset, owned by Android.
 2. `StatusBar`, fixed intrinsic height.
 3. `QuestRibbon`, fixed intrinsic height or one extra text line.
-4. Combat region, flexible and always visible while the main shell is active.
-5. `FeatureSheet`, docked above navigation in closed, half, or expanded state.
-6. `BottomNav`, fixed above the system bottom inset.
-7. System bottom or gesture inset, owned by Android.
+4. `CombatRegion`, fixed to 45% of the safe logical portrait height and always visible while the main shell is active.
+5. `QuickBar`, four fixed generated-atlas skill actions and one auto control.
+6. `FeatureSheet`, one masked vertical `ScrollRect` with six mutually exclusive feature panels.
+7. `BottomNav`, six fixed destinations above the system bottom inset.
+8. System bottom or gesture inset, owned by Android.
 
 The `CombatViewportOverlay` is anchored inside the combat region. Objective/status stays at its top edge, entity/resource bars stay near their semantic targets, and the four `QuickSlot` controls form a reachable cluster at the combat region's lower edge. HUD controls never anchor to raw screen coordinates.
 
@@ -236,9 +241,9 @@ All primitives are implementation-neutral. They may map to UI Toolkit or uGUI, b
 
 ### `BottomNav`
 
-- Structure: five approved destinations: character growth, skills, equipment, world, and store/summon. Each item has icon, localized label, optional `Badge`.
+- Structure: six approved destinations: character growth, skills, equipment, world, store, and summon. Each item has icon, localized label, optional `Badge`.
 - States: default, selected, pressed, focused, locked, notification, disabled by maintenance.
-- Behavior: selecting a destination opens its FeatureSheet at half height; selecting the active destination toggles half/expanded. A locked destination opens `LockedState` without changing selection.
+- Behavior: selecting a destination swaps the single scrollable FeatureSheet panel and moves the orange geometry indicator, label, and icon state to the selected item.
 - Rules: no excluded companion or social destination. Labels may wrap to two short lines without reducing target size.
 
 ### `FeatureSheet`

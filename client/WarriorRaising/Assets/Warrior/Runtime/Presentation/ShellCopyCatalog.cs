@@ -6,6 +6,9 @@ namespace Warrior.Presentation
     {
         StatusTitle,
         StatusSubtitle,
+        ResourceCoin,
+        ResourceAether,
+        ResourceLevel,
         QuestEmpty,
         QuestHint,
         StageIdle,
@@ -16,6 +19,14 @@ namespace Warrior.Presentation
         NavEquipment,
         NavWorld,
         NavStore,
+        NavSummon,
+        PanelGrowth,
+        PanelSkills,
+        PanelGear,
+        PanelWorld,
+        PanelStore,
+        PanelSummon,
+        UpgradeAction,
         QuickSlotEmpty
     }
 
@@ -40,18 +51,29 @@ namespace Warrior.Presentation
         private static readonly IReadOnlyDictionary<ShellCopyKey, string> English =
             new Dictionary<ShellCopyKey, string>
             {
-                { ShellCopyKey.StatusTitle, "ASTRAL FORGE" },
-                { ShellCopyKey.StatusSubtitle, "Idle shell online" },
-                { ShellCopyKey.QuestEmpty, "No active quest" },
-                { ShellCopyKey.QuestHint, "Guidance will appear here" },
-                { ShellCopyKey.StageIdle, "IDLE WATCH" },
-                { ShellCopyKey.CombatWaiting, "Combat space reserved" },
-                { ShellCopyKey.FeatureSheetPeek, "FEATURES CLOSED" },
+                { ShellCopyKey.StatusTitle, "LV. 10" },
+                { ShellCopyKey.StatusSubtitle, "Astral Vanguard" },
+                { ShellCopyKey.ResourceCoin, "12,480" },
+                { ShellCopyKey.ResourceAether, "5,900" },
+                { ShellCopyKey.ResourceLevel, "68%" },
+                { ShellCopyKey.QuestEmpty, "Guest active" },
+                { ShellCopyKey.QuestHint, "Beginner's Orbit IV" },
+                { ShellCopyKey.StageIdle, "STAGE 4 - CELESTIAL GROVE" },
+                { ShellCopyKey.CombatWaiting, "AUTO BATTLE" },
+                { ShellCopyKey.FeatureSheetPeek, "GROWTH" },
                 { ShellCopyKey.NavGrowth, "Growth" },
                 { ShellCopyKey.NavSkills, "Skills" },
                 { ShellCopyKey.NavEquipment, "Gear" },
                 { ShellCopyKey.NavWorld, "World" },
                 { ShellCopyKey.NavStore, "Store" },
+                { ShellCopyKey.NavSummon, "Summon" },
+                { ShellCopyKey.PanelGrowth, "Growth" },
+                { ShellCopyKey.PanelSkills, "Skills" },
+                { ShellCopyKey.PanelGear, "Equipment" },
+                { ShellCopyKey.PanelWorld, "World" },
+                { ShellCopyKey.PanelStore, "Store" },
+                { ShellCopyKey.PanelSummon, "Summon" },
+                { ShellCopyKey.UpgradeAction, "LEVEL UP" },
                 { ShellCopyKey.QuickSlotEmpty, "EMPTY" }
             };
 
