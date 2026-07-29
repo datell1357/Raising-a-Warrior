@@ -1,2 +1,3 @@
 vendor_id,vendor_name,license_id,receipt_id,source_record,status
 vendor:sample-internal-creative,Synthetic Placeholder Contributor (not a real vendor),license:sample-original-work,receipt:sample-original-001,source:sample-synthetic-concept-001,approved
+vendor:openai-gpt-image-2,OpenAI GPT Image 2,license:openai-output-terms-20260729,receipt:codex-imagegen2-019fae06-20260729,source:warrior-shell-imagegen2-brief,approved
