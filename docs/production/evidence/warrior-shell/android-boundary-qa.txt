@@ -1,0 +1,24 @@
+Warrior shell Android boundary QA
+Date: 2026-07-29
+Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T221919722Z-8303
+
+Real Android captures:
+- android-20x9.png: 1080x2400.
+- android-19_5x9.png: 1080x2340.
+- android-16x9.png: 1080x1920.
+
+Observed on every target:
+- Top player/resource HUD and quest/stage strip remain fully visible.
+- Generated combat backdrop and hero retain aspect without stretching.
+- Combat viewport occupies 45% of the safe logical height.
+- Four generated skill icons and AUTO control remain visible.
+- Lower feature content is visible and masked inside one vertical ScrollRect.
+- All six navigation destinations remain visible above the bottom edge.
+- Runtime `WindowInsets.Type.systemGestures()` reports and reserves the qualified 84px Android gesture inset; no navigation-mode constant is used.
+- The 16:9 target yields lower feature height first and exposes the remaining rows through scrolling.
+
+EditMode boundary proof:
+- ShellLayout returns an exact 0.45 combat ratio for 1080x2400, 1080x2340, and 1080x1920.
+- ShellNavigationController.Select(6) throws ArgumentOutOfRangeException.
+- Scene anchors pin BottomNav to the safe bottom and preserve the responsive combat/feature split.
+- `SafeAreaRoot` combines `Screen.safeArea` with the runtime bottom system-gesture inset before applying anchors.

@@ -1,0 +1,28 @@
+Warrior shell Android navigation QA
+Date: 2026-07-29
+Device: Pixel_6a emulator-5554, 1080x2400
+Package: com.warriorraising.dev
+Installed artifact: client/WarriorRaising/android/build/WarriorRaising-dev-1785363688566.apks
+Qualification: .omo/evidence/implementation/local-20260728/mvp-t6/a1/task-6/lanes/l6/android-runs/20260729T221919722Z-8303
+
+Observed through adb input and real emulator screenshots:
+- Growth selected at index 0 with Power/Vitality/Aether progression rows.
+- Skills selected at index 1 with Comet Slash/Forge Eruption/Gravity Seal and EQUIP actions.
+- Gear selected at index 2 with Aether Blade/Bronze Armor/Star Ring and FORGE actions.
+- World selected at index 3 with Celestial Grove/Ruin Gate/Ember Vault and ENTER actions.
+- Store selected at index 4 with Daily Cache/Aether Pack/Forge Pass and CLAIM actions.
+- Summon selected at index 5 with Warrior Draw/Skill Draw/Gear Draw and SUMMON actions.
+- Every selection moved the orange icon, label, and geometry indicator and swapped the lower panel title, rows, values, and actions while preserving the HUD, combat viewport, skill bar, and navigation.
+- Persisted screenshots and SHA-256:
+  - growth.png: 36dc86e9e3236e3115977e02d0e7408232f26f36d93e635219eccde19fb0d250
+  - skills.png: c4499dcca725da548ec6b2dedbb25358993d683a5d7acf82b80c156fb350c72a
+  - gear.png: e3cb64eeabd93e0d724964c4244e0281007a216aeb9f664a875b695849af6bdf
+  - world.png: aa0ec401e66213ae6f27a00555a5783b69f31c79a9646e65dbfdb5c0c620f8fc
+  - store.png: 35fdd7c5e5111fb25865634ecb5f3f386f8601311a85eada8e7fb00aa2f159df
+  - summon.png: b263fc8f7f22f2f1ad89fb37a16d3e8f6ef3a625af01483c42e66c7f7d6e37d2
+- A 400px upward swipe exposed the third Growth row.
+- Scroll-before SHA-256: 36dc86e9e3236e3115977e02d0e7408232f26f36d93e635219eccde19fb0d250.
+- Scroll-after SHA-256: dbdb5273dbb120c034d726a4fa3f417d618cdeda57a3e13bb7fd3a3b1ad32d94.
+- Force-stop and monkey relaunch returned com.warriorraising.dev/com.unity3d.player.UnityPlayerActivity to topResumedActivity.
+- Navigation is positioned above the qualified 84px Android gesture inset read dynamically from `WindowInsets.Type.systemGestures()`.
+- Final package logcat: zero fatal exception, ANR, fatal signal, or NullReferenceException matches.
